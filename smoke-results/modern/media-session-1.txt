@@ -3,7 +3,7 @@ MEDIA SESSION SERVICE (dumpsys media_session)
 4 sessions listeners.
 Global priority session is com.android.server.telecom/HeadsetMediaButton (userId=0)
   HeadsetMediaButton com.android.server.telecom/HeadsetMediaButton (userId=0)
-    ownerPid=241, ownerUid=1000, userId=0
+    ownerPid=237, ownerUid=1000, userId=0
     package=com.android.server.telecom
     launchIntent=null
     mediaButtonReceiver=null
