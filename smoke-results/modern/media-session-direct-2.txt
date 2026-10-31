@@ -3,7 +3,7 @@ MEDIA SESSION SERVICE (dumpsys media_session)
 4 sessions listeners.
 Global priority session is com.android.server.telecom/HeadsetMediaButton (userId=0)
   HeadsetMediaButton com.android.server.telecom/HeadsetMediaButton (userId=0)
-    ownerPid=236, ownerUid=1000, userId=0
+    ownerPid=245, ownerUid=1000, userId=0
     package=com.android.server.telecom
     launchIntent=null
     mediaButtonReceiver=null
@@ -28,15 +28,15 @@ Record for full_user=0
   Media button session is null
   Sessions Stack - have 1 sessions:
     AlgerPhone com.wushisan.algertv.phone/AlgerPhone (userId=0)
-      ownerPid=2749, ownerUid=10077, userId=0
+      ownerPid=2767, ownerUid=10077, userId=0
       package=com.wushisan.algertv.phone
       launchIntent=null
-      mediaButtonReceiver=MBR {pi=PendingIntent{3bcbefe: PendingIntentRecord{f889fb com.wushisan.algertv.phone broadcastIntent}}, type=1}
+      mediaButtonReceiver=MBR {pi=PendingIntent{21f9ea5: PendingIntentRecord{c7573a2 com.wushisan.algertv.phone broadcastIntent}}, type=1}
       active=true
       flags=3
       rating type=0
       controllers: 4
-      state=PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=225975, actions=822, custom actions=[], active item id=-1, error=null}
+      state=PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=536037, actions=822, custom actions=[], active item id=-1, error=null}
       audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_UNKNOWN flags=0x800 tags= bundle=null
       volumeType=1, controlType=2, max=0, current=0
       metadata: size=4, description=Smoke Direct, SoundHelix, null
