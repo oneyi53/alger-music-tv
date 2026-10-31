@@ -35,13 +35,18 @@ public class MainActivity extends FragmentActivity {
      *  during prepare. */
     private void maybeSmokeDirectPlay() {
         if (!"1".equals(getIntent().getStringExtra("alger_smoke_direct"))) return;
+        PlayerController controller = PlayerController.get();
+        if (controller == null) {
+            Log.w(App.TAG, "SMOKE_DIRECT_PLAY skipped: PlayerController not initialized");
+            return;
+        }
         Song s = new Song(
                 "direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
                 "Smoke Direct", "SoundHelix", "", null, null, 0);
         Log.i(App.TAG, "SMOKE_DIRECT_PLAY tv");
         List<Song> q = new ArrayList<>();
         q.add(s);
-        PlayerController.get().playQueue(q, 0);
+        controller.playQueue(q, 0);
         startActivity(new Intent(this, PlayerActivity.class));
     }
 }
