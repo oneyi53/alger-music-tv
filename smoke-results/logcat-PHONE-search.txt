@@ -1,217 +1,240 @@
 --------- beginning of system
-10-31 06:15:00.214   272   571 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} from uid 0
-10-31 06:15:00.218   272   306 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
-10-31 06:15:00.218   272   306 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: ENABLED
-10-31 06:15:00.219   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: ENABLED
+10-31 08:16:43.340   275  1211 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} from uid 0
 --------- beginning of main
-10-31 06:15:00.223   140   140 D Zygote  : Forked child process 2260
-10-31 06:15:00.224   272   313 I ActivityManager: Start proc 2260:com.wushisan.algertv.phone/u0a116 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
-10-31 06:15:00.224  2260  2260 I Zygote  : seccomp disabled by setenforce 0
-10-31 06:15:00.226  1938  1944 I adbd    : jdwp connection from 2260
-10-31 06:15:00.229   272   571 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-10-31 06:15:00.230   272   306 I ActivityManager: Killing 1320:com.android.managedprovisioning/u0a67 (adj 985): empty #17
-10-31 06:15:00.239   140   140 I Zygote  : Process 1320 exited due to signal 9 (Killed)
-10-31 06:15:00.242  2260  2260 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:15:00.242  2260  2260 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:15:00.245  2260  2260 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-31 06:15:00.276  2260  2260 I AlgerTV : App onCreate
-10-31 06:15:00.297  2260  2260 I AlgerTV : HOME_LOAD_START
-10-31 06:15:00.297  2260  2260 I AlgerTV : HOME_CACHE_HIT
-10-31 06:15:00.364    70    70 D hwcomposer: VSYNC event status:0
-10-31 06:15:00.378  2260  2260 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
-10-31 06:15:00.379   272  2253 D ConnectivityService: requestNetwork for uid/pid:10116/2260 NetworkRequest [ TRACK_DEFAULT id=21, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv.phone] ]
-10-31 06:15:00.379   272   396 D ConnectivityService: NetReassign [21 : null → 100]
-10-31 06:15:00.380   272   426 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=21, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-31 06:15:00.380   272   392 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=21, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-31 06:15:00.380   272   392 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=21, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-31 06:15:00.380   809   809 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=21, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-31 06:15:00.381   461   461 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-10-31 06:15:00.382   809   809 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-10-31 06:15:00.382   809   809 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-10-31 06:15:00.388    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-10-31 06:15:00.625    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:15:00.625  2260  2282 I Gralloc4: mapper 4.x is not supported
-10-31 06:15:00.626    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 06:15:00.626  2260  2282 W Gralloc3: mapper 3.x is not supported
-10-31 06:15:00.627    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:15:00.643   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity: +421ms
-10-31 06:15:00.996  2260  2260 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
-10-31 06:15:01.226  2260  2260 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
-10-31 06:15:02.645  2260  2260 I AlgerTV : HOME_META_OK id=60198 ms=2348
-10-31 06:15:03.182  2260  2260 I AlgerTV : HOME_META_OK id=745956260 ms=2885
-10-31 06:15:03.420  2260  2260 I AlgerTV : HOME_META_OK id=2809513713 ms=3123
-10-31 06:15:03.551  2260  2260 I AlgerTV : HOME_META_OK id=180106 ms=3254
-10-31 06:15:04.233   272  1110 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 06:15:04.665  2260  2260 I AlgerTV : HOME_META_OK id=60131 ms=4368
-10-31 06:15:04.810  2260  2260 I AlgerTV : HOME_META_OK id=71384707 ms=4513
-10-31 06:15:05.050  2260  2260 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
-10-31 06:15:06.141  2260  2260 I AlgerTV : HOME_META_OK id=19723756 ms=5844
-10-31 06:15:06.168  2260  2260 I AlgerTV : HOME_META_OK id=3779629 ms=5871
-10-31 06:15:06.409  2260  2260 I AlgerTV : HOME_META_OK id=3778678 ms=6112
-10-31 06:15:07.857  2260  2260 I AlgerTV : HOME_META_OK id=2884035 ms=7560
-10-31 06:15:07.869  2260  2260 I AlgerTV : HOME_META_OK id=1978921795 ms=7572
-10-31 06:15:09.065  2260  2260 I AlgerTV : HOME_META_OK id=11641012 ms=8768
-10-31 06:15:09.273  2313  2313 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 06:15:09.275  2313  2313 I AndroidRuntime: Using default boot image
-10-31 06:15:09.275  2313  2313 I AndroidRuntime: Leaving lock profiling enabled
-10-31 06:15:09.276  2313  2313 I app_process: Core platform API reporting enabled, enforcing=false
-10-31 06:15:09.319  2313  2313 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-31 06:15:09.319  2313  2313 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-31 06:15:09.323  2313  2313 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:09.323  2313  2313 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:09.330  2313  2313 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-31 06:15:09.332  2313  2313 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-10-31 06:15:09.338  2313  2329 V UiAutomation: Init UiAutomation@ea79ecc[id=1, flags=0]
-10-31 06:15:09.348  2260  2260 I AlgerTV : HOME_META_OK id=991319590 ms=9051
-10-31 06:15:09.348  2260  2260 I AlgerTV : HOME_DONE ms=9051 meta=13/13 fallback=false
-10-31 06:15:09.349  2260  2330 I AlgerTV : HOME_CACHE_SAVED bytes=1992
-10-31 06:15:11.805  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-home.xml to set project id.: Operation not supported on transport endpoint
-10-31 06:15:11.806  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-home.xml
-10-31 06:15:11.806  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-home.xml
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:15:11.806  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:15:11.808  2313  2313 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@b7d4; boundsInParent: Rect(0, 0 - 1080, 895); boundsInScreen: Rect(0, 1853 - 1080, 1794); packageName: com.wushisan.algertv.phone; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/toplist_rows; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:11.809  2313  2313 W AccessibilityNodeInfoDumper: Fetch time: 5ms
-10-31 06:15:11.809   272  2253 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@dc6639d
-10-31 06:15:11.809  2313  2329 V UiAutomation: Init UiAutomation@ea79ecc[id=-1, flags=0]
-10-31 06:15:11.811  2313  2313 D AndroidRuntime: Shutting down VM
-10-31 06:15:12.309  2339  2339 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 06:15:12.311  2339  2339 I AndroidRuntime: Using default boot image
-10-31 06:15:12.311  2339  2339 I AndroidRuntime: Leaving lock profiling enabled
-10-31 06:15:12.313  2339  2339 I app_process: Core platform API reporting enabled, enforcing=false
-10-31 06:15:12.356  2339  2339 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-31 06:15:12.356  2339  2339 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-31 06:15:12.360  2339  2339 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:12.367  2339  2339 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-31 06:15:12.369  2339  2339 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-10-31 06:15:12.372  2339  2339 D AndroidRuntime: Shutting down VM
-10-31 06:15:12.374   272  2167 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} from uid 10116
-10-31 06:15:12.377   272  2253 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (382144)
-10-31 06:15:12.516   272   578 D AutofillManagerServiceImpl: Reset component for user 0:
-10-31 06:15:12.517   272   304 D AutofillUI: destroySaveUiUiThread(): already destroyed
-10-31 06:15:12.519   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity: +145ms
-10-31 06:15:15.412   272  1110 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 06:15:15.863    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:15:15.863  2358  2358 I Gralloc4: mapper 4.x is not supported
-10-31 06:15:15.864    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 06:15:15.864  2358  2358 W Gralloc3: mapper 3.x is not supported
-10-31 06:15:15.967  1146  1771 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:15:15.971  1146  1771 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:15:15.972  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 06:15:15.972  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:15:15.972  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:15:15.972  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:15:16.103  2369  2369 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 06:15:16.105  2369  2369 I AndroidRuntime: Using default boot image
-10-31 06:15:16.105  2369  2369 I AndroidRuntime: Leaving lock profiling enabled
-10-31 06:15:16.106  2369  2369 I app_process: Core platform API reporting enabled, enforcing=false
-10-31 06:15:16.150  2369  2369 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-31 06:15:16.150  2369  2369 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-31 06:15:16.154  2369  2369 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:16.154  2369  2369 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:16.161  2369  2369 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-31 06:15:16.164  2369  2369 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-10-31 06:15:16.169  2369  2385 V UiAutomation: Init UiAutomation@119d7ab[id=2, flags=0]
-10-31 06:15:16.448   689   954 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 06:15:16.448   689   954 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 06:15:17.176  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-search.xml to set project id.: Operation not supported on transport endpoint
-10-31 06:15:17.177  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-search.xml
-10-31 06:15:17.177  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-search.xml
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:15:17.177  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:15:17.178  2369  2369 W AccessibilityNodeInfoDumper: Fetch time: 2ms
-10-31 06:15:17.178   272   571 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@5bc920b
-10-31 06:15:17.178  2369  2385 V UiAutomation: Init UiAutomation@119d7ab[id=-1, flags=0]
-10-31 06:15:17.180  2369  2369 D AndroidRuntime: Shutting down VM
-10-31 06:15:17.717  2388  2388 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 06:15:17.719  2388  2388 I AndroidRuntime: Using default boot image
-10-31 06:15:17.719  2388  2388 I AndroidRuntime: Leaving lock profiling enabled
-10-31 06:15:17.720  2388  2388 I app_process: Core platform API reporting enabled, enforcing=false
-10-31 06:15:17.764  2388  2388 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-31 06:15:17.764  2388  2388 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-31 06:15:17.768  2388  2388 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:17.774  2388  2388 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-31 06:15:17.777  2388  2388 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-10-31 06:15:17.780  2388  2388 D AndroidRuntime: Shutting down VM
-10-31 06:15:19.210  2260  2260 I AlgerTV : SEARCH_GDS_OK kw=周杰伦 n=30
-10-31 06:15:26.171   151   177 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-10-31 06:15:26.171   151   177 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-10-31 06:15:27.269    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:15:27.269  2408  2408 I Gralloc4: mapper 4.x is not supported
-10-31 06:15:27.270    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 06:15:27.270  2408  2408 W Gralloc3: mapper 3.x is not supported
-10-31 06:15:27.385  2412  2414 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 06:15:27.386  1146  1771 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:15:27.390  1146  1771 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:15:27.392  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 06:15:27.392  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:15:27.392  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:15:27.392  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:15:27.452  2416  2416 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 06:15:27.454  2416  2416 I AndroidRuntime: Using default boot image
-10-31 06:15:27.454  2416  2416 I AndroidRuntime: Leaving lock profiling enabled
-10-31 06:15:27.455  2416  2416 I app_process: Core platform API reporting enabled, enforcing=false
-10-31 06:15:27.498  2416  2416 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-31 06:15:27.498  2416  2416 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-31 06:15:27.502  2416  2416 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:27.503  2416  2416 I app_process: The ClassLoaderContext is a special shared library.
-10-31 06:15:27.509  2416  2416 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-31 06:15:27.512  2416  2416 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-10-31 06:15:27.517  2416  2432 V UiAutomation: Init UiAutomation@e167a2e[id=3, flags=0]
-10-31 06:15:28.526  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-results.xml to set project id.: Operation not supported on transport endpoint
-10-31 06:15:28.526  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-results.xml
-10-31 06:15:28.526  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-results.xml
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:15:28.526  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:15:28.529  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2d0b8; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 609 - 1027, 652); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.531  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2eaff; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 788 - 1027, 831); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.532  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@30546; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 967 - 1027, 1010); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.532  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@31f8d; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1146 - 1027, 1189); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.532  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@339d4; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1325 - 1027, 1368); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.533  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@3541b; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1504 - 1027, 1547); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.533  2416  2416 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@36e62; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1683 - 1027, 1726); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-31 06:15:28.534  2416  2416 W AccessibilityNodeInfoDumper: Fetch time: 9ms
-10-31 06:15:28.534   272   571 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@ca4b55c
-10-31 06:15:28.535  2416  2432 V UiAutomation: Init UiAutomation@e167a2e[id=-1, flags=0]
-10-31 06:15:28.536  2416  2416 D AndroidRuntime: Shutting down VM
+10-31 08:16:43.343  2534  2536 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 08:16:43.344   275   309 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
+10-31 08:16:43.344   275   309 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
+10-31 08:16:43.344   275   316 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+10-31 08:16:43.348   143   143 D Zygote  : Forked child process 2537
+10-31 08:16:43.349   275   316 I ActivityManager: Start proc 2537:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+10-31 08:16:43.349  2537  2537 I Zygote  : seccomp disabled by setenforce 0
+10-31 08:16:43.352  2184  2190 I adbd    : jdwp connection from 2537
+10-31 08:16:43.354   275  1211 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+10-31 08:16:43.361  2537  2537 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 08:16:43.361  2537  2537 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 08:16:43.364  2537  2537 I AlgerTV : TLS_SUPPORT_READY bundled=true
+10-31 08:16:43.401  2537  2537 I AlgerTV : App onCreate
+10-31 08:16:43.423  2537  2537 I AlgerTV : HOME_LOAD_START
+10-31 08:16:43.424  2537  2537 I AlgerTV : HOME_CACHE_HIT
+10-31 08:16:43.451  2537  2537 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
+10-31 08:16:43.452   275   541 D ConnectivityService: requestNetwork for uid/pid:10117/2537 NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
+10-31 08:16:43.452   275   400 D ConnectivityService: NetReassign [29 : null → 100]
+10-31 08:16:43.453   275   396 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 08:16:43.453   275   396 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 08:16:43.453   275   425 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 08:16:43.455   802   802 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 08:16:43.456   462   462 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-31 08:16:43.456   802   802 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+10-31 08:16:43.456   802   802 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-31 08:16:43.461    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-31 08:16:43.637    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:43.707    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 08:16:43.707  2537  2559 I Gralloc4: mapper 4.x is not supported
+10-31 08:16:43.707    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 08:16:43.708  2537  2559 W Gralloc3: mapper 3.x is not supported
+10-31 08:16:43.709    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 08:16:43.718  2537  2537 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
+10-31 08:16:43.718  2537  2537 W AlgerTV : HOME_META_FAIL id=60198 attempt=0: HTTP 503
+10-31 08:16:43.719   275   314 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity: +377ms
+10-31 08:16:43.773  2537  2537 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+10-31 08:16:43.805  2537  2537 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+10-31 08:16:43.908  2537  2537 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+10-31 08:16:43.955  2537  2537 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+10-31 08:16:44.043   275   400 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] (release request)
+10-31 08:16:44.044   462   462 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-31 08:16:44.044   802   802 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+10-31 08:16:44.044   802   802 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-31 08:16:44.059  2537  2537 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
+10-31 08:16:44.103  2537  2537 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
+10-31 08:16:44.213  2537  2537 W AlgerTV : HOME_META_FAIL id=2884035 attempt=0: HTTP 503
+10-31 08:16:44.265  2537  2537 I AlgerTV : HOME_META_OK id=745956260 ms=842
+10-31 08:16:44.287  2537  2537 I AlgerTV : HOME_META_OK id=180106 ms=864
+10-31 08:16:44.638  2537  2537 I AlgerTV : HOME_META_OK id=2809513713 ms=1215
+10-31 08:16:44.721  2537  2537 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
+10-31 08:16:44.790  2537  2537 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
+10-31 08:16:44.875  2537  2537 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
+10-31 08:16:44.950  2537  2537 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
+10-31 08:16:44.998  2537  2537 I AlgerTV : HOME_META_OK id=991319590 ms=1575
+10-31 08:16:45.105  2537  2537 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
+10-31 08:16:45.172  2537  2537 W AlgerTV : HOME_META_FAIL id=2884035 attempt=1: HTTP 503
+10-31 08:16:45.372  2537  2537 I AlgerTV : HOME_META_OK id=1978921795 ms=1949
+10-31 08:16:45.385  2537  2537 I AlgerTV : HOME_META_OK id=60198 ms=1962
+10-31 08:16:47.010   156   182 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+10-31 08:16:47.010   156   182 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+10-31 08:16:47.180   690   987 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 08:16:47.180   690   987 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 08:16:47.292  2537  2537 I AlgerTV : HOME_META_OK id=19723756 ms=3869
+10-31 08:16:47.292  2537  2537 I AlgerTV : HOME_DONE ms=3869 meta=7/13 fallback=false
+10-31 08:16:47.293    68    68 D hwcomposer: VSYNC event status:1
+10-31 08:16:47.293  2537  2590 I AlgerTV : HOME_CACHE_SAVED bytes=1411
+10-31 08:16:47.304    68    81 D hwcomposer: hw_composer sent 36 syncs in 62s
+10-31 08:16:47.637    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:47.914   275  1102 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-31 08:16:48.299    68    68 D hwcomposer: VSYNC event status:1
+10-31 08:16:48.637    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:49.066    68    68 D hwcomposer: VSYNC event status:1
+10-31 08:16:49.437    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:52.396  2598  2598 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 08:16:52.398  2598  2598 I AndroidRuntime: Using default boot image
+10-31 08:16:52.398  2598  2598 I AndroidRuntime: Leaving lock profiling enabled
+10-31 08:16:52.399  2598  2598 I app_process: Core platform API reporting enabled, enforcing=false
+10-31 08:16:52.442  2598  2598 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-31 08:16:52.442  2598  2598 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-31 08:16:52.446  2598  2598 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:52.446  2598  2598 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:52.453  2598  2598 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-31 08:16:52.455  2598  2598 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-31 08:16:52.459    68    68 D hwcomposer: VSYNC event status:1
+10-31 08:16:52.460  2598  2614 V UiAutomation: Init UiAutomation@b4a882b[id=1, flags=0]
+10-31 08:16:52.837    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:53.467  1109  1786 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-home.xml to set project id.: Operation not supported on transport endpoint
+10-31 08:16:53.467  1109  1786 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-home.xml
+10-31 08:16:53.467  1109  1786 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-home.xml
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 08:16:53.467  1109  1786 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 08:16:53.474  2598  2598 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@b7d6; boundsInParent: Rect(0, 0 - 1080, 895); boundsInScreen: Rect(0, 1853 - 1080, 1794); packageName: com.wushisan.algertv.phone; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/toplist_rows; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:16:53.474  2598  2598 W AccessibilityNodeInfoDumper: Fetch time: 8ms
+10-31 08:16:53.475   275   551 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@75b4c1a
+10-31 08:16:53.475  2598  2614 V UiAutomation: Init UiAutomation@b4a882b[id=-1, flags=0]
+10-31 08:16:53.475    68    68 D hwcomposer: VSYNC event status:1
+10-31 08:16:53.476  2598  2598 D AndroidRuntime: Shutting down VM
+10-31 08:16:53.837    68    68 D hwcomposer: VSYNC event status:0
+10-31 08:16:53.970  2616  2616 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 08:16:53.972  2616  2616 I AndroidRuntime: Using default boot image
+10-31 08:16:53.972  2616  2616 I AndroidRuntime: Leaving lock profiling enabled
+10-31 08:16:53.974  2616  2616 I app_process: Core platform API reporting enabled, enforcing=false
+10-31 08:16:54.016  2616  2616 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-31 08:16:54.016  2616  2616 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-31 08:16:54.020  2616  2616 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:54.026  2616  2616 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-31 08:16:54.029  2616  2616 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-31 08:16:54.032  2616  2616 D AndroidRuntime: Shutting down VM
+10-31 08:16:54.033   275   541 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} from uid 10117
+10-31 08:16:54.036   275   541 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (368344)
+10-31 08:16:54.186   275  1211 D AutofillManagerServiceImpl: Reset component for user 0:
+10-31 08:16:54.186   275   307 D AutofillUI: destroySaveUiUiThread(): already destroyed
+10-31 08:16:54.189   275   314 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity: +155ms
+10-31 08:16:57.076   275  1102 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-31 08:16:57.519    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 08:16:57.519  2635  2635 I Gralloc4: mapper 4.x is not supported
+10-31 08:16:57.519    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 08:16:57.519  2635  2635 W Gralloc3: mapper 3.x is not supported
+10-31 08:16:57.623  2639  2641 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 08:16:57.624  1109  1781 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 08:16:57.628  1109  1781 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 08:16:57.628  1109  1786 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+10-31 08:16:57.628  1109  1786 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 08:16:57.628  1109  1786 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 08:16:57.628  1109  1786 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 08:16:57.718  2646  2646 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 08:16:57.720  2646  2646 I AndroidRuntime: Using default boot image
+10-31 08:16:57.720  2646  2646 I AndroidRuntime: Leaving lock profiling enabled
+10-31 08:16:57.721  2646  2646 I app_process: Core platform API reporting enabled, enforcing=false
+10-31 08:16:57.762  2646  2646 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-31 08:16:57.762  2646  2646 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-31 08:16:57.766  2646  2646 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:57.767  2646  2646 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:57.773  2646  2646 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-31 08:16:57.775  2646  2646 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-31 08:16:57.780  2646  2662 V UiAutomation: Init UiAutomation@8778c38[id=2, flags=0]
+10-31 08:16:58.845  1109  1786 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-search.xml to set project id.: Operation not supported on transport endpoint
+10-31 08:16:58.845  1109  1786 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-search.xml
+10-31 08:16:58.845  1109  1786 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-search.xml
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 08:16:58.845  1109  1786 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 08:16:58.846  2646  2646 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+10-31 08:16:58.846   275   541 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@3257ba9
+10-31 08:16:58.846  2646  2662 V UiAutomation: Init UiAutomation@8778c38[id=-1, flags=0]
+10-31 08:16:58.848  2646  2646 D AndroidRuntime: Shutting down VM
+10-31 08:16:59.388  2665  2665 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 08:16:59.390  2665  2665 I AndroidRuntime: Using default boot image
+10-31 08:16:59.390  2665  2665 I AndroidRuntime: Leaving lock profiling enabled
+10-31 08:16:59.392  2665  2665 I app_process: Core platform API reporting enabled, enforcing=false
+10-31 08:16:59.433  2665  2665 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-31 08:16:59.433  2665  2665 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-31 08:16:59.437  2665  2665 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:16:59.443  2665  2665 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-31 08:16:59.446  2665  2665 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-31 08:16:59.449  2665  2665 D AndroidRuntime: Shutting down VM
+10-31 08:16:59.931  2537  2537 I AlgerTV : SEARCH_GDS_OK kw=周杰伦 n=30
+10-31 08:17:00.001   462   462 D KeyguardClockSwitch: Updating clock: 817
+10-31 08:17:07.187   690   987 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 08:17:07.187   690   987 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 08:17:08.936    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 08:17:08.936  2686  2686 I Gralloc4: mapper 4.x is not supported
+10-31 08:17:08.936    22    22 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 08:17:08.936  2686  2686 W Gralloc3: mapper 3.x is not supported
+10-31 08:17:09.058  1109  1781 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 08:17:09.062  1109  1781 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 08:17:09.063  1109  1786 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+10-31 08:17:09.063  1109  1786 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 08:17:09.063  1109  1786 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 08:17:09.063  1109  1786 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 08:17:09.126  2694  2694 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 08:17:09.128  2694  2694 I AndroidRuntime: Using default boot image
+10-31 08:17:09.128  2694  2694 I AndroidRuntime: Leaving lock profiling enabled
+10-31 08:17:09.129  2694  2694 I app_process: Core platform API reporting enabled, enforcing=false
+10-31 08:17:09.171  2694  2694 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-31 08:17:09.171  2694  2694 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-31 08:17:09.175  2694  2694 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:17:09.176  2694  2694 I app_process: The ClassLoaderContext is a special shared library.
+10-31 08:17:09.182  2694  2694 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-31 08:17:09.185  2694  2694 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-31 08:17:09.190  2694  2710 V UiAutomation: Init UiAutomation@816c924[id=3, flags=0]
+10-31 08:17:10.196  1109  1786 E StorageManager: Failed to set extended attributes for /storage/emulated/0/ui-results.xml to set project id.: Operation not supported on transport endpoint
+10-31 08:17:10.197  1109  1786 W MediaProvider: Failed to update quota type for /storage/emulated/0/ui-results.xml
+10-31 08:17:10.197  1109  1786 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/ui-results.xml
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:587)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 08:17:10.197  1109  1786 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 08:17:10.200  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2d0b7; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 609 - 1027, 652); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.200  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2eafe; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 788 - 1027, 831); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.201  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@30545; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 967 - 1027, 1010); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.201  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@31f8c; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1146 - 1027, 1189); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.202  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@339d3; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1325 - 1027, 1368); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.204  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@3541a; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1504 - 1027, 1547); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.205  2694  2694 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@36e61; boundsInParent: Rect(0, 0 - 0, 43); boundsInScreen: Rect(1027, 1683 - 1027, 1726); packageName: com.wushisan.algertv.phone; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.wushisan.algertv.phone:id/track_duration; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-31 08:17:10.206  2694  2694 W AccessibilityNodeInfoDumper: Fetch time: 10ms
+10-31 08:17:10.207   275  2529 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@4fee442
+10-31 08:17:10.207  2694  2710 V UiAutomation: Init UiAutomation@816c924[id=-1, flags=0]
+10-31 08:17:10.208  2694  2694 D AndroidRuntime: Shutting down VM

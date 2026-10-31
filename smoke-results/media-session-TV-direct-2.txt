@@ -3,7 +3,7 @@ MEDIA SESSION SERVICE (dumpsys media_session)
 4 sessions listeners.
 Global priority session is com.android.server.telecom/HeadsetMediaButton (userId=0)
   HeadsetMediaButton com.android.server.telecom/HeadsetMediaButton (userId=0)
-    ownerPid=272, ownerUid=1000, userId=0
+    ownerPid=275, ownerUid=1000, userId=0
     package=com.android.server.telecom
     launchIntent=null
     mediaButtonReceiver=null
@@ -27,5 +27,19 @@ Record for full_user=0
     from com.android.bluetooth
   Last MediaButtonReceiver: null
   Media button session is null
-  Sessions Stack - have 0 sessions:
+  Sessions Stack - have 1 sessions:
+    AlgerTV com.wushisan.algertv/AlgerTV (userId=0)
+      ownerPid=2082, ownerUid=10116, userId=0
+      package=com.wushisan.algertv
+      launchIntent=null
+      mediaButtonReceiver=MBR {pi=PendingIntent{a76b8fb: PendingIntentRecord{e0b6d18 com.wushisan.algertv broadcastIntent}}, type=1}
+      active=true
+      flags=3
+      rating type=0
+      controllers: 2
+      state=PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=309865, actions=822, custom actions=[], active item id=-1, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_UNKNOWN flags=0x800 tags= bundle=null
+      volumeType=1, controlType=2, max=0, current=0
+      metadata: size=4, description=Smoke Direct, SoundHelix, null
+      queueTitle=null, size=0
 Audio playback (lastly played comes first)
