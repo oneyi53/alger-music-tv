@@ -1,15 +1,3 @@
-Downloading https://services.gradle.org/distributions/gradle-8.5-bin.zip
-............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
-
-Welcome to Gradle 8.5!
-
-Here are the highlights of this release:
- - Support for running on Java 21
- - Faster first use with Kotlin DSL
- - Improved error and warning messages
-
-For more details see https://docs.gradle.org/8.5/release-notes.html
-
 Starting a Gradle Daemon (subsequent builds will be faster)
 Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
 License for package Android SDK Build-Tools 33.0.1 accepted.
@@ -25,8 +13,8 @@ Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-to
 > Task :app:stripPhoneReleaseDebugSymbols NO-SOURCE
 > Task :app:extractPhoneReleaseNativeSymbolTables NO-SOURCE
 > Task :app:mergePhoneReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:checkPhoneReleaseDuplicateClasses
 > Task :app:javaPreCompilePhoneRelease
+> Task :app:checkPhoneReleaseDuplicateClasses
 > Task :app:generatePhoneReleaseResValues
 > Task :app:checkPhoneReleaseAarMetadata
 > Task :app:mapPhoneReleaseSourceSetPaths
@@ -39,6 +27,7 @@ Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-to
 > Task :app:processPhoneReleaseMainManifest
 > Task :app:processPhoneReleaseManifest
 > Task :app:desugarPhoneReleaseFileDependencies
+> Task :app:processPhoneReleaseManifestForPackage
 > Task :app:mergePhoneReleaseArtProfile
 > Task :app:mergePhoneReleaseShaders
 > Task :app:compilePhoneReleaseShaders NO-SOURCE
@@ -50,21 +39,8 @@ Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-to
 > Task :app:writePhoneReleaseAppMetadata
 > Task :app:writePhoneReleaseSigningConfigVersions
 > Task :app:preTvReleaseBuild UP-TO-DATE
-> Task :app:mergeTvReleaseJniLibFolders
-> Task :app:mergeTvReleaseNativeLibs NO-SOURCE
-> Task :app:stripTvReleaseDebugSymbols NO-SOURCE
-> Task :app:extractTvReleaseNativeSymbolTables NO-SOURCE
-> Task :app:mergeTvReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:processPhoneReleaseManifestForPackage
-> Task :app:checkTvReleaseDuplicateClasses
-> Task :app:mergeExtDexPhoneRelease
-> Task :app:javaPreCompileTvRelease
-> Task :app:checkTvReleaseAarMetadata
-> Task :app:generateTvReleaseResValues
-> Task :app:mapTvReleaseSourceSetPaths
-> Task :app:generateTvReleaseResources
 > Task :app:processPhoneReleaseResources
-> Task :app:mergeTvReleaseResources
+> Task :app:mergeTvReleaseJniLibFolders
 
 > Task :app:compilePhoneReleaseJavaWithJavac
 Note: [1] Wrote GeneratedAppGlideModule with: []
@@ -73,26 +49,35 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
+> Task :app:mergeExtDexPhoneRelease
 > Task :app:dexBuilderPhoneRelease
 > Task :app:mergePhoneReleaseGlobalSynthetics
 > Task :app:processPhoneReleaseJavaRes
+> Task :app:mergeTvReleaseNativeLibs NO-SOURCE
+> Task :app:stripTvReleaseDebugSymbols NO-SOURCE
+> Task :app:extractTvReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeTvReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkTvReleaseDuplicateClasses
+> Task :app:optimizePhoneReleaseResources
+> Task :app:javaPreCompileTvRelease
+> Task :app:checkTvReleaseAarMetadata
+> Task :app:generateTvReleaseResValues
+> Task :app:mapTvReleaseSourceSetPaths
+> Task :app:generateTvReleaseResources
+> Task :app:mergePhoneReleaseJavaResource
 > Task :app:packageTvReleaseResources
-> Task :app:parseTvReleaseLocalResources
 > Task :app:createTvReleaseCompatibleScreenManifests
 > Task :app:extractDeepLinksTvRelease
 > Task :app:processTvReleaseMainManifest
-> Task :app:optimizePhoneReleaseResources
 > Task :app:processTvReleaseManifest
+> Task :app:parseTvReleaseLocalResources
 > Task :app:desugarTvReleaseFileDependencies
-> Task :app:mergePhoneReleaseJavaResource
-> Task :app:mergeDexPhoneRelease
-> Task :app:compilePhoneReleaseArtProfile
 > Task :app:processTvReleaseManifestForPackage
+> Task :app:mergeTvReleaseResources
 > Task :app:mergeTvReleaseArtProfile
+> Task :app:mergeDexPhoneRelease
 > Task :app:mergeTvReleaseShaders
-> Task :app:packagePhoneRelease
-> Task :app:createPhoneReleaseApkListingFileRedirect
-> Task :app:assemblePhoneRelease
+> Task :app:compilePhoneReleaseArtProfile
 > Task :app:compileTvReleaseShaders NO-SOURCE
 > Task :app:generateTvReleaseAssets UP-TO-DATE
 > Task :app:mergeTvReleaseAssets
@@ -112,18 +97,21 @@ Note: /home/runner/work/alger-music-tv/alger-music-tv/app/src/tv/java/com/wushis
 Note: Recompile with -Xlint:unchecked for details.
 
 > Task :app:dexBuilderTvRelease
-> Task :app:processTvReleaseJavaRes
+> Task :app:packagePhoneRelease
+> Task :app:createPhoneReleaseApkListingFileRedirect
+> Task :app:assemblePhoneRelease
 > Task :app:mergeTvReleaseGlobalSynthetics
-> Task :app:mergeTvReleaseJavaResource
+> Task :app:processTvReleaseJavaRes
 > Task :app:optimizeTvReleaseResources
+> Task :app:mergeTvReleaseJavaResource
 > Task :app:mergeDexTvRelease
 > Task :app:compileTvReleaseArtProfile
 > Task :app:packageTvRelease
 > Task :app:createTvReleaseApkListingFileRedirect
 > Task :app:assembleTvRelease
 > Task :app:assembleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_4-1793424839900.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_4-1793426655115.json
 
-BUILD SUCCESSFUL in 55s
+BUILD SUCCESSFUL in 26s
 70 actionable tasks: 70 executed
 gradle_exit=0
