@@ -1,536 +1,79 @@
---------- beginning of main
-10-31 06:12:12.671   458   458 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{253779e I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
-10-31 06:12:12.673   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
 --------- beginning of system
-10-31 06:12:12.674   272  1949 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity (has extras)} from uid 2000
-10-31 06:12:12.677  2082  2084 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 06:12:12.678   272   306 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
-10-31 06:12:12.678   272   306 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: DISABLED
-10-31 06:12:12.678   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
-10-31 06:12:12.686   142   142 D Zygote  : Forked child process 2085
-10-31 06:12:12.686  2085  2085 I Zygote  : seccomp disabled by setenforce 0
-10-31 06:12:12.686  2085  2085 I libc    : SetHeapTaggingLevel: tag level set to 0
-10-31 06:12:12.687   272   313 I ActivityManager: Start proc 2085:com.wushisan.algertv/u0a116 for pre-top-activity {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity}
-10-31 06:12:12.690   122   133 I adbd    : jdwp connection from 2085
-10-31 06:12:12.691   272  1969 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-10-31 06:12:12.692   272   306 I ActivityManager: Killing 1303:com.android.managedprovisioning/u0a68 (adj 985): empty #17
-10-31 06:12:12.695  2085  2085 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-10-31 06:12:12.698   142   142 I Zygote  : Process 1303 exited due to signal 9 (Killed)
-10-31 06:12:12.700  2085  2085 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:12:12.700  2085  2085 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:12:12.703  2085  2085 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-31 06:12:12.725    94   174 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
-10-31 06:12:12.725    94   174 I chatty  : uid=1041(audioserver) ApmOutput identical 1 line
-10-31 06:12:12.725    94   174 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
-10-31 06:12:12.725   272  1661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 06:12:12.734  2085  2085 I AlgerTV : App onCreate
-10-31 06:12:12.747  2085  2085 I AlgerTV : SMOKE_DIRECT_PLAY tv
-10-31 06:12:12.750  2085  2085 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
-10-31 06:12:12.750  2085  2085 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-31 06:12:12.751   272  1969 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv/.ui.PlayerActivity} from uid 10116
-10-31 06:12:12.761  2085  2085 I AlgerTV : HOME_LOAD_START
-10-31 06:12:12.761  2085  2085 I AlgerTV : HOME_CACHE_HIT
-10-31 06:12:12.769   272  1949 D MediaSessionService: Media button session is changed to com.wushisan.algertv/AlgerTV (userId=0)
-10-31 06:12:12.770   438   438 W AvrcpMediaPlayerList: onMediaKeyEventSessionChanged(Token): Addressed Player changed to a player we didn't have a session for
-10-31 06:12:12.771   438   438 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv at key: 1
-10-31 06:12:12.771   438   438 I AvrcpMediaPlayerList: onMediaKeyEventSessionChanged: token=com.wushisan.algertv
-10-31 06:12:12.771  2085  2085 I AlgerTV : PlaybackService onCreate
-10-31 06:12:12.771   438   438 D AvrcpMediaPlayerList: setActivePlayer(): setting player to com.wushisan.algertv
-10-31 06:12:12.772   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:12.772   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:12.772   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:12.772   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:12.772   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:12.772   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:12.772   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:12.772   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-31 06:12:12.772   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-10-31 06:12:12.772   438   438 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv
-10-31 06:12:12.772   438   438 D AvrcpMediaPlayerList: Already have a controller for the player: com.wushisan.algertv, updating instead
-10-31 06:12:12.773   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:12.773   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:12.773   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:12.773   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:12.773   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:12.773   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:12.773   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:12.776  2085  2085 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
-10-31 06:12:12.776  2085  2085 E MediaPlayerNative: error (-38, 0)
-10-31 06:12:12.780   438   438 V AvrcpMediaPlayerWrapper: trySendMediaUpdate(): Metadata has been updated for com.wushisan.algertv
-10-31 06:12:12.780   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:12.780   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:12.780   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=290228, actions=822, custom actions=[], active item id=-1, error=null}
-10-31 06:12:12.780   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=true state=true queue=true
-10-31 06:12:12.780   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=true playStatus=true queue=true
-10-31 06:12:12.780   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:12.780   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=1 :  play_state=1 :  queue=1
-10-31 06:12:12.781   438   438 V AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv : PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=290228, actions=822, custom actions=[], active item id=-1, error=null}
-10-31 06:12:12.782   438   438 W AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv tried to update with no new data
-10-31 06:12:12.784  2085  2085 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
-10-31 06:12:12.785  2085  2085 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-10-31 06:12:12.785  2085  2085 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-10-31 06:12:12.785  2085  2085 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@e494dc2): Cookies: null
-10-31 06:12:12.786   152  1765 D NuPlayerDriver: NuPlayerDriver(0xee7419b0) created, clientPid(2085)
-10-31 06:12:12.788   438   438 V AvrcpMediaPlayerWrapper: trySendMediaUpdate(): Metadata has been updated for com.wushisan.algertv
-10-31 06:12:12.788   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:12.788   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:12.788   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=290234, actions=822, custom actions=[], active item id=-1, error=null}
-10-31 06:12:12.788   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:12.788   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:12.788   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:12.788  2085  2085 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-31 06:12:12.788   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:12.789   438   438 V AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv : PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=290234, actions=822, custom actions=[], active item id=-1, error=null}
-10-31 06:12:12.789  2085  2103 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@97bcdc5
-10-31 06:12:12.789  2085  2103 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@e494dc2): cookieHandler: java.net.CookieManager@97bcdc5 Cookies: null
-10-31 06:12:12.789   438   438 W AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv tried to update with no new data
-10-31 06:12:12.789   272  1949 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (290148)
-10-31 06:12:12.793  2085  2085 I AlgerTV : HOME_ROWS_BUILT fallback=false
-10-31 06:12:12.806    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-10-31 06:12:12.981   272   272 D NotificationService: 0|com.wushisan.algertv|1001|null|10116: granting content://settings/system/notification_sound
-10-31 06:12:12.981   272   272 I chatty  : uid=1000 system_server identical 1 line
-10-31 06:12:12.981   272   272 D NotificationService: 0|com.wushisan.algertv|1001|null|10116: granting content://settings/system/notification_sound
-10-31 06:12:12.982   272   272 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
-10-31 06:12:12.984   458   458 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:12.984   458   458 D InterruptionStateProvider: No heads up: unimportant notification: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:12.988   458   458 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:12.988   458   458 D InterruptionStateProvider: No heads up: unimportant notification: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:13.000    71    71 D hwcomposer: VSYNC event status:0
-10-31 06:12:13.135    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:12:13.135  2085  2107 I Gralloc4: mapper 4.x is not supported
-10-31 06:12:13.135    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 06:12:13.135  2085  2107 W Gralloc3: mapper 3.x is not supported
-10-31 06:12:13.136    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:12:13.151  2085  2085 I AlgerTV : PLAYER_UI_BIND id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-31 06:12:13.204  2085  2085 W AlgerTV : HOME_META_FAIL id=60198 attempt=0: HTTP 503
-10-31 06:12:13.204  2085  2085 W AlgerTV : HOME_META_FAIL id=180106 attempt=0: HTTP 503
-10-31 06:12:13.204  2085  2085 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0xeb1e71c292d0, mCurrentState=4
-10-31 06:12:13.204  2085  2085 E MediaPlayerNative: error (-38, 0)
-10-31 06:12:13.205   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv/.ui.PlayerActivity: +530ms
-10-31 06:12:13.209  2085  2085 E MediaPlayer: Error (-38,0)
-10-31 06:12:13.209  2085  2085 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
-10-31 06:12:13.209   152   152 D NuPlayerDriver: reset(0xee7419b0) at state 3
-10-31 06:12:15.651   272  1949 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 06:12:16.743   272  1105 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 06:12:17.697  2085  2106 I ushisan.algert: Waiting for a blocking GC ProfileSaver
-10-31 06:12:17.716  2085  2106 I ushisan.algert: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 18.503ms
-10-31 06:12:18.273   272   348 I WindowManager: Input event dispatching timed out sending to com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity.  Reason: a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true)
-10-31 06:12:18.291   272   348 D WindowManager: notifyANR took 18ms
-10-31 06:12:18.291   272   348 W InputDispatcher: Canceling events for a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server) because it is unresponsive
-10-31 06:12:18.294   272  2144 I ActivityManager: dumpStackTraces pids={438=true, 489=true, 750=true, 867=true, 1019=true, 1046=true, 1124=true, 1243=true, 1280=true, 1369=true, 1400=true, 1428=true, 1569=true, 1614=true, 1639=true, 1667=true, 1690=true, 1713=true, 1741=true, 1770=true, 1848=true} nativepids=[28, 94, 97, 144, 145, 150, 151, 152, 153, 159, 167, 168, 438]
-10-31 06:12:18.305   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.313   272  2145 I chatty  : uid=1000 system_server identical 15 lines
-10-31 06:12:18.314   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.316   148   148 V installd: DexInv: --- BEGIN '/apex/com.android.wifi/javalib/service-wifi.jar' ---
-10-31 06:12:18.326  2146  2146 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=8 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --classpath-dir=/apex/com.android.wifi/javalib --class-loader-context=PCL[];PCL[/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar] --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
-10-31 06:12:18.327  2146  2146 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onIpClientCreated is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onNewDhcpResults is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onPostDhcpAction is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onPreDhcpAction is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onProvisioningFailure is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onProvisioningSuccess is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getCachedSizeField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getEnumVerifier is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getFieldNumber is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getMapDefaultEntry is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getMessageFieldClass is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getOneof is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getPresenceField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getPresenceMask is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getType is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.isEnforceUtf8 is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.isRequired is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/OneofInfo;.getCaseField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/OneofInfo;.getValueField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldArray;.dataAt is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldArray;.size is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldData;.computeSerializedSize is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldData;.writeTo is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/SoapEnvelope;.parseBody is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/SoapEnvelope;.writeBody is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.341  2146  2146 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/transport/HttpTransportSE;.getServiceConnection is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
-10-31 06:12:18.378   489  1804 I PermissionControllerServiceImpl: Updating user sensitive for user 0
-10-31 06:12:18.519   272  2144 I ActivityManager: Skipping next CPU consuming process, not a java proc: 272
-10-31 06:12:18.519   272  2144 I ActivityManager: Skipping next CPU consuming process, not a java proc: 2146
-10-31 06:12:18.520   272  2144 I ActivityManager: Dumping to /data/anr/anr_2026-10-31-06-12-18-519
-10-31 06:12:18.520   272  2144 I ActivityManager: Collecting stacks for pid 2085
-10-31 06:12:18.520   272  2144 I system_server: libdebuggerd_client: started dumping process 2085
-10-31 06:12:18.520    48    48 I tombstoned: registered intercept for pid 2085 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.520  2085  2095 I ushisan.algert: Thread[5,tid=2095,WaitingInMainSignalCatcherLoop,Thread*=0xeb1fa1c0bf50,peer=0x133c0730,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.520  2085  2095 I ushisan.algert: 
-10-31 06:12:18.675    48    48 I tombstoned: received crash request for pid 2085
-10-31 06:12:18.675    48    48 I tombstoned: found intercept fd 512 for pid 2085 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.675   272  2144 I system_server: libdebuggerd_client: done dumping process 2085
-10-31 06:12:18.675  2085  2095 I ushisan.algert: Wrote stack traces to tombstoned
-10-31 06:12:18.677   272  2144 I ActivityManager: Collecting stacks for pid 272
-10-31 06:12:18.678   272  2144 I system_server: libdebuggerd_client: started dumping process 272
-10-31 06:12:18.678    48    48 I tombstoned: registered intercept for pid 272 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.678   272   278 I system_server: Thread[2,tid=278,WaitingInMainSignalCatcherLoop,Thread*=0xb400eb1fa1c0f6f0,peer=0x13040150,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.678   272   278 I system_server: 
-10-31 06:12:18.683  2146  2146 I dex2oat32: dex2oat took 358.725ms (1.106s cpu) (threads: 4) arena alloc=0B (0B) java alloc=742KB (759840B) native alloc=2565KB (2627056B) free=4824KB (4939808B)
-10-31 06:12:18.687   148   148 V installd: DexInv: --- END '/apex/com.android.wifi/javalib/service-wifi.jar' (success) ---
-10-31 06:12:18.728   148   148 V installd: DexInv: --- BEGIN '/apex/com.android.os.statsd/javalib/service-statsd.jar' ---
-10-31 06:12:18.734    48    48 I tombstoned: received crash request for pid 272
-10-31 06:12:18.734    48    48 I tombstoned: found intercept fd 512 for pid 272 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.734   272   278 I system_server: Wrote stack traces to tombstoned
-10-31 06:12:18.734   272  2144 I system_server: libdebuggerd_client: done dumping process 272
-10-31 06:12:18.735   272  2144 I ActivityManager: Collecting stacks for pid 808
-10-31 06:12:18.735   272  2144 I system_server: libdebuggerd_client: started dumping process 808
-10-31 06:12:18.735    48    48 I tombstoned: registered intercept for pid 808 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.735   808   818 I m.android.phon: Thread[6,tid=818,WaitingInMainSignalCatcherLoop,Thread*=0xb400eb1fa1c0f6f0,peer=0x13b001b0,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.735   808   818 I m.android.phon: 
-10-31 06:12:18.737  2153  2153 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=8 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --classpath-dir=/apex/com.android.os.statsd/javalib --class-loader-context=PCL[];PCL[/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar] --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
-10-31 06:12:18.738  2153  2153 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
-10-31 06:12:18.738  2153  2153 W dex2oat32: Could not reserve sentinel fault page
-10-31 06:12:18.753    48    48 I tombstoned: received crash request for pid 808
-10-31 06:12:18.753    48    48 I tombstoned: found intercept fd 512 for pid 808 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.753   808   818 I m.android.phon: Wrote stack traces to tombstoned
-10-31 06:12:18.753   272  2144 I system_server: libdebuggerd_client: done dumping process 808
-10-31 06:12:18.754   272  2144 I ActivityManager: Collecting stacks for pid 785
-10-31 06:12:18.754   272  2144 I system_server: libdebuggerd_client: started dumping process 785
-10-31 06:12:18.754    48    48 I tombstoned: registered intercept for pid 785 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.754   785   796 I com.android.se: Thread[6,tid=796,WaitingInMainSignalCatcherLoop,Thread*=0xb400eb1fa1c0db20,peer=0x12e401b0,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.754   785   796 I com.android.se: 
-10-31 06:12:18.764  2153  2153 I dex2oat32: dex2oat took 28.166ms (29.702ms cpu) (threads: 4) arena alloc=0B (0B) java alloc=49KB (50984B) native alloc=1135KB (1162720B) free=1496KB (1532048B)
-10-31 06:12:18.767   148   148 V installd: DexInv: --- END '/apex/com.android.os.statsd/javalib/service-statsd.jar' (success) ---
-10-31 06:12:18.768   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.769   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.769    48    48 I tombstoned: received crash request for pid 785
-10-31 06:12:18.769    48    48 I tombstoned: found intercept fd 512 for pid 785 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.769   785   796 I com.android.se: Wrote stack traces to tombstoned
-10-31 06:12:18.769   272  2144 I system_server: libdebuggerd_client: done dumping process 785
-10-31 06:12:18.770   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.770   272  2144 I ActivityManager: Collecting stacks for pid 706
-10-31 06:12:18.770   272  2144 I system_server: libdebuggerd_client: started dumping process 706
-10-31 06:12:18.770   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.770    48    48 I tombstoned: registered intercept for pid 706 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.771   706   711 I rkstack.proces: Thread[6,tid=711,WaitingInMainSignalCatcherLoop,Thread*=0xb400eb1fa1c18200,peer=0x130c01b0,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.771   706   711 I rkstack.proces: 
-10-31 06:12:18.773   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.786   272  2145 I chatty  : uid=1000 system_server identical 21 lines
-10-31 06:12:18.787   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.788    48    48 I tombstoned: received crash request for pid 706
-10-31 06:12:18.788    48    48 I tombstoned: found intercept fd 512 for pid 706 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.788   706   711 I rkstack.proces: Wrote stack traces to tombstoned
-10-31 06:12:18.788   272  2144 I system_server: libdebuggerd_client: done dumping process 706
-10-31 06:12:18.788   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.789   272  2144 I ActivityManager: Collecting stacks for pid 458
-10-31 06:12:18.789   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.789   272  2144 I system_server: libdebuggerd_client: started dumping process 458
-10-31 06:12:18.789    48    48 I tombstoned: registered intercept for pid 458 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.789   458   468 I ndroid.systemu: Thread[6,tid=468,WaitingInMainSignalCatcherLoop,Thread*=0xb400eb1fa1c0a380,peer=0x13d801b0,"Signal Catcher"]: reacting to signal 3
-10-31 06:12:18.789   458   468 I ndroid.systemu: 
-10-31 06:12:18.789   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.809   272  2145 I chatty  : uid=1000 system_server identical 25 lines
-10-31 06:12:18.810   272  2145 I system_server: The ClassLoaderContext is a special shared library.
-10-31 06:12:18.810   272  2145 I BackgroundDexOptService: Pinning optimized code {android}
-10-31 06:12:18.958    48    48 I tombstoned: received crash request for pid 458
-10-31 06:12:18.958    48    48 I tombstoned: found intercept fd 512 for pid 458 and type kDebuggerdJavaBacktrace
-10-31 06:12:18.958   458   468 I ndroid.systemu: Wrote stack traces to tombstoned
-10-31 06:12:18.958   272  2144 I system_server: libdebuggerd_client: done dumping process 458
-10-31 06:12:18.959   272  2144 I ActivityManager: Collecting stacks for native pid 28
-10-31 06:12:18.959   272  2144 I system_server: libdebuggerd_client: started dumping process 28
-10-31 06:12:18.959    48    48 I tombstoned: registered intercept for pid 28 and type kDebuggerdNativeBacktrace
-10-31 06:12:18.959    28    28 I libc    : Requested dump for tid 28 (Binder:28_2)
-10-31 06:12:18.966  2162  2162 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:18.967    48    48 I tombstoned: received crash request for pid 28
-10-31 06:12:18.967    48    48 I tombstoned: found intercept fd 512 for pid 28 and type kDebuggerdNativeBacktrace
-10-31 06:12:18.967  2162  2162 I crash_dump64: performing dump of process 28 (target tid = 28)
-10-31 06:12:18.971   272  2144 I system_server: libdebuggerd_client: done dumping process 28
-10-31 06:12:18.971   272  2144 I ActivityManager: Collecting stacks for native pid 94
-10-31 06:12:18.972   272  2144 I system_server: libdebuggerd_client: started dumping process 94
-10-31 06:12:18.972    48    48 I tombstoned: registered intercept for pid 94 and type kDebuggerdNativeBacktrace
-10-31 06:12:18.972    94    94 I libc    : Requested dump for tid 94 (audioserver)
-10-31 06:12:18.981  2168  2168 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:18.981    48    48 I tombstoned: received crash request for pid 94
-10-31 06:12:18.981    48    48 I tombstoned: found intercept fd 512 for pid 94 and type kDebuggerdNativeBacktrace
-10-31 06:12:18.981  2168  2168 I crash_dump64: performing dump of process 94 (target tid = 94)
-10-31 06:12:18.990   272  2144 I system_server: libdebuggerd_client: done dumping process 94
-10-31 06:12:18.990   272  2144 I ActivityManager: Collecting stacks for native pid 97
-10-31 06:12:18.991   272  2144 I system_server: libdebuggerd_client: started dumping process 97
-10-31 06:12:18.991    48    48 I tombstoned: registered intercept for pid 97 and type kDebuggerdNativeBacktrace
-10-31 06:12:18.991    97    97 I libc    : Requested dump for tid 97 (surfaceflinger)
-10-31 06:12:19.004  2173  2173 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.005    48    48 I tombstoned: received crash request for pid 97
-10-31 06:12:19.005    48    48 I tombstoned: found intercept fd 512 for pid 97 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.005  2173  2173 I crash_dump64: performing dump of process 97 (target tid = 97)
-10-31 06:12:19.033   153   189 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-10-31 06:12:19.033   153   189 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-10-31 06:12:19.043   272  2144 I system_server: libdebuggerd_client: done dumping process 97
-10-31 06:12:19.043   272  2144 I ActivityManager: Collecting stacks for native pid 144
-10-31 06:12:19.043   272  2144 I system_server: libdebuggerd_client: started dumping process 144
-10-31 06:12:19.044    48    48 I tombstoned: registered intercept for pid 144 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.044   144   144 I libc    : Requested dump for tid 144 (cameraserver)
-10-31 06:12:19.051  2178  2178 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.052    48    48 I tombstoned: received crash request for pid 144
-10-31 06:12:19.052    48    48 I tombstoned: found intercept fd 512 for pid 144 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.052  2178  2178 I crash_dump32: performing dump of process 144 (target tid = 144)
-10-31 06:12:19.061   272  2144 I system_server: libdebuggerd_client: done dumping process 144
-10-31 06:12:19.062   272  2144 I ActivityManager: Collecting stacks for native pid 145
-10-31 06:12:19.062   272  2144 I system_server: libdebuggerd_client: started dumping process 145
-10-31 06:12:19.062    48    48 I tombstoned: registered intercept for pid 145 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.062   145   145 I libc    : Requested dump for tid 145 (drmserver)
-10-31 06:12:19.068  2184  2184 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.068    48    48 I tombstoned: received crash request for pid 145
-10-31 06:12:19.068    48    48 I tombstoned: found intercept fd 512 for pid 145 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.068  2184  2184 I crash_dump32: performing dump of process 145 (target tid = 145)
-10-31 06:12:19.074   272  2144 I system_server: libdebuggerd_client: done dumping process 145
-10-31 06:12:19.075   272  2144 I ActivityManager: Collecting stacks for native pid 150
-10-31 06:12:19.075   272  2144 I system_server: libdebuggerd_client: started dumping process 150
-10-31 06:12:19.075    48    48 I tombstoned: registered intercept for pid 150 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.075    48    48 I tombstoned: received crash request for pid 150
-10-31 06:12:19.075    48    48 I tombstoned: found intercept fd 512 for pid 150 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.091   272  2144 I system_server: libdebuggerd_client: done dumping process 150
-10-31 06:12:19.092   272  2144 I ActivityManager: Collecting stacks for native pid 151
-10-31 06:12:19.092   272  2144 I system_server: libdebuggerd_client: started dumping process 151
-10-31 06:12:19.092    48    48 I tombstoned: registered intercept for pid 151 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.092   151   151 I libc    : Requested dump for tid 151 (mediametrics)
-10-31 06:12:19.099  2190  2190 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.099    48    48 I tombstoned: received crash request for pid 151
-10-31 06:12:19.099    48    48 I tombstoned: found intercept fd 512 for pid 151 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.099  2190  2190 I crash_dump64: performing dump of process 151 (target tid = 151)
-10-31 06:12:19.103   272  2144 I system_server: libdebuggerd_client: done dumping process 151
-10-31 06:12:19.104   272  2144 I ActivityManager: Collecting stacks for native pid 152
-10-31 06:12:19.104   272  2144 I system_server: libdebuggerd_client: started dumping process 152
-10-31 06:12:19.104    48    48 I tombstoned: registered intercept for pid 152 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.104   152   152 I libc    : Requested dump for tid 152 (mediaserver)
-10-31 06:12:19.113  2195  2195 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.113    48    48 I tombstoned: received crash request for pid 152
-10-31 06:12:19.113    48    48 I tombstoned: found intercept fd 512 for pid 152 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.113  2195  2195 I crash_dump32: performing dump of process 152 (target tid = 152)
-10-31 06:12:19.128   272  2144 I system_server: libdebuggerd_client: done dumping process 152
-10-31 06:12:19.129   272  2144 I ActivityManager: Collecting stacks for native pid 153
-10-31 06:12:19.129   272  2144 I system_server: libdebuggerd_client: started dumping process 153
-10-31 06:12:19.129    48    48 I tombstoned: registered intercept for pid 153 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.129   153   153 I libc    : Requested dump for tid 153 (Binder:153_4)
-10-31 06:12:19.137  2200  2200 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.137    48    48 I tombstoned: received crash request for pid 153
-10-31 06:12:19.137    48    48 I tombstoned: found intercept fd 512 for pid 153 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.137  2200  2200 I crash_dump64: performing dump of process 153 (target tid = 153)
-10-31 06:12:19.148   272  2144 I system_server: libdebuggerd_client: done dumping process 153
-10-31 06:12:19.149   272  2144 I ActivityManager: Collecting stacks for native pid 159
-10-31 06:12:19.149   272  2144 I system_server: libdebuggerd_client: started dumping process 159
-10-31 06:12:19.149    48    48 I tombstoned: registered intercept for pid 159 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.149    48    48 I tombstoned: received crash request for pid 159
-10-31 06:12:19.149    48    48 I tombstoned: found intercept fd 512 for pid 159 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.159   706   972 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 06:12:19.159   706   972 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 06:12:19.219   272  2144 I system_server: libdebuggerd_client: done dumping process 159
-10-31 06:12:19.220   272  2144 I ActivityManager: Collecting stacks for native pid 167
-10-31 06:12:19.220   272  2144 I system_server: libdebuggerd_client: started dumping process 167
-10-31 06:12:19.220    48    48 I tombstoned: registered intercept for pid 167 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.220    48    48 I tombstoned: received crash request for pid 167
-10-31 06:12:19.220    48    48 I tombstoned: found intercept fd 512 for pid 167 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.252   272  2144 I system_server: libdebuggerd_client: done dumping process 167
-10-31 06:12:19.253   272  2144 I ActivityManager: Collecting stacks for native pid 168
-10-31 06:12:19.253   272  2144 I system_server: libdebuggerd_client: started dumping process 168
-10-31 06:12:19.253    48    48 I tombstoned: registered intercept for pid 168 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.253   168   168 I libc    : Requested dump for tid 168 (Binder:168_2)
-10-31 06:12:19.260  2205  2205 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.260    48    48 I tombstoned: received crash request for pid 168
-10-31 06:12:19.260    48    48 I tombstoned: found intercept fd 512 for pid 168 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.260  2205  2205 I crash_dump64: performing dump of process 168 (target tid = 168)
-10-31 06:12:19.266   272  2144 I system_server: libdebuggerd_client: done dumping process 168
-10-31 06:12:19.267   272  2144 I ActivityManager: Collecting stacks for native pid 438
-10-31 06:12:19.267   272  2144 I system_server: libdebuggerd_client: started dumping process 438
-10-31 06:12:19.268    48    48 I tombstoned: registered intercept for pid 438 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.268   438   438 I libc    : Requested dump for tid 438 (droid.bluetooth)
-10-31 06:12:19.288  2210  2210 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
-10-31 06:12:19.288    48    48 I tombstoned: received crash request for pid 438
-10-31 06:12:19.288    48    48 I tombstoned: found intercept fd 512 for pid 438 and type kDebuggerdNativeBacktrace
-10-31 06:12:19.288  2210  2210 I crash_dump64: performing dump of process 438 (target tid = 438)
-10-31 06:12:19.455   272  2144 I system_server: libdebuggerd_client: done dumping process 438
-10-31 06:12:19.456   272  2144 I ActivityManager: Done dumping
-10-31 06:12:19.456   272  2144 E ActivityManager: ANR in com.wushisan.algertv (com.wushisan.algertv/.ui.PlayerActivity)
-10-31 06:12:19.456   272  2144 E ActivityManager: PID: 2085
-10-31 06:12:19.456   272  2144 E ActivityManager: Reason: Input dispatching timed out (a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true))
-10-31 06:12:19.456   272  2144 E ActivityManager: Parent: com.wushisan.algertv/.ui.PlayerActivity
-10-31 06:12:19.456   272  2144 E ActivityManager: Load: 1.17 / 0.54 / 0.21
-10-31 06:12:19.456   272  2144 E ActivityManager: ----- Output from /proc/pressure/memory -----
-10-31 06:12:19.456   272  2144 E ActivityManager: some avg10=0.00 avg60=0.00 avg300=0.00 total=0
-10-31 06:12:19.456   272  2144 E ActivityManager: full avg10=0.00 avg60=0.00 avg300=0.00 total=0
-10-31 06:12:19.456   272  2144 E ActivityManager: ----- End output from /proc/pressure/memory -----
-10-31 06:12:19.456   272  2144 E ActivityManager: 
-10-31 06:12:19.456   272  2144 E ActivityManager: CPU usage from 59940ms to 0ms ago (2026-10-31 06:11:18.351 to 2026-10-31 06:12:18.291):
-10-31 06:12:19.456   272  2144 E ActivityManager:   4% 272/system_server: 2.7% user + 1.3% kernel / faults: 39339 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   1.3% 152/mediaserver: 0.2% user + 1% kernel / faults: 4132 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   1.1% 97/surfaceflinger: 0.8% user + 0.3% kernel / faults: 37680 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.9% 150/media.extractor: 0.4% user + 0.4% kernel / faults: 1018 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.6% 20/servicemanager: 0.4% user + 0.2% kernel / faults: 4 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.3% 142/zygote64: 0% user + 0.3% kernel / faults: 7476 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.2% 18/logd: 0% user + 0.1% kernel / faults: 319 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.2% 159/media.codec: 0% user + 0.1% kernel / faults: 1679 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0.1% 94/audioserver: 0% user + 0% kernel / faults: 151 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 62/android.hardware.bluetooth@1.1-service.sim: 0% user + 0% kernel / faults: 40 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 168/statsd: 0% user + 0% kernel / faults: 157 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 71/android.hardware.graphics.composer@2.1-service: 0% user + 0% kernel / faults: 67 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 122/adbd: 0% user + 0% kernel / faults: 1840 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 153/netd: 0% user + 0% kernel / faults: 1719 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 1/init: 0% user + 0% kernel / faults: 239 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 167/media.swcodec: 0% user + 0% kernel / faults: 639 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 61/android.hardware.audio.service: 0% user + 0% kernel / faults: 22 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 76/android.hardware.sensors@2.1-service.mock: 0% user + 0% kernel / faults: 28 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 143/zygote: 0% user + 0% kernel / faults: 3150 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 148/installd: 0% user + 0% kernel / faults: 116 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 151/media.metrics: 0% user + 0% kernel / faults: 214 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 25/hwservicemanager: 0% user + 0% kernel / faults: 18 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 19/lmkd: 0% user + 0% kernel / faults: 1 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 33/android.system.suspend@1.0-service: 0% user + 0% kernel / faults: 10 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:   0% 70/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 4 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 438/com.android.bluetooth: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 458/com.android.systemui: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 489/com.android.permissioncontroller: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 706/com.android.networkstack.process: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 728/webview_zygote: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 750/com.android.launcher3: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 785/com.android.se: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 808/com.android.phone: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 867/com.android.settings: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1019/com.android.inputmethod.latin: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1046/android.ext.services: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1124/com.android.providers.media.module: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1243/com.android.smspush: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1280/com.android.printspooler: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1369/android.process.media: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1400/com.android.providers.calendar: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1428/android.process.acore: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1569/com.android.gallery3d: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1614/com.android.onetimeinitializer: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1639/com.android.packageinstaller: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1667/com.android.shell: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1690/com.android.traceur: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1713/com.android.quicksearchbox: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1741/com.android.externalstorage: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1770/com.android.localtransport: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1820/abb: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 1848/com.android.documentsui: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 2085/com.wushisan.algertv: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager: 13% TOTAL: 8.6% user + 3.3% kernel + 1.3% iowait + 0% softirq
-10-31 06:12:19.456   272  2144 E ActivityManager: CPU usage from 3ms to 225ms later (2026-10-31 06:12:18.294 to 2026-10-31 06:12:18.516):
-10-31 06:12:19.456   272  2144 E ActivityManager:   18% 272/system_server: 9.2% user + 9.2% kernel / faults: 514 minor
-10-31 06:12:19.456   272  2144 E ActivityManager:     4.6% 272/system_server: 4.6% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:     4.6% 303/android.fg: 4.6% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:     4.6% 1969/Binder:272_F: 0% user + 4.6% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:     4.6% 2144/AnrConsumer: 0% user + 4.6% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:    +0% 2145/BackgroundDexOp: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager:  +0% 2146/dex2oat32: 0% user + 0% kernel
-10-31 06:12:19.456   272  2144 E ActivityManager: 78% TOTAL: 67% user + 11% kernel
-10-31 06:12:19.457   272  2144 D ActivityManager: Completed ANR of com.wushisan.algertv in 1166ms, latency 0ms
-10-31 06:12:19.458   272   304 W ActivityTaskManager:   Force finishing activity com.wushisan.algertv/.ui.PlayerActivity
-10-31 06:12:19.459   272  2213 I DropBoxManagerService: add tag=data_app_anr isTagEnabled=true flags=0x2
-10-31 06:12:19.474   272   304 W ActivityTaskManager:   Force finishing activity com.wushisan.algertv/.ui.MainActivity
-10-31 06:12:19.475   272   304 I ActivityManager: Killing 2085:com.wushisan.algertv/u0a116 (adj 0): user request after error
-10-31 06:12:19.480    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:12:19.487   272   348 W InputDispatcher: channel 'a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0xd
-10-31 06:12:19.487   272   348 E InputDispatcher: channel 'a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
-10-31 06:12:19.488   152  2130 D NuPlayerDriver: notifyResetComplete(0xee7419b0)
-10-31 06:12:19.488   272  1969 D MediaSessionService: Media button session is changed to null
-10-31 06:12:19.488   272  2078 W ActivityManager: Scheduling restart of crashed service com.wushisan.algertv/.playback.PlaybackService in 1000ms for start-requested
-10-31 06:12:19.488   272  1949 I WindowManager: WIN DEATH: Window{c60e42c u0 com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity}
-10-31 06:12:19.488   272  1949 W InputDispatcher: Attempted to unregister already unregistered input channel 'c60e42c com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity (server)'
-10-31 06:12:19.489   152  2132 E GenericSource: Failed to create data source!
-10-31 06:12:19.489   152   152 D NuPlayerDriver: reset(0xee7419b0) at state 0
-10-31 06:12:19.490   438   438 I AvrcpMediaPlayerList: onMediaKeyEventSessionChanged: packageName=com.wushisan.algertv
-10-31 06:12:19.490   438   438 W AvrcpMediaPlayerList: com.wushisan.algertv is already the active player
-10-31 06:12:19.490   438   438 W AvrcpMediaPlayerWrapper: The session was destroyed com.wushisan.algertv
-10-31 06:12:19.491   438   438 D AvrcpMediaPlayerList: sessionUpdatedCallback(): packageName: com.wushisan.algertv
-10-31 06:12:19.491   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:19.491   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:19.491   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=true state=true queue=true
-10-31 06:12:19.491   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=true playStatus=true queue=true
-10-31 06:12:19.491   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:19.491   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=1 :  play_state=1 :  queue=1
-10-31 06:12:19.491   438   438 D AvrcpMediaPlayerList: Removing media player com.wushisan.algertv
-10-31 06:12:19.491   438   438 D AvrcpMediaPlayerList: com.wushisan.algertv doesn't have a browse service. Recycle player ID.
-10-31 06:12:19.491   142   142 I Zygote  : Process 2085 exited due to signal 9 (Killed)
-10-31 06:12:19.491   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-31 06:12:19.492   272  1150 I WindowManager: WIN DEATH: Window{a4adbd5 u0 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity}
-10-31 06:12:19.492   272  1150 W InputDispatcher: Attempted to unregister already unregistered input channel 'a4adbd5 com.wushisan.algertv/com.wushisan.algertv.ui.PlayerActivity (server)'
-10-31 06:12:19.494   272   306 W ActivityManager: setHasOverlayUi called on unknown pid: 2085
-10-31 06:12:19.537   458   458 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{253779e I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
-10-31 06:12:19.973   272   306 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{4da132 u0 com.wushisan.algertv/.ui.PlayerActivity t-1 f}}
-10-31 06:12:20.489   272   312 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
-10-31 06:12:20.489   272   312 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: DISABLED
-10-31 06:12:20.489   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
-10-31 06:12:20.493   142   142 D Zygote  : Forked child process 2222
-10-31 06:12:20.493  2222  2222 I Zygote  : seccomp disabled by setenforce 0
-10-31 06:12:20.494  2222  2222 I libc    : SetHeapTaggingLevel: tag level set to 0
-10-31 06:12:20.494   272   313 I ActivityManager: Start proc 2222:com.wushisan.algertv/u0a116 for service {com.wushisan.algertv/com.wushisan.algertv.playback.PlaybackService}
-10-31 06:12:20.496   122   133 I adbd    : jdwp connection from 2222
-10-31 06:12:20.498   272  1661 D CompatibilityChangeReporter: Compat change id reported: 136219221; UID 10116; state: DISABLED
-10-31 06:12:20.501  2222  2222 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-10-31 06:12:20.505  2222  2222 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:12:20.505  2222  2222 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 06:12:20.509  2222  2222 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-31 06:12:20.540  2222  2222 I AlgerTV : App onCreate
-10-31 06:12:20.542   272  1150 D MediaSessionService: Media button session is changed to com.wushisan.algertv/AlgerTV (userId=0)
-10-31 06:12:20.544   438   438 W AvrcpMediaPlayerList: onMediaKeyEventSessionChanged(Token): Addressed Player changed to a player we didn't have a session for
-10-31 06:12:20.544   438   438 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv at key: 1
-10-31 06:12:20.544   438   438 I AvrcpMediaPlayerList: onMediaKeyEventSessionChanged: token=com.wushisan.algertv
-10-31 06:12:20.547  2222  2222 I AlgerTV : PlaybackService onCreate
-10-31 06:12:20.547   438   438 D AvrcpMediaPlayerList: setActivePlayer(): setting player to com.wushisan.algertv
-10-31 06:12:20.548   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:20.548   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:20.548   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:20.548   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:20.548   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:20.548   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:20.548   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:20.548   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-31 06:12:20.548   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-10-31 06:12:20.549   272  1661 D MediaSessionService: Media button session is changed to null
-10-31 06:12:20.550   438   438 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv
-10-31 06:12:20.550   438   438 D AvrcpMediaPlayerList: Already have a controller for the player: com.wushisan.algertv, updating instead
-10-31 06:12:20.550   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:20.550   438   438 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-31 06:12:20.550   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:20.550   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:20.550   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:20.550   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:20.550   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:20.551   438   438 I AvrcpMediaPlayerList: onMediaKeyEventSessionChanged: packageName=com.wushisan.algertv
-10-31 06:12:20.551   438   438 W AvrcpMediaPlayerList: com.wushisan.algertv is already the active player
-10-31 06:12:20.551   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-31 06:12:20.551   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-31 06:12:20.551   438   438 W AvrcpMediaPlayerWrapper: The session was destroyed com.wushisan.algertv
-10-31 06:12:20.551   438   438 D AvrcpMediaPlayerList: sessionUpdatedCallback(): packageName: com.wushisan.algertv
-10-31 06:12:20.551   438   438 D AvrcpMediaPlayerList: sendMediaUpdate
-10-31 06:12:20.551   438   438 D AvrcpMediaPlayerList: sendMediaUpdate state=null
-10-31 06:12:20.551   438   438 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-31 06:12:20.551   438   438 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-31 06:12:20.551   438   438 D AvrcpTargetJni: sendMediaUpdateNative
-10-31 06:12:20.551   438   438 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-31 06:12:20.551   438   438 D AvrcpMediaPlayerList: Removing media player com.wushisan.algertv
-10-31 06:12:20.551   438   438 D AvrcpMediaPlayerList: com.wushisan.algertv doesn't have a browse service. Recycle player ID.
-10-31 06:12:20.699   272   272 D NotificationService: 0|com.wushisan.algertv|1001|null|10116: granting content://settings/system/notification_sound
-10-31 06:12:20.700   272   272 I chatty  : uid=1000 system_server identical 1 line
-10-31 06:12:20.700   272   272 D NotificationService: 0|com.wushisan.algertv|1001|null|10116: granting content://settings/system/notification_sound
-10-31 06:12:20.700   272   272 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
-10-31 06:12:20.703   458   458 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:20.703   458   458 D InterruptionStateProvider: No heads up: unimportant notification: 0|com.wushisan.algertv|1001|null|10116
-10-31 06:12:23.036   272  1105 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 06:12:25.736   458   458 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{253779e I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
-10-31 06:12:28.750    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 06:12:28.750  2245  2245 I Gralloc4: mapper 4.x is not supported
-10-31 06:12:28.751    25    25 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 06:12:28.751  2245  2245 W Gralloc3: mapper 3.x is not supported
-10-31 06:12:28.948  1124  1762 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:12:28.952  1124  1762 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 06:12:28.952  1124  1766 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 06:12:28.952  1124  1766 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:12:28.952  1124  1766 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 06:12:28.952  1124  1766 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 06:12:32.872   153  2134 W SocketClient: write error (Broken pipe)
-10-31 06:12:32.872   153  2134 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10116 pid 2085: Broken pipe
+10-31 06:13:52.811   272   571 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity (has extras)} from uid 2000
+--------- beginning of main
+10-31 06:13:52.812  1902  1904 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:13:55.424   272  1905 I system_server: The ClassLoaderContext is a special shared library.
+10-31 06:13:55.434   272  1905 I chatty  : uid=1000 system_server identical 15 lines
+10-31 06:13:55.434   272  1905 I system_server: The ClassLoaderContext is a special shared library.
+10-31 06:13:55.436   146   294 V installd: DexInv: --- BEGIN '/apex/com.android.wifi/javalib/service-wifi.jar' ---
+10-31 06:13:55.446  1906  1906 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=8 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --classpath-dir=/apex/com.android.wifi/javalib --class-loader-context=PCL[];PCL[/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar] --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
+10-31 06:13:55.447  1906  1906 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onIpClientCreated is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onNewDhcpResults is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onPostDhcpAction is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onPreDhcpAction is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onProvisioningFailure is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/android/net/ip/IpClientCallbacks;.onProvisioningSuccess is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getCachedSizeField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getEnumVerifier is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getFieldNumber is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getMapDefaultEntry is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getMessageFieldClass is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getOneof is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getPresenceField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getPresenceMask is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.getType is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.isEnforceUtf8 is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/FieldInfo;.isRequired is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/OneofInfo;.getCaseField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/OneofInfo;.getValueField is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldArray;.dataAt is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.461  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldArray;.size is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldData;.computeSerializedSize is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/com/google/protobuf/nano/FieldData;.writeTo is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/SoapEnvelope;.parseBody is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/SoapEnvelope;.writeBody is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Method Lcom/android/wifi/x/org/ksoap2/transport/HttpTransportSE;.getServiceConnection is abstract, but the declaring class is neither abstract nor an interface in dex file service-wifi.jar
+10-31 06:13:55.462  1906  1906 W dex2oat32: Could not reserve sentinel fault page
+10-31 06:13:55.515   482   502 I PermissionControllerServiceImpl: Updating user sensitive for user 0
+10-31 06:13:55.866  1906  1906 I dex2oat32: dex2oat took 421.343ms (1.466s cpu) (threads: 4) arena alloc=0B (0B) java alloc=742KB (759840B) native alloc=2565KB (2627024B) free=4849KB (4965824B)
+10-31 06:13:55.870   146   294 V installd: DexInv: --- END '/apex/com.android.wifi/javalib/service-wifi.jar' (success) ---
+10-31 06:13:55.872   146   294 V installd: DexInv: --- BEGIN '/apex/com.android.os.statsd/javalib/service-statsd.jar' ---
+10-31 06:13:55.882  1912  1912 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=8 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --classpath-dir=/apex/com.android.os.statsd/javalib --class-loader-context=PCL[];PCL[/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar] --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
+10-31 06:13:55.883  1912  1912 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+10-31 06:13:55.913  1912  1912 I dex2oat32: dex2oat took 32.169ms (33.966ms cpu) (threads: 4) arena alloc=0B (0B) java alloc=65KB (67368B) native alloc=1267KB (1297728B) free=1487KB (1523248B)
+10-31 06:13:55.916   146   294 V installd: DexInv: --- END '/apex/com.android.os.statsd/javalib/service-statsd.jar' (success) ---
+10-31 06:13:55.917   272  1905 I system_server: The ClassLoaderContext is a special shared library.
+10-31 06:13:55.958   272  1905 I chatty  : uid=1000 system_server identical 54 lines
+10-31 06:13:55.959   272  1905 I system_server: The ClassLoaderContext is a special shared library.
+10-31 06:13:55.959   272  1905 I BackgroundDexOptService: Pinning optimized code {android}
+10-31 06:13:56.170   151   177 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+10-31 06:13:56.170   151   177 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+10-31 06:13:56.403   689   954 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 06:13:56.403   689   954 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 06:14:00.002   461   461 D KeyguardClockSwitch: Updating clock: 614
+10-31 06:14:00.002    70    70 D hwcomposer: VSYNC event status:1
+10-31 06:14:00.031    70    80 D hwcomposer: hw_composer sent 48 syncs in 68s
+10-31 06:14:00.366    70    70 D hwcomposer: VSYNC event status:0
+10-31 06:14:08.886    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 06:14:08.886  1918  1918 I Gralloc4: mapper 4.x is not supported
+10-31 06:14:08.886    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 06:14:08.886  1918  1918 W Gralloc3: mapper 3.x is not supported
+10-31 06:14:09.080  1922  1924 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:14:09.081  1146  1771 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 06:14:09.086  1146  1771 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 06:14:09.086  1146  1776 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+10-31 06:14:09.086  1146  1776 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 06:14:09.086  1146  1776 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 06:14:09.086  1146  1776 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)

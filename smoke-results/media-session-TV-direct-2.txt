@@ -25,8 +25,7 @@ Record for full_user=0
   OnMediaKeyEventDispatchedListener: added 0 listener(s)
   OnMediaKeyEventSessionChangedListener: added 1 listener(s)
     from com.android.bluetooth
-  Last MediaButtonReceiver: MBR {pi=PendingIntent{d3397e3: PendingIntentRecord{3d105e0 com.wushisan.algertv broadcastIntent}}, type=1}
+  Last MediaButtonReceiver: null
   Media button session is null
   Sessions Stack - have 0 sessions:
 Audio playback (lastly played comes first)
-  uid=10116 packages=com.wushisan.algertv 

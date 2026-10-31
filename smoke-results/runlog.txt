@@ -1,8 +1,7 @@
 === uname ===
 Linux runnervm9u1px 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 19:06:39 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
-total 8.0K
-drwxr-xr-x 3 runner runner 4.0K Oct 31 06:10 phone
-drwxr-xr-x 3 runner runner 4.0K Oct 31 06:10 tv
+total 4.0K
+drwxr-xr-x 3 runner runner 4.0K Oct 31 06:12 phone
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -23,7 +22,7 @@ Get:5 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-libzipar
 Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libprotobuf32t64 arm64 3.21.12-8.2ubuntu0.4 [859 kB]
 Get:7 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 adb arm64 1:34.0.4-1build3 [272 kB]
 Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-sdk-platform-tools-common all 28.0.2+9 [6402 B]
-Fetched 2004 kB in 1s (3784 kB/s)
+Fetched 2004 kB in 2s (997 kB/s)
 Selecting previously unselected package android-liblog:arm64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 218279 files and directories currently installed.)
 Preparing to unpack .../0-android-liblog_1%3a34.0.4-1build3_arm64.deb ...
@@ -79,12 +78,11 @@ BINDER_OK via direct
 Unable to find image 'redroid/redroid:11.0.0-latest' locally
 11.0.0-latest: Pulling from redroid/redroid
 06cb3c383cf0: Pulling fs layer
-06cb3c383cf0: Verifying Checksum
 06cb3c383cf0: Download complete
 06cb3c383cf0: Pull complete
 Digest: sha256:60b0810684be4578733a847be3314c50b70f73bc92405b5a627ebe9b633ebb5e
 Status: Downloaded newer image for redroid/redroid:11.0.0-latest
-459d2ac42db7dbc6e5ac28a5bcc0fd94e94a7ff01e2c9d0869cf4b69f394a446
+08f09f9247519473d64c86343d55eb68dca545959cea5de94935f69e4703af53
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 connected to localhost:5555
@@ -93,18 +91,25 @@ boot try 2: 1
 arm64-v8a,armeabi-v7a,armeabi
 === sign artifacts with ephemeral key (smoke only; CI artifacts are unsigned) ===
 apksigner=/usr/bin/apksigner keytool=/usr/bin/keytool
-SMOKE_SIGNED apks/tv/release/AlgerTV-1.0.5.apk
 SMOKE_SIGNED apks/phone/release/AlgerPhone-1.3.apk
-Success
+Failed
 --- TV first launch (cold, no extras) ---
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity }
+Error type 3
+Error: Activity class {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity} does not exist.
 --- TV second launch (smoke autoplay) ---
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
+Error type 3
+Error: Activity class {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity} does not exist.
 --- TV direct-URL pipeline (source-independent) ---
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
+Error type 3
+Error: Activity class {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity} does not exist.
 --- TV TLS sim (dual-store ISRG Root X1 removal) ---
-Success
+Failed
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity }
+Error type 3
+Error: Activity class {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity} does not exist.
 Success
 --- PHONE first launch (cold) ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
@@ -112,48 +117,45 @@ Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
 --- PHONE search repro ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
-/home/runner/work/_temp/6dff2be2-6bb5-442a-9ebe-8f787d79953c.sh: line 309: PPID: readonly variable
+/home/runner/work/_temp/cb66c2c4-0dab-452e-975e-e8079ab940ba.sh: line 309: PPID: readonly variable
 --- PHONE direct-URL pipeline ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras) }
-/home/runner/work/_temp/6dff2be2-6bb5-442a-9ebe-8f787d79953c.sh: line 335: [: 0
-0: integer expression expected
 REDROID_BOOTED
-TV_INSTALL_OK
-TV_FIRST_ALIVE pid=1883
+SMOKE_SIGN_FAIL apks/tv/release/AlgerTV-1.0.5.apk
+TV_INSTALL_FAIL
+TV_FIRST_DEAD
 TV_FIRST_FATAL_COUNT=0
-TV_PROCESS_ALIVE pid=1977
+TV_PROCESS_DEAD
 TV_FATAL_COUNT=0
-TV_AUTOPLAY_OK
-TV_FIRST_TRACK load=2755496359 start=3449064757 errors=1
+TV_AUTOPLAY_UNCONFIRMED
+TV_FIRST_TRACK load=none start=none errors=0
 TV_FIRST_TRACK_FAIL
 TV_DIRECT_NOT_STARTED
-TV_DIRECT_PLAYER_ERRORS=1
+TV_DIRECT_PLAYER_ERRORS=0
 TV_DIRECT_POSITION p1=none p2=none
-TV_DIRECT_ALIVE pid=2222
-TV_HOME_BASE_META=6
+TV_DIRECT_DEAD
+TV_HOME_BASE_META=none
 TV_TLS_PRE_SYSTEM_X1=present
 TV_TLS_ISO_SYSTEM=ok
 TV_TLS_ISO_APEX=absent
 TV_TLS_ISO_ESTABLISHED=1
 TV_TLS_SIM_MODE=dual
-TV_TLS_SIM_META=6
+TV_TLS_SIM_META=none
 TV_TLS_BUNDLED_HITS=0
 TV_TLS_SSL_ERRS=0
-TV_TLS_SIM_INCONCLUSIVE
+TV_TLS_SIM_FAIL
 PHONE_INSTALL_OK
-PHONE_FIRST_ALIVE pid=2449
+PHONE_FIRST_ALIVE pid=2081
 PHONE_FIRST_FATAL_COUNT=0
-PHONE_PROCESS_ALIVE pid=2539
+PHONE_PROCESS_ALIVE pid=2176
 PHONE_FATAL_COUNT=0
 PHONE_SEARCH_OPEN_OK
 PHONE_SEARCH_RESULTS=7
 PHONE_SEARCH_ANR_COUNT=0
 PHONE_SEARCH_FATAL_COUNT=0
-PHONE_SEARCH_ALIVE pid=2623
+PHONE_SEARCH_ALIVE pid=2260
 PHONE_DIRECT_NOT_STARTED
 PHONE_DIRECT_PLAYER_ERRORS=1
-PHONE_DIRECT_POSITION p1=0
-0 p2=0
-0
-PHONE_DIRECT_ALIVE pid=2834
-SMOKE_DONE date=2026-10-31T06:14:02Z sha=90a28bb2cf7751b952ebe943cd96c497bdf73325
+PHONE_DIRECT_POSITION p1=none p2=none
+PHONE_DIRECT_ALIVE pid=2590
+SMOKE_DONE date=2026-10-31T06:15:52Z sha=1663d65e53850586ec9d4f5a870301f39deb0f8c
