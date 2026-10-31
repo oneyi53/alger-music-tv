@@ -1,230 +1,235 @@
 --------- beginning of system
-10-23 03:54:11.665   272   425 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 0
+10-31 06:08:10.887   272   301 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 0
 --------- beginning of main
-10-23 03:54:11.667  2737  2739 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:11.668   272   306 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
-10-23 03:54:11.668   272   306 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
-10-23 03:54:11.669   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
-10-23 03:54:11.673   143   143 D Zygote  : Forked child process 2740
-10-23 03:54:11.674   272   313 I ActivityManager: Start proc 2740:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
-10-23 03:54:11.674  2740  2740 I Zygote  : seccomp disabled by setenforce 0
-10-23 03:54:11.676  2708  2714 I adbd    : jdwp connection from 2740
-10-23 03:54:11.680   272   301 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-10-23 03:54:11.686  2740  2740 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-23 03:54:11.686  2740  2740 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-23 03:54:11.689  2740  2740 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-23 03:54:11.712   272   398 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] (release request)
-10-23 03:54:11.715   460   460 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-10-23 03:54:11.716   806   806 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-10-23 03:54:11.716   806   806 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-10-23 03:54:11.716  2740  2740 I AlgerTV : App onCreate
-10-23 03:54:11.734  2740  2740 I AlgerTV : HOME_LOAD_START
-10-23 03:54:11.734  2740  2740 I AlgerTV : HOME_CACHE_HIT
-10-23 03:54:11.736  2740  2740 I AlgerTV : SMOKE_DIRECT_PLAY phone
-10-23 03:54:11.738   272   425 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:11.738   272   425 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:11.739  2740  2740 W MediaPlayer: Use of stream types is deprecated for operations other than volume control
-10-23 03:54:11.739  2740  2740 W MediaPlayer: See the documentation of setAudioStreamType() for what to use instead with android.media.AudioAttributes to qualify your playback use case
-10-23 03:54:11.740  2740  2740 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
-10-23 03:54:11.740  2740  2740 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-23 03:54:11.740   272   387 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10117
-10-23 03:54:11.759  2740  2740 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
-10-23 03:54:11.760   272   387 D ConnectivityService: requestNetwork for uid/pid:10117/2740 NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
-10-23 03:54:11.760   272   398 D ConnectivityService: NetReassign [30 : null → 100]
-10-23 03:54:11.760   272   394 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-23 03:54:11.760   272   394 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-23 03:54:11.760   272   427 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-23 03:54:11.762   806   806 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-10-23 03:54:11.767   460   460 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-10-23 03:54:11.767   806   806 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-10-23 03:54:11.767   806   806 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-10-23 03:54:11.770   440   440 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-10-23 03:54:11.771  2740  2740 I AlgerTV : PlaybackService(phone) onCreate
-10-23 03:54:11.771   440   440 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-10-23 03:54:11.771   440   440 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
-10-23 03:54:11.772   440   440 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv.phone at key: 1
-10-23 03:54:11.777  2740  2740 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-10-23 03:54:11.777  2740  2740 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-10-23 03:54:11.777  2740  2740 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@68e3fe0): Cookies: null
-10-23 03:54:11.778   155   155 D NuPlayerDriver: NuPlayerDriver(0xe8b81190) created, clientPid(2740)
-10-23 03:54:11.779  2740  2740 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-23 03:54:11.779  2740  2758 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@947a299
-10-23 03:54:11.779  2740  2758 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@68e3fe0): cookieHandler: java.net.CookieManager@947a299 Cookies: null
-10-23 03:54:11.780   272  1662 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (591101)
-10-23 03:54:11.821    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-10-23 03:54:11.975   272   272 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
-10-23 03:54:11.975   272   272 I chatty  : uid=1000 system_server identical 1 line
-10-23 03:54:11.975   272   272 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
-10-23 03:54:11.975   272   272 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
-10-23 03:54:11.979   460   460 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:11.983   460   460 I chatty  : uid=10109(com.android.systemui) identical 4 lines
-10-23 03:54:11.983   460   460 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:11.984   460   460 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=591167, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:11.984   460   460 V MediaTimeout: schedule timeout for 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:11.984   460   460 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
-10-23 03:54:11.988   440   459 D BluetoothDatabase: getBondedDevicesOrdered: Invalid address for device LocalStorage
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:12.012   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:12.048   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:12.051   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:12.051   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:12.052   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:12.052   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:12.052   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:12.052   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:12.052   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:12.057   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:12.179    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-23 03:54:12.179  2740  2762 I Gralloc4: mapper 4.x is not supported
-10-23 03:54:12.179    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-23 03:54:12.179  2740  2762 W Gralloc3: mapper 3.x is not supported
-10-23 03:54:12.180    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-23 03:54:12.316  2740  2740 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
-10-23 03:54:12.316  2740  2740 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=0: HTTP 503
-10-23 03:54:12.318   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +651ms
-10-23 03:54:12.324  2740  2740 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
-10-23 03:54:12.325  2740  2740 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
-10-23 03:54:12.479  2740  2740 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
-10-23 03:54:12.479  2740  2740 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
-10-23 03:54:12.681  2740  2740 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
-10-23 03:54:12.744  2740  2740 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
-10-23 03:54:12.798  2740  2740 I AlgerTV : HOME_META_OK id=1978921795 ms=1064
-10-23 03:54:13.003  2740  2740 I AlgerTV : HOME_META_OK id=60198 ms=1269
-10-23 03:54:13.144  2740  2740 I AlgerTV : HOME_META_OK id=180106 ms=1410
-10-23 03:54:13.348  2740  2740 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=1: HTTP 503
-10-23 03:54:13.573  2740  2740 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
-10-23 03:54:13.845  2740  2740 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
-10-23 03:54:14.042  2740  2740 I AlgerTV : HOME_META_OK id=2884035 ms=2308
-10-23 03:54:14.199  2740  2740 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
-10-23 03:54:14.272  2740  2740 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
-10-23 03:54:14.449  2740  2740 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
-10-23 03:54:14.645  2740  2740 I AlgerTV : HOME_META_OK id=991319590 ms=2911
-10-23 03:54:14.741   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:14.744  2740  2740 I AlgerTV : HOME_META_OK id=745956260 ms=3010
-10-23 03:54:15.580   157   165 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-10-23 03:54:15.580   157   165 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-10-23 03:54:16.042  2740  2740 I AlgerTV : HOME_META_OK id=60131 ms=4308
-10-23 03:54:16.042  2740  2740 I AlgerTV : HOME_DONE ms=4308 meta=7/13 fallback=false
-10-23 03:54:16.043  2740  2802 I AlgerTV : HOME_CACHE_SAVED bytes=1408
-10-23 03:54:16.264   272  1113 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-23 03:54:25.727   718   981 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-10-23 03:54:25.727   718   981 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-10-23 03:54:27.728    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-23 03:54:27.728  2803  2803 I Gralloc4: mapper 4.x is not supported
-10-23 03:54:27.728    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-23 03:54:27.728  2803  2803 W Gralloc3: mapper 3.x is not supported
-10-23 03:54:27.824  2807  2809 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:27.825  1126  1768 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-23 03:54:27.828  1126  1774 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-23 03:54:27.828  1126  1774 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-23 03:54:27.828  1126  1774 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-23 03:54:27.828  1126  1774 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-23 03:54:27.828  1126  1768 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-23 03:54:32.433   153   153 E Utils   : did not find channel-count and/or sample-rate
-10-23 03:54:32.433   153   153 E Utils   : did not find channel-count and/or sample-rate
-10-23 03:54:32.533  2740  2740 I AlgerTV : PLAYER_PREPARED id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 dur=372715
-10-23 03:54:32.533  2740  2740 W AudioManager: Use of stream types is deprecated for operations other than volume control
-10-23 03:54:32.533  2740  2740 W AudioManager: See the documentation of requestAudioFocus() for what to use instead with android.media.AudioAttributes to qualify your playback use case
-10-23 03:54:32.534   272   425 I MediaFocusControl: requestAudioFocus() from uid/pid 10117/2740 clientId=android.media.AudioManager@7169a90com.wushisan.algertv.playback.PlayerController$1@317df89 callingPack=com.wushisan.algertv.phone req=1 flags=0x0 sdk=34
-10-23 03:54:32.534   272   272 D MediaSessionService: Media button session is changed to com.wushisan.algertv.phone/AlgerPhone (userId=0)
-10-23 03:54:32.535   440   440 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-10-23 03:54:32.535   440   440 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
-10-23 03:54:32.535   440   440 D AvrcpMediaPlayerList: Already have a controller for the player: com.wushisan.algertv.phone, updating instead
-10-23 03:54:32.535   440   440 I AvrcpMediaPlayerList: onMediaKeyEventSessionChanged: token=com.wushisan.algertv.phone
-10-23 03:54:32.536   155  2788 I GenericSource: start
-10-23 03:54:32.536  2740  2740 I AlgerTV : PLAYER_STARTED id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-23 03:54:32.536   440   440 D AvrcpMediaPlayerList: setActivePlayer(): setting player to com.wushisan.algertv.phone
-10-23 03:54:32.537   440   440 D AvrcpMediaPlayerList: sendMediaUpdate
-10-23 03:54:32.537   440   440 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-23 03:54:32.537   440   440 D AvrcpMediaPlayerList: sendMediaUpdate state=PlaybackState {state=3, position=1, buffered position=0, speed=1.0, updated=611929, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.537   440   440 D AvrcpTargetService: onMediaUpdated: track_changed=true state=true queue=true
-10-23 03:54:32.537   440   440 D AvrcpNativeInterface: sendMediaUpdate: metadata=true playStatus=true queue=true
-10-23 03:54:32.537   440   440 D AvrcpTargetJni: sendMediaUpdateNative
-10-23 03:54:32.537   440   440 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=1 :  play_state=1 :  queue=1
-10-23 03:54:32.538   440   440 V AvrcpMediaPlayerWrapper: trySendMediaUpdate(): Metadata has been updated for com.wushisan.algertv.phone
-10-23 03:54:32.538   440   440 D AvrcpMediaPlayerList: sendMediaUpdate
-10-23 03:54:32.538   440   440 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-23 03:54:32.538   440   440 D AvrcpMediaPlayerList: sendMediaUpdate state=PlaybackState {state=3, position=2, buffered position=0, speed=1.0, updated=611930, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.538   440   440 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-23 03:54:32.538   440   440 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-23 03:54:32.538   440   440 D AvrcpTargetJni: sendMediaUpdateNative
-10-23 03:54:32.538   440   440 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-23 03:54:32.538   440   440 V AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv.phone : PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611928, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.538   440   440 W AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv.phone tried to update with no new data
-10-23 03:54:32.539   155  2821 I OMXClient: IOmx service obtained
-10-23 03:54:32.539   160   534 I OMXMaster: makeComponentInstance(OMX.google.mp3.decoder) in android.hardwar process
-10-23 03:54:32.540   160   534 E OMXNodeInstance: setConfig(0xe85c00f0:google.mp3.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
-10-23 03:54:32.540   155  2821 I ACodec  : codec does not support config priority (err -2147483648)
-10-23 03:54:32.540   440   440 V AvrcpMediaPlayerWrapper: trySendMediaUpdate(): Metadata has been updated for com.wushisan.algertv.phone
-10-23 03:54:32.540   440   440 D AvrcpMediaPlayerList: sendMediaUpdate
-10-23 03:54:32.540   440   440 I AvrcpMediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
-10-23 03:54:32.540   440   440 D AvrcpMediaPlayerList: sendMediaUpdate state=PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611932, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.540   160   655 E OMXNodeInstance: getConfig(0xe85c00f0:google.mp3.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
-10-23 03:54:32.540   440   440 D AvrcpTargetService: onMediaUpdated: track_changed=false state=false queue=false
-10-23 03:54:32.540   440   440 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=false queue=false
-10-23 03:54:32.540   440   440 D AvrcpTargetJni: sendMediaUpdateNative
-10-23 03:54:32.540   440   440 I bt_stack: [INFO:avrcp_service.cc(346)] virtual void bluetooth::avrcp::AvrcpService::SendMediaUpdate(bool, bool, bool) track_changed=0 :  play_state=0 :  queue=0
-10-23 03:54:32.541   440   440 V AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv.phone : PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611932, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.541   155  2821 I MediaCodec: MediaCodec will operate in async mode
-10-23 03:54:32.541   440   440 W AvrcpMediaPlayerWrapper: onPlaybackStateChanged(): com.wushisan.algertv.phone tried to update with no new data
-10-23 03:54:32.541   460   460 V MediaTimeout: processState: PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611928, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.541   460   460 V MediaTimeout: media timeout cancelled for  0|com.wushisan.algertv.phone|1001|null|10117, reason: playback started - PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611928, actions=822, custom actions=[], active item id=-1, error=null}, 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:32.542   460   460 V MediaTimeout: processState: PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=611932, actions=822, custom actions=[], active item id=-1, error=null}
-10-23 03:54:32.545    85   197 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000008) and output flags (00000006)
-10-23 03:54:32.545    85   197 D AudioFlinger: Client defaulted notificationFrames to 11200 for frameCount 22400
-10-23 03:54:32.546    85   197 D AF::TrackHandle: OpPlayAudio: track:56 usage:1 not muted
-10-23 03:54:32.550    85   195 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
-10-23 03:54:32.550    85   195 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
-10-23 03:54:32.551   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:32.551   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-10-23 03:54:32.741   460   460 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:32.745   460   460 I chatty  : uid=10109(com.android.systemui) identical 2 lines
-10-23 03:54:32.745   460   460 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-10-23 03:54:32.746   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:32.746   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:32.747   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:32.747   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:32.747   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:32.747   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:32.747   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:32.811   460   460 W ConstraintSet: id unknown dismiss
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown center_vertical_guideline
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown media_action_barrier
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown media_text
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown remove_text
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown settings
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown cancel
-10-23 03:54:32.819   460   460 W ConstraintSet: id unknown dismiss
+10-31 06:08:10.890  2759  2761 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:08:10.891   272   306 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
+10-31 06:08:10.891   272   306 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
+10-31 06:08:10.892   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+10-31 06:08:10.896   142   142 D Zygote  : Forked child process 2762
+10-31 06:08:10.897   272   313 I ActivityManager: Start proc 2762:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+10-31 06:08:10.897  2762  2762 I Zygote  : seccomp disabled by setenforce 0
+10-31 06:08:10.900  2194  2200 I adbd    : jdwp connection from 2762
+10-31 06:08:10.902   272  2225 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+10-31 06:08:10.908  2762  2762 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 06:08:10.908  2762  2762 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 06:08:10.911  2762  2762 I AlgerTV : TLS_SUPPORT_READY bundled=true
+10-31 06:08:10.942  2762  2762 I AlgerTV : App onCreate
+10-31 06:08:10.960  2762  2762 I AlgerTV : HOME_LOAD_START
+10-31 06:08:10.960  2762  2762 I AlgerTV : HOME_CACHE_HIT
+10-31 06:08:10.962  2762  2762 I AlgerTV : SMOKE_DIRECT_PLAY phone
+10-31 06:08:10.964   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:08:10.965   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:08:10.966  2762  2762 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
+10-31 06:08:10.966  2762  2762 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+10-31 06:08:10.966   272   301 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10117
+10-31 06:08:10.986  2762  2762 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
+10-31 06:08:10.987   272   301 D ConnectivityService: requestNetwork for uid/pid:10117/2762 NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
+10-31 06:08:10.987   272   400 D ConnectivityService: NetReassign [31 : null → 100]
+10-31 06:08:10.987   272   426 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 06:08:10.987   272   396 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 06:08:10.987   813   813 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 06:08:10.988   272   396 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+10-31 06:08:10.989   813   813 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+10-31 06:08:10.989   813   813 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-31 06:08:10.989   465   465 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-31 06:08:10.998   443   443 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+10-31 06:08:11.000   443   443 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
+10-31 06:08:11.000  2762  2762 I AlgerTV : PlaybackService(phone) onCreate
+10-31 06:08:11.000  2762  2762 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
+10-31 06:08:11.000  2762  2762 E MediaPlayerNative: error (-38, 0)
+10-31 06:08:11.000   443   443 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
+10-31 06:08:11.001   443   443 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv.phone at key: 1
+10-31 06:08:11.003  2762  2762 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
+10-31 06:08:11.005  2762  2762 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+10-31 06:08:11.005  2762  2762 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+10-31 06:08:11.005  2762  2762 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@44cd15c): Cookies: null
+10-31 06:08:11.005   155  1778 D NuPlayerDriver: NuPlayerDriver(0xea500d30) created, clientPid(2762)
+10-31 06:08:11.007  2762  2762 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+10-31 06:08:11.007  2762  2780 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@5a75c65
+10-31 06:08:11.007  2762  2780 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@44cd15c): cookieHandler: java.net.CookieManager@5a75c65 Cookies: null
+10-31 06:08:11.008   272  2225 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (286472)
+10-31 06:08:11.012   272   400 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] (release request)
+10-31 06:08:11.014   813   813 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+10-31 06:08:11.014   465   465 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-31 06:08:11.014   813   813 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-31 06:08:11.020    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-31 06:08:11.204   272   272 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+10-31 06:08:11.204   272   272 I chatty  : uid=1000 system_server identical 1 line
+10-31 06:08:11.204   272   272 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+10-31 06:08:11.204   272   272 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+10-31 06:08:11.208   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+10-31 06:08:11.210   465   465 I chatty  : uid=10107(com.android.systemui) identical 2 lines
+10-31 06:08:11.210   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+10-31 06:08:11.212   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=286573, actions=822, custom actions=[], active item id=-1, error=null}
+10-31 06:08:11.212   465   465 V MediaTimeout: schedule timeout for 0|com.wushisan.algertv.phone|1001|null|10117
+10-31 06:08:11.212   465   465 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
+10-31 06:08:11.223   443   463 D BluetoothDatabase: getBondedDevicesOrdered: Invalid address for device LocalStorage
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.261   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.262   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.279   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.283   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.286   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.391    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 06:08:11.391  2762  2784 I Gralloc4: mapper 4.x is not supported
+10-31 06:08:11.391    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 06:08:11.391  2762  2784 W Gralloc3: mapper 3.x is not supported
+10-31 06:08:11.392    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 06:08:11.530  2762  2762 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
+10-31 06:08:11.530  2762  2762 W AlgerTV : HOME_META_FAIL id=60198 attempt=0: HTTP 503
+10-31 06:08:11.530  2762  2762 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0xb400f37b92c2faf0, mCurrentState=4
+10-31 06:08:11.530  2762  2762 E MediaPlayerNative: error (-38, 0)
+10-31 06:08:11.531   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +643ms
+10-31 06:08:11.542  2762  2762 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+10-31 06:08:11.542  2762  2762 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+10-31 06:08:11.542  2762  2762 E MediaPlayer: Error (-38,0)
+10-31 06:08:11.542  2762  2762 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
+10-31 06:08:11.543   155  1778 D NuPlayerDriver: reset(0xea500d30) at state 3
+10-31 06:08:11.543   155  2825 I NuCachedSource2: caching reached eos.
+10-31 06:08:11.543   155  2811 D NuPlayerDriver: notifyResetComplete(0xea500d30)
+10-31 06:08:11.544   155  1778 D NuPlayerDriver: reset(0xea500d30) at state 0
+10-31 06:08:11.544  2762  2762 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+10-31 06:08:11.544  2762  2762 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+10-31 06:08:11.544  2762  2762 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+10-31 06:08:11.544  2762  2762 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+10-31 06:08:11.544   155  2812 E GenericSource: initFromDataSource, cannot create extractor!
+10-31 06:08:11.544   155  2812 E GenericSource: Failed to init from data source!
+10-31 06:08:11.544   155  2812 W AMessage: failed to post message as target looper for handler 0 is gone.
+10-31 06:08:11.545   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=287114, actions=822, custom actions=[], active item id=-1, error=null}
+10-31 06:08:11.546  2762  2762 W AlgerTV : service sees error: 播放失败，自动跳到下一首
+10-31 06:08:11.546  2762  2762 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10117; state: ENABLED
+10-31 06:08:11.549   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=287116, actions=822, custom actions=[], active item id=-1, error=null}
+10-31 06:08:11.730  2762  2762 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+10-31 06:08:11.730  2762  2762 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+10-31 06:08:11.748   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+10-31 06:08:11.796   465   465 I chatty  : uid=10107(com.android.systemui) identical 2 lines
+10-31 06:08:11.796   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.798   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.861   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.928   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown center_vertical_guideline
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown media_action_barrier
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown media_text
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown remove_text
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown settings
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown cancel
+10-31 06:08:11.994   465   465 W ConstraintSet: id unknown dismiss
+10-31 06:08:11.995  2762  2762 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
+10-31 06:08:11.995  2762  2762 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
+10-31 06:08:12.159  2762  2762 W AlgerTV : HOME_META_FAIL id=2884035 attempt=0: HTTP 503
+10-31 06:08:12.182  2762  2762 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
+10-31 06:08:12.531  2762  2762 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=1: HTTP 503
+10-31 06:08:12.795  2762  2762 W AlgerTV : HOME_META_FAIL id=60198 attempt=1: HTTP 503
+10-31 06:08:13.024  2762  2762 I AlgerTV : HOME_META_OK id=180106 ms=2064
+10-31 06:08:13.121  2762  2762 I AlgerTV : HOME_META_OK id=745956260 ms=2161
+10-31 06:08:13.321  2762  2762 I AlgerTV : HOME_META_OK id=2809513713 ms=2361
+10-31 06:08:13.519  2762  2762 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
+10-31 06:08:13.549   272   300 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@7a90c50
+10-31 06:08:13.725  2762  2762 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
+10-31 06:08:13.923  2762  2762 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
+10-31 06:08:13.966   272   301 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:08:14.127  2762  2762 W AlgerTV : HOME_META_FAIL id=2884035 attempt=1: HTTP 503
+10-31 06:08:14.327  2762  2762 W AlgerTV : HOME_META_FAIL id=991319590 attempt=1: HTTP 503
+10-31 06:08:15.050   272   306 W WindowManager: Unable to start animation, surface is null or no children.
+10-31 06:08:15.428  2762  2762 I AlgerTV : HOME_META_OK id=71384707 ms=4468
+10-31 06:08:15.432  2762  2762 I AlgerTV : HOME_META_OK id=11641012 ms=4472
+10-31 06:08:15.464   272  1096 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-31 06:08:16.225  2762  2762 I AlgerTV : HOME_META_OK id=60131 ms=5265
+10-31 06:08:16.226  2762  2762 I AlgerTV : HOME_DONE ms=5266 meta=6/13 fallback=false
+10-31 06:08:16.226  2762  2829 I AlgerTV : HOME_CACHE_SAVED bytes=1312
+10-31 06:08:17.253   159   198 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+10-31 06:08:17.253   159   198 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+10-31 06:08:24.550   272   272 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@5881125
+10-31 06:08:26.961    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-31 06:08:26.961  2831  2831 I Gralloc4: mapper 4.x is not supported
+10-31 06:08:26.961    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-31 06:08:26.961  2831  2831 W Gralloc3: mapper 3.x is not supported
+10-31 06:08:27.062  2835  2837 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-31 06:08:27.064  1118  1775 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 06:08:27.066  1118  1775 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+10-31 06:08:27.066  1118  1775 W ExifInterface: java.io.EOFException
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface$ByteOrderedDataInputStream.readShort(ExifInterface.java:4657)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:3657)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:3677)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2924)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:1988)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1607)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1558)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1092)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:780)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.access$800(ModernMediaScanner.java:139)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:633)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:272)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:366)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:329)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:239)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:233)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1096)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.MediaService.onScanFile(MediaService.java:166)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at com.android.providers.media.MediaService.onHandleWork(MediaService.java:67)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:391)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:382)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-31 06:08:27.066  1118  1775 W ExifInterface: 	at java.lang.Thread.run(Thread.java:923)
+10-31 06:08:27.068  1118  1775 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+10-31 06:08:27.069  1118  1779 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+10-31 06:08:27.069  1118  1779 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 06:08:27.069  1118  1779 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-31 06:08:27.069  1118  1779 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-31 06:08:27.467   752   982 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+10-31 06:08:27.467   752   982 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2

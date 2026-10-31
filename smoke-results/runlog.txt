@@ -1,22 +1,19 @@
 === uname ===
-Linux runnervmidgih 6.17.0-1022-azure #22-Ubuntu SMP Mon Jul 27 17:12:01 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+Linux runnervm9u1px 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 19:06:39 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
 total 8.0K
-drwxr-xr-x 3 runner runner 4.0K Oct 23 03:50 phone
-drwxr-xr-x 3 runner runner 4.0K Oct 23 03:50 tv
+drwxr-xr-x 3 runner runner 4.0K Oct 31 06:05 phone
+drwxr-xr-x 3 runner runner 4.0K Oct 31 06:05 tv
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   android-libbase android-libboringssl android-libcutils android-liblog
-  android-libziparchive android-sdk-platform-tools-common
-  libprotobuf-lite32t64 libprotobuf32t64
+  android-libziparchive android-sdk-platform-tools-common libprotobuf32t64
 The following NEW packages will be installed:
   adb android-libbase android-libboringssl android-libcutils android-liblog
   android-libziparchive android-sdk-platform-tools-common libprotobuf32t64
-The following packages will be upgraded:
-  libprotobuf-lite32t64
-1 upgraded, 8 newly installed, 0 to remove and 97 not upgraded.
-Need to get 2225 kB of archives.
+0 upgraded, 8 newly installed, 0 to remove and 6 not upgraded.
+Need to get 2004 kB of archives.
 After this operation, 6612 kB of additional disk space will be used.
 Get:1 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-liblog arm64 1:34.0.4-1build3 [35.7 kB]
 Get:2 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-libbase arm64 1:34.0.4-1build3 [96.8 kB]
@@ -26,10 +23,9 @@ Get:5 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-libzipar
 Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libprotobuf32t64 arm64 3.21.12-8.2ubuntu0.4 [859 kB]
 Get:7 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 adb arm64 1:34.0.4-1build3 [272 kB]
 Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-sdk-platform-tools-common all 28.0.2+9 [6402 B]
-Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libprotobuf-lite32t64 arm64 3.21.12-8.2ubuntu0.4 [221 kB]
-Fetched 2225 kB in 2s (1045 kB/s)
+Fetched 2004 kB in 2s (1059 kB/s)
 Selecting previously unselected package android-liblog:arm64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 203258 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 218279 files and directories currently installed.)
 Preparing to unpack .../0-android-liblog_1%3a34.0.4-1build3_arm64.deb ...
 Unpacking android-liblog:arm64 (1:34.0.4-1build3) ...
 Selecting previously unselected package android-libbase:arm64.
@@ -53,9 +49,6 @@ Unpacking adb (1:34.0.4-1build3) ...
 Selecting previously unselected package android-sdk-platform-tools-common.
 Preparing to unpack .../7-android-sdk-platform-tools-common_28.0.2+9_all.deb ...
 Unpacking android-sdk-platform-tools-common (28.0.2+9) ...
-Preparing to unpack .../8-libprotobuf-lite32t64_3.21.12-8.2ubuntu0.4_arm64.deb ...
-Unpacking libprotobuf-lite32t64:arm64 (3.21.12-8.2ubuntu0.4) over (3.21.12-8.2ubuntu0.3) ...
-Setting up libprotobuf-lite32t64:arm64 (3.21.12-8.2ubuntu0.4) ...
 Setting up libprotobuf32t64:arm64 (3.21.12-8.2ubuntu0.4) ...
 Setting up android-sdk-platform-tools-common (28.0.2+9) ...
 Setting up android-liblog:arm64 (1:34.0.4-1build3) ...
@@ -80,75 +73,17 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 Android Debug Bridge version 1.0.41
 Version 34.0.4-debian
 Installed as /usr/lib/android-sdk/platform-tools/adb
-Running on Linux 6.17.0-1022-azure (aarch64)
+Running on Linux 7.0.0-1017-azure (aarch64)
 === binder ladder ===
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  wireless-regdb
-The following NEW packages will be installed:
-  linux-modules-extra-6.17.0-1022-azure wireless-regdb
-0 upgraded, 2 newly installed, 0 to remove and 97 not upgraded.
-Need to get 114 MB of archives.
-After this operation, 112 MB of additional disk space will be used.
-Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 wireless-regdb all 2026.05.30-0ubuntu1~24.04.1 [7714 B]
-Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 linux-modules-extra-6.17.0-1022-azure arm64 6.17.0-1022.22 [114 MB]
-Fetched 114 MB in 3s (38.7 MB/s)
-Selecting previously unselected package wireless-regdb.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 203319 files and directories currently installed.)
-Preparing to unpack .../wireless-regdb_2026.05.30-0ubuntu1~24.04.1_all.deb ...
-Unpacking wireless-regdb (2026.05.30-0ubuntu1~24.04.1) ...
-Selecting previously unselected package linux-modules-extra-6.17.0-1022-azure.
-Preparing to unpack .../linux-modules-extra-6.17.0-1022-azure_6.17.0-1022.22_arm64.deb ...
-Unpacking linux-modules-extra-6.17.0-1022-azure (6.17.0-1022.22) ...
-Setting up wireless-regdb (2026.05.30-0ubuntu1~24.04.1) ...
-Setting up linux-modules-extra-6.17.0-1022-azure (6.17.0-1022.22) ...
-Processing triggers for man-db (2.12.0-4build2) ...
-Not building database; man-db/auto-update is not 'true'.
-Processing triggers for linux-image-6.17.0-1022-azure (6.17.0-1022.22) ...
-/etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-6.17.0-1022-azure
-W: Possible missing firmware /lib/firmware/renesas_usb_fw.mem for built-in driver xhci_pci_renesas
-flash-kernel: deferring update (trigger activated)
-/etc/kernel/postinst.d/zz-flash-kernel:
-flash-kernel: deferring update (trigger activated)
-/etc/kernel/postinst.d/zz-update-grub:
-Sourcing file `/etc/default/grub'
-Sourcing file `/etc/default/grub.d/40-force-partuuid.cfg'
-Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
-Sourcing file `/etc/default/grub.d/99-runner-performance.cfg'
-Generating grub configuration file ...
-GRUB_FORCE_PARTUUID is set, will attempt initrdless boot
-Found linux image: /boot/vmlinuz-6.17.0-1022-azure
-Found initrd image: /boot/initrd.img-6.17.0-1022-azure
-Warning: os-prober will not be executed to detect other bootable partitions.
-Systems on them will not be added to the GRUB boot configuration.
-Check GRUB_DISABLE_OS_PROBER documentation entry.
-Adding boot menu entry for UEFI Firmware Settings ...
-done
-Processing triggers for flash-kernel (3.107ubuntu13~24.04.6) ...
-System running in EFI mode, skipping.
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-BINDER_OK via after-install
+BINDER_OK via direct
 Unable to find image 'redroid/redroid:11.0.0-latest' locally
 11.0.0-latest: Pulling from redroid/redroid
 06cb3c383cf0: Pulling fs layer
-06cb3c383cf0: Verifying Checksum
 06cb3c383cf0: Download complete
 06cb3c383cf0: Pull complete
 Digest: sha256:60b0810684be4578733a847be3314c50b70f73bc92405b5a627ebe9b633ebb5e
 Status: Downloaded newer image for redroid/redroid:11.0.0-latest
-82604bc1bcf65fc7687e515b6ec89b30d76aaae8ef29d23c82ea9119a334fa04
+3d0bae6aef7a1d1626dbb2f55e4be3e0532bd1cd8003c9f593cf3006a8accc3b
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 connected to localhost:5555
@@ -166,7 +101,7 @@ Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity }
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
 --- TV direct-URL pipeline (source-independent) ---
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
-/home/runner/work/_temp/d4b232e7-3df8-4b9f-8452-aa21dc2a9f35.sh: line 130: [: 0
+/home/runner/work/_temp/f883721b-f982-44e0-b106-3f762cf2c1d3.sh: line 130: [: 0
 0: integer expression expected
 --- TV TLS sim (dual-store ISRG Root X1 removal) ---
 Success
@@ -178,50 +113,50 @@ Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
 --- PHONE search repro ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
-/home/runner/work/_temp/d4b232e7-3df8-4b9f-8452-aa21dc2a9f35.sh: line 309: PPID: readonly variable
+/home/runner/work/_temp/f883721b-f982-44e0-b106-3f762cf2c1d3.sh: line 309: PPID: readonly variable
 --- PHONE direct-URL pipeline ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras) }
-/home/runner/work/_temp/d4b232e7-3df8-4b9f-8452-aa21dc2a9f35.sh: line 335: [: 0
+/home/runner/work/_temp/f883721b-f982-44e0-b106-3f762cf2c1d3.sh: line 335: [: 0
 0: integer expression expected
 REDROID_BOOTED
 TV_INSTALL_OK
-TV_FIRST_ALIVE pid=1887
+TV_FIRST_ALIVE pid=1896
 TV_FIRST_FATAL_COUNT=0
-TV_PROCESS_ALIVE pid=1981
+TV_PROCESS_ALIVE pid=1991
 TV_FATAL_COUNT=0
-TV_AUTOPLAY_UNCONFIRMED
-TV_FIRST_TRACK load=none start=none errors=0
+TV_AUTOPLAY_OK
+TV_FIRST_TRACK load=2755496359 start=3449064757 errors=1
 TV_FIRST_TRACK_FAIL
-TV_DIRECT_STARTED
-TV_DIRECT_PLAYER_ERRORS=0
+TV_DIRECT_NOT_STARTED
+TV_DIRECT_PLAYER_ERRORS=1
 TV_DIRECT_POSITION p1=0
 0 p2=0
 0
-TV_DIRECT_ALIVE pid=2061
-TV_HOME_BASE_META=13
+TV_DIRECT_ALIVE pid=2094
+TV_HOME_BASE_META=3
 TV_TLS_PRE_SYSTEM_X1=present
 TV_TLS_ISO_SYSTEM=ok
 TV_TLS_ISO_APEX=absent
 TV_TLS_ISO_ESTABLISHED=1
 TV_TLS_SIM_MODE=dual
-TV_TLS_SIM_META=6
+TV_TLS_SIM_META=12
 TV_TLS_BUNDLED_HITS=0
 TV_TLS_SSL_ERRS=0
 TV_TLS_SIM_INCONCLUSIVE
 PHONE_INSTALL_OK
-PHONE_FIRST_ALIVE pid=2340
+PHONE_FIRST_ALIVE pid=2370
 PHONE_FIRST_FATAL_COUNT=0
-PHONE_PROCESS_ALIVE pid=2435
+PHONE_PROCESS_ALIVE pid=2469
 PHONE_FATAL_COUNT=0
 PHONE_SEARCH_OPEN_OK
 PHONE_SEARCH_RESULTS=7
 PHONE_SEARCH_ANR_COUNT=0
 PHONE_SEARCH_FATAL_COUNT=0
-PHONE_SEARCH_ALIVE pid=2525
-PHONE_DIRECT_STARTED
-PHONE_DIRECT_PLAYER_ERRORS=0
+PHONE_SEARCH_ALIVE pid=2559
+PHONE_DIRECT_NOT_STARTED
+PHONE_DIRECT_PLAYER_ERRORS=1
 PHONE_DIRECT_POSITION p1=0
 0 p2=0
 0
-PHONE_DIRECT_ALIVE pid=2740
-SMOKE_DONE date=2026-10-23T03:54:32Z sha=b4adf5bba75573b463b726c251abeffaef2ee70a
+PHONE_DIRECT_ALIVE pid=2762
+SMOKE_DONE date=2026-10-31T06:08:32Z sha=3b54c3e3c3b055bcbe3d6be6ae042e5a25bc3fc8
