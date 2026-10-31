@@ -53,53 +53,64 @@ public class PlaybackService extends Service {
     public void onCreate() {
         super.onCreate();
         createChannel();
-        // See the phone PlaybackService: the two-arg MediaSessionCompat
-        // constructor builds a flag-less PendingIntent internally; pass
-        // our own immutable one so this stays safe if targetSdk rises.
-        ComponentName mediaButton = new ComponentName(this, MediaButtonReceiver.class);
-        Intent mediaButtonIntent = new Intent(Intent.ACTION_MEDIA_BUTTON);
-        mediaButtonIntent.setComponent(mediaButton);
-        PendingIntent mediaButtonPi = PendingIntent.getBroadcast(this, 0,
-                mediaButtonIntent, PendingIntent.FLAG_IMMUTABLE);
-        mediaSession = new MediaSessionCompat(this, "AlgerTV",
-                mediaButton, mediaButtonPi);
-        mediaSession.setFlags(MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS
-                | MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
-        mediaSession.setCallback(new MediaSessionCompat.Callback() {
-            @Override
-            public void onPlay() {
-                PlayerController.get().resume();
-            }
+        try {
+            ComponentName mediaButton = new ComponentName(this, MediaButtonReceiver.class);
+            Intent mediaButtonIntent = new Intent(Intent.ACTION_MEDIA_BUTTON);
+            mediaButtonIntent.setComponent(mediaButton);
+            PendingIntent mediaButtonPi = PendingIntent.getBroadcast(this, 0,
+                    mediaButtonIntent, PendingIntent.FLAG_IMMUTABLE);
+            mediaSession = new MediaSessionCompat(this, "AlgerTV",
+                    mediaButton, mediaButtonPi);
+            mediaSession.setFlags(MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS
+                    | MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
+            mediaSession.setCallback(new MediaSessionCompat.Callback() {
+                @Override
+                public void onPlay() {
+                    PlayerController pc = PlayerController.get();
+                    if (pc != null) pc.resume();
+                }
 
-            @Override
-            public void onPause() {
-                PlayerController.get().pause();
-            }
+                @Override
+                public void onPause() {
+                    PlayerController pc = PlayerController.get();
+                    if (pc != null) pc.pause();
+                }
 
-            @Override
-            public void onSkipToNext() {
-                PlayerController.get().playNext();
-            }
+                @Override
+                public void onSkipToNext() {
+                    PlayerController pc = PlayerController.get();
+                    if (pc != null) pc.playNext();
+                }
 
-            @Override
-            public void onSkipToPrevious() {
-                PlayerController.get().playPrev();
-            }
+                @Override
+                public void onSkipToPrevious() {
+                    PlayerController pc = PlayerController.get();
+                    if (pc != null) pc.playPrev();
+                }
 
-            @Override
-            public void onSeekTo(long pos) {
-                PlayerController.get().seekTo((int) pos);
+                @Override
+                public void onSeekTo(long pos) {
+                    PlayerController pc = PlayerController.get();
+                    if (pc != null) pc.seekTo((int) pos);
+                }
+            });
+            mediaSession.setActive(true);
+            PlayerController pc = PlayerController.get();
+            if (pc != null) pc.addListener(controllerListener);
+            Log.i(App.TAG, "PlaybackService onCreate");
+        } catch (Exception e) {
+            Log.w(App.TAG, "PlaybackService onCreate failed: " + e.getMessage());
+            if (mediaSession != null) {
+                mediaSession.release();
+                mediaSession = null;
             }
-        });
-        mediaSession.setActive(true);
-        PlayerController.get().addListener(controllerListener);
-        Log.i(App.TAG, "PlaybackService onCreate");
+        }
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null && intent.getAction() != null) {
-            PlayerController pc = PlayerController.get();
+        PlayerController pc = PlayerController.get();
+        if (intent != null && intent.getAction() != null && pc != null) {
             switch (intent.getAction()) {
                 case ACTION_PLAY_PAUSE:
                     pc.togglePlayPause();
@@ -114,11 +125,7 @@ public class PlaybackService extends Service {
                     break;
             }
         }
-        // Started via startForegroundService on API 26+: with nothing to
-        // play, refresh() would never call startForeground and Android
-        // would kill the process (ForegroundServiceDidNotStartInTime).
-        PlayerController pc0 = PlayerController.get();
-        if (pc0 == null || pc0.currentSong() == null) {
+        if (pc == null || pc.currentSong() == null) {
             stopSelf();
             return START_NOT_STICKY;
         }
@@ -133,10 +140,12 @@ public class PlaybackService extends Service {
 
     @Override
     public void onDestroy() {
-        PlayerController.get().removeListener(controllerListener);
+        PlayerController pc = PlayerController.get();
+        if (pc != null) pc.removeListener(controllerListener);
         if (mediaSession != null) {
             mediaSession.setActive(false);
             mediaSession.release();
+            mediaSession = null;
         }
         super.onDestroy();
     }
@@ -160,50 +169,79 @@ public class PlaybackService extends Service {
 
     private void refresh() {
         PlayerController pc = PlayerController.get();
+        if (pc == null || mediaSession == null) return;
         Song song = pc.currentSong();
         if (song == null) {
             stopForeground(false);
             return;
         }
-        // MediaSession metadata + state
-        MediaMetadataCompat metadata = new MediaMetadataCompat.Builder()
-                .putString(MediaMetadataCompat.METADATA_KEY_TITLE, song.name)
-                .putString(MediaMetadataCompat.METADATA_KEY_ARTIST, song.artistsText)
-                .putString(MediaMetadataCompat.METADATA_KEY_ALBUM, song.albumName)
-                .putLong(MediaMetadataCompat.METADATA_KEY_DURATION, pc.getDuration())
-                .build();
-        mediaSession.setMetadata(metadata);
-        long actions = PlaybackStateCompat.ACTION_PLAY | PlaybackStateCompat.ACTION_PAUSE
-                | PlaybackStateCompat.ACTION_PLAY_PAUSE | PlaybackStateCompat.ACTION_SKIP_TO_NEXT
-                | PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS | PlaybackStateCompat.ACTION_SEEK_TO;
-        PlaybackStateCompat state = new PlaybackStateCompat.Builder()
-                .setActions(actions)
-                .setState(pc.isPlaying() ? PlaybackStateCompat.STATE_PLAYING
-                                : PlaybackStateCompat.STATE_PAUSED,
-                        pc.getPosition(), 1.0f)
-                .build();
-        mediaSession.setPlaybackState(state);
 
-        Intent openIntent = new Intent(this, PlayerActivity.class);
-        openIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, openIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        try {
+            MediaMetadataCompat metadata = new MediaMetadataCompat.Builder()
+                    .putString(MediaMetadataCompat.METADATA_KEY_TITLE, song.name)
+                    .putString(MediaMetadataCompat.METADATA_KEY_ARTIST, song.artistsText)
+                    .putString(MediaMetadataCompat.METADATA_KEY_ALBUM, song.albumName)
+                    .putLong(MediaMetadataCompat.METADATA_KEY_DURATION, pc.getDuration())
+                    .build();
+            mediaSession.setMetadata(metadata);
 
-        Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(android.R.drawable.ic_media_play)
-                .setContentTitle(song.name)
-                .setContentText(song.artistsText)
-                .setContentIntent(contentIntent)
-                .setOngoing(pc.isPlaying())
-                .addAction(android.R.drawable.ic_media_previous, "上一首",
-                        serviceIntent(ACTION_PREV, 1))
-                .addAction(pc.isPlaying() ? android.R.drawable.ic_media_pause
-                                : android.R.drawable.ic_media_play,
-                        pc.isPlaying() ? "暂停" : "播放", serviceIntent(ACTION_PLAY_PAUSE, 2))
-                .addAction(android.R.drawable.ic_media_next, "下一首",
-                        serviceIntent(ACTION_NEXT, 3))
-                .build();
-        startForeground(NOTIF_ID, notification);
+            long actions = PlaybackStateCompat.ACTION_PLAY | PlaybackStateCompat.ACTION_PAUSE
+                    | PlaybackStateCompat.ACTION_PLAY_PAUSE | PlaybackStateCompat.ACTION_SKIP_TO_NEXT
+                    | PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS | PlaybackStateCompat.ACTION_SEEK_TO;
+            PlaybackStateCompat state = new PlaybackStateCompat.Builder()
+                    .setActions(actions)
+                    .setState(pc.isPlaying() ? PlaybackStateCompat.STATE_PLAYING
+                                    : PlaybackStateCompat.STATE_PAUSED,
+                            pc.getPosition(), 1.0f)
+                    .build();
+            mediaSession.setPlaybackState(state);
+
+            Intent openIntent = new Intent(this, PlayerActivity.class);
+            openIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            PendingIntent contentIntent = PendingIntent.getActivity(this, 0, openIntent,
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+            Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
+                    .setSmallIcon(android.R.drawable.ic_media_play)
+                    .setContentTitle(song.name)
+                    .setContentText(song.artistsText)
+                    .setContentIntent(contentIntent)
+                    .setOngoing(pc.isPlaying())
+                    .addAction(android.R.drawable.ic_media_previous, "上一首",
+                            serviceIntent(ACTION_PREV, 1))
+                    .addAction(pc.isPlaying() ? android.R.drawable.ic_media_pause
+                                    : android.R.drawable.ic_media_play,
+                            pc.isPlaying() ? "暂停" : "播放", serviceIntent(ACTION_PLAY_PAUSE, 2))
+                    .addAction(android.R.drawable.ic_media_next, "下一首",
+                            serviceIntent(ACTION_NEXT, 3))
+                    .build();
+
+            startForegroundCompat(notification);
+        } catch (Exception e) {
+            Log.w(App.TAG, "PlaybackService refresh failed: " + e.getMessage());
+            try {
+                stopForeground(false);
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    private void startForegroundCompat(Notification notification) {
+        try {
+            if (Build.VERSION.SDK_INT >= 29) {
+                startForeground(NOTIF_ID, notification,
+                        android.app.ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK);
+            } else {
+                startForeground(NOTIF_ID, notification);
+            }
+        } catch (Exception e) {
+            Log.w(App.TAG, "startForeground typed failed: " + e.getMessage());
+            try {
+                startForeground(NOTIF_ID, notification);
+            } catch (Exception e2) {
+                Log.w(App.TAG, "startForeground plain failed: " + e2.getMessage());
+            }
+        }
     }
 
     private PendingIntent serviceIntent(String action, int requestCode) {
