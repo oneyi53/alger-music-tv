@@ -2,8 +2,10 @@ package com.wushisan.algertv.playback;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
@@ -17,10 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- * Owns the MediaPlayer and the play queue (single process, app-wide singleton).
- * PlaybackService mirrors this state into a foreground notification + media session.
- */
 public class PlayerController {
 
     public interface Listener {
@@ -29,6 +27,16 @@ public class PlayerController {
         void onPlaybackStateChanged(boolean playing);
 
         void onPlaybackError(String message);
+    }
+
+    private enum PlaybackState {
+        IDLE,
+        PREPARING,
+        PREPARED,
+        PLAYING,
+        PAUSED,
+        STOPPED,
+        ERROR
     }
 
     private static PlayerController sInstance;
@@ -41,24 +49,16 @@ public class PlayerController {
     private MediaPlayer mediaPlayer;
     private List<Song> queue = new ArrayList<>();
     private int index = -1;
-    private boolean playing = false;
-    private boolean preparing = false;
-    /**
-     * True only between onPrepared and the next load/reset. MediaPlayer
-     * position/duration/seek calls are valid solely inside this window;
-     * calling them earlier (a UI ticker polling while prepareAsync is
-     * still in flight, or PlaybackService.refresh on song change) makes
-     * the player post error (1, -38) to the error listener — which used
-     * to kill the first track of every queue on real devices.
-     */
-    private boolean prepared = false;
     private long loadToken = 0;
+
+    private PlaybackState state = PlaybackState.IDLE;
+    private PlaybackState lastReportedState = null;
 
     private final AudioManager.OnAudioFocusChangeListener focusListener =
             new AudioManager.OnAudioFocusChangeListener() {
                 @Override
                 public void onAudioFocusChange(int focusChange) {
-                    if (focusChange == AudioManager.AUDIOFOCUS_LOSS && playing) {
+                    if (focusChange == AudioManager.AUDIOFOCUS_LOSS && state == PlaybackState.PLAYING) {
                         pause();
                     }
                 }
@@ -73,7 +73,7 @@ public class PlayerController {
     }
 
     private PlayerController(Context ctx) {
-        this.appContext = ctx;
+        this.appContext = ctx.getApplicationContext();
         this.audioManager = (AudioManager) ctx.getSystemService(Context.AUDIO_SERVICE);
     }
 
@@ -84,8 +84,6 @@ public class PlayerController {
     public void removeListener(Listener l) {
         listeners.remove(l);
     }
-
-    // ------------------------------------------------------------- state
 
     public boolean hasQueue() {
         return index >= 0 && index < queue.size();
@@ -104,19 +102,20 @@ public class PlayerController {
     }
 
     public boolean isPlaying() {
-        return playing;
+        return state == PlaybackState.PLAYING;
     }
 
     public boolean isPreparing() {
-        return preparing;
+        return state == PlaybackState.PREPARING;
     }
 
     public int getPosition() {
-        // Never touch the player outside the prepared window: in Idle /
-        // Initialized / Preparing states getCurrentPosition() posts an
-        // error (1, -38) to the error listener even when called inside
-        // try/catch — the exception is not the delivery mechanism.
-        if (!prepared || mediaPlayer == null) return 0;
+        if (state != PlaybackState.PREPARED
+                && state != PlaybackState.PLAYING
+                && state != PlaybackState.PAUSED) {
+            return 0;
+        }
+        if (mediaPlayer == null) return 0;
         try {
             return mediaPlayer.getCurrentPosition();
         } catch (Exception ignored) {
@@ -125,20 +124,16 @@ public class PlayerController {
     }
 
     public int getDuration() {
-        // Same guard as getPosition(): fall back to playlist metadata
-        // until the player is actually prepared.
-        if (prepared && mediaPlayer != null) {
+        if (mediaPlayer != null) {
             try {
-                int d = mediaPlayer.getDuration();
-                if (d > 0) return d;
+                int dur = mediaPlayer.getDuration();
+                if (dur > 0) return dur;
             } catch (Exception ignored) {
             }
         }
         Song s = currentSong();
         return s == null ? 0 : (int) s.durationMs;
     }
-
-    // ------------------------------------------------------------- control
 
     public void playQueue(List<Song> songs, int startIndex) {
         if (songs == null || songs.isEmpty()) return;
@@ -150,35 +145,52 @@ public class PlayerController {
 
     public void togglePlayPause() {
         if (!hasQueue()) return;
-        if (playing) pause();
+        if (isPlaying()) pause();
         else resume();
     }
 
     public void resume() {
-        if (preparing) return; // onPrepared starts playback when ready
-        if (mediaPlayer == null || !prepared) {
+        if (!hasQueue()) return;
+        if (state == PlaybackState.PREPARING) return;
+
+        if (mediaPlayer == null
+                || state == PlaybackState.IDLE
+                || state == PlaybackState.STOPPED
+                || state == PlaybackState.ERROR) {
             startCurrent();
             return;
         }
-        requestFocus();
-        try {
-            mediaPlayer.start();
-            setPlaying(true);
-        } catch (Exception e) {
-            startCurrent();
+
+        if (state == PlaybackState.PREPARED || state == PlaybackState.PAUSED) {
+            requestFocus();
+            try {
+                mediaPlayer.start();
+                updateState(PlaybackState.PLAYING);
+            } catch (Exception e) {
+                startCurrent();
+            }
         }
     }
 
     public void pause() {
+        if (mediaPlayer == null) {
+            updateState(PlaybackState.PAUSED);
+            return;
+        }
+
         try {
-            if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.pause();
+            if (mediaPlayer.isPlaying()) mediaPlayer.pause();
         } catch (Exception ignored) {
         }
-        setPlaying(false);
+
+        if (state != PlaybackState.ERROR) {
+            updateState(PlaybackState.PAUSED);
+        }
     }
 
     public void playNext() {
         if (!hasQueue()) return;
+
         if (index + 1 < queue.size()) {
             index++;
             startCurrent();
@@ -189,10 +201,12 @@ public class PlayerController {
 
     public void playPrev() {
         if (!hasQueue()) return;
+
         if (getPosition() > 3000) {
             seekTo(0);
             return;
         }
+
         if (index > 0) {
             index--;
             startCurrent();
@@ -202,7 +216,7 @@ public class PlayerController {
     }
 
     public void seekBy(int deltaMs) {
-        if (mediaPlayer == null || !prepared) return;
+        if (mediaPlayer == null || (state != PlaybackState.PLAYING && state != PlaybackState.PAUSED)) return;
         try {
             int pos = mediaPlayer.getCurrentPosition() + deltaMs;
             int dur = mediaPlayer.getDuration();
@@ -214,7 +228,7 @@ public class PlayerController {
     }
 
     public void seekTo(int posMs) {
-        if (mediaPlayer == null || !prepared) return;
+        if (mediaPlayer == null || (state != PlaybackState.PLAYING && state != PlaybackState.PAUSED)) return;
         try {
             mediaPlayer.seekTo(posMs);
         } catch (Exception ignored) {
@@ -223,27 +237,26 @@ public class PlayerController {
 
     public void stopPlayback() {
         loadToken++;
+
         try {
-            if (mediaPlayer != null) mediaPlayer.reset();
+            if (mediaPlayer != null) {
+                mediaPlayer.setOnPreparedListener(null);
+                mediaPlayer.setOnCompletionListener(null);
+                mediaPlayer.setOnErrorListener(null);
+                mediaPlayer.reset();
+                mediaPlayer.release();
+                mediaPlayer = null;
+            }
         } catch (Exception ignored) {
         }
-        preparing = false;
-        prepared = false;
-        setPlaying(false);
-    }
 
-    // ------------------------------------------------------------- internals
+        updateState(PlaybackState.STOPPED);
+    }
 
     private void ensureService() {
         try {
             Intent i = new Intent(appContext, PlaybackService.class);
-            // The playback service is a foreground service: on API 26+ it
-            // must be started via startForegroundService (plain startService
-            // throws IllegalStateException once the app is not in the
-            // foreground on Android 12+/targetSdk 31+, which the phone
-            // flavor hits — playback entry points like notification
-            // actions and auto-advance reach here from the background).
-            if (android.os.Build.VERSION.SDK_INT >= 26) {
+            if (Build.VERSION.SDK_INT >= 26) {
                 androidx.core.content.ContextCompat.startForegroundService(appContext, i);
             } else {
                 appContext.startService(i);
@@ -255,24 +268,43 @@ public class PlayerController {
 
     private void ensurePlayer() {
         if (mediaPlayer != null) return;
+
         mediaPlayer = new MediaPlayer();
         mediaPlayer.setWakeMode(appContext, PowerManager.PARTIAL_WAKE_LOCK);
-        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            mediaPlayer.setAudioAttributes(new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .build());
+        } else {
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        }
+
         mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
-                prepared = true;
-                preparing = false;
+                if (loadToken == 0) return;
+
+                updateState(PlaybackState.PREPARED);
                 Song s = currentSong();
                 Log.i(App.TAG, "PLAYER_PREPARED id=" + (s == null ? "?" : s.id)
                         + " dur=" + mp.getDuration());
                 requestFocus();
-                mp.start();
-                setPlaying(true);
-                Log.i(App.TAG, "PLAYER_STARTED id=" + (s == null ? "?" : s.id));
-                notifySongChanged();
+
+                try {
+                    mp.start();
+                    updateState(PlaybackState.PLAYING);
+                    Log.i(App.TAG, "PLAYER_STARTED id=" + (s == null ? "?" : s.id));
+                    notifySongChanged();
+                } catch (Exception e) {
+                    updateState(PlaybackState.ERROR);
+                    notifyError("播放启动失败");
+                    advanceToNextOrStop();
+                }
             }
         });
+
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -281,32 +313,23 @@ public class PlayerController {
                     index++;
                     startCurrent();
                 } else {
-                    setPlaying(false);
+                    updateState(PlaybackState.PAUSED);
                 }
             }
         });
+
         mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() {
             @Override
             public boolean onError(MediaPlayer mp, int what, int extra) {
-                // -38 (INVALID_OPERATION) is a client-side state error,
-                // not a stream failure: something polled or sought the
-                // player outside the prepared window. It must never kill
-                // a track — the pre-fix handler treated it as fatal and
-                // skipped the first song of every queue.
                 if (extra == -38) {
-                    Log.w(App.TAG, "PLAYER_ERROR_IGNORED -38 idx=" + index
-                            + " prepared=" + prepared);
+                    Log.w(App.TAG, "PLAYER_ERROR_IGNORED -38 idx=" + index + " state=" + state);
                     return true;
                 }
+
                 Log.e(App.TAG, "PLAYER_ERROR what=" + what + " extra=" + extra + " idx=" + index);
-                prepared = false;
-                preparing = false;
-                setPlaying(false);
+                updateState(PlaybackState.ERROR);
                 notifyError("播放失败，自动跳到下一首");
-                if (index + 1 < queue.size()) {
-                    index++;
-                    startCurrent();
-                }
+                advanceToNextOrStop();
                 return true;
             }
         });
@@ -315,45 +338,59 @@ public class PlayerController {
     private void startCurrent() {
         final Song song = currentSong();
         if (song == null) return;
+
         ensurePlayer();
         final long token = ++loadToken;
-        prepared = false;
-        preparing = true;
-        setPlaying(false);
-        notifySongChanged();
+
+        updateState(PlaybackState.PREPARING);
         Log.i(App.TAG, "PLAYER_LOAD id=" + song.id + " name=" + song.name);
+
         MusicRepository.get().resolvePlayUrl(song, new MusicRepository.Result<String>() {
             @Override
             public void onSuccess(final String url) {
-                if (token != loadToken) return; // superseded
+                if (token != loadToken || mediaPlayer == null) return;
+
                 try {
                     mediaPlayer.reset();
                     mediaPlayer.setDataSource(url);
                     mediaPlayer.prepareAsync();
                     Log.i(App.TAG, "PLAYER_PREPARING id=" + song.id);
                 } catch (Exception e) {
-                    preparing = false;
+                    if (token != loadToken) return;
+                    updateState(PlaybackState.ERROR);
                     Log.e(App.TAG, "PLAYER_SETDATA_FAIL: " + e.getMessage());
                     notifyError("无法播放该歌曲");
-                    if (index + 1 < queue.size()) {
-                        index++;
-                        startCurrent();
-                    }
+                    advanceToNextOrStop();
                 }
             }
 
             @Override
             public void onError(String message) {
                 if (token != loadToken) return;
-                preparing = false;
+                updateState(PlaybackState.ERROR);
                 Log.e(App.TAG, "PLAYER_URL_FAIL id=" + song.id + ": " + message);
                 notifyError("无播放源：" + song.name);
-                if (index + 1 < queue.size()) {
-                    index++;
-                    startCurrent();
-                }
+                advanceToNextOrStop();
             }
         });
+    }
+
+    private void advanceToNextOrStop() {
+        if (index + 1 < queue.size()) {
+            index++;
+            startCurrent();
+        } else {
+            stopPlayback();
+        }
+    }
+
+    private void updateState(PlaybackState newState) {
+        if (state == newState) {
+            notifyState();
+            return;
+        }
+        state = newState;
+        notifyState();
     }
 
     private void requestFocus() {
@@ -364,16 +401,12 @@ public class PlayerController {
         }
     }
 
-    private void setPlaying(boolean value) {
-        if (playing == value) {
-            notifyState();
+    private void notifyState() {
+        final boolean playing = state == PlaybackState.PLAYING;
+        if (lastReportedState == state) {
             return;
         }
-        playing = value;
-        notifyState();
-    }
-
-    private void notifyState() {
+        lastReportedState = state;
         mainHandler.post(new Runnable() {
             @Override
             public void run() {
