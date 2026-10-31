@@ -12,6 +12,8 @@ import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
@@ -60,6 +62,9 @@ public final class SslSupport {
         try {
             X509TrustManager systemTm = systemTrustManager();
             X509TrustManager bundledTm = bundledTrustManager(ctx);
+            if (systemTm == null && bundledTm == null) {
+                throw new IllegalStateException("No usable X509TrustManager found");
+            }
             trustManager = composite(systemTm, bundledTm);
             SSLContext sc = SSLContext.getInstance("TLS");
             sc.init(null, new TrustManager[]{trustManager}, null);
@@ -73,7 +78,17 @@ public final class SslSupport {
             } catch (Exception ignored) {
                 trustManager = null;
             }
-            socketFactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+            if (trustManager != null) {
+                try {
+                    SSLContext sc = SSLContext.getInstance("TLS");
+                    sc.init(null, new TrustManager[]{trustManager}, null);
+                    socketFactory = sc.getSocketFactory();
+                } catch (Exception ignored2) {
+                    socketFactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+                }
+            } else {
+                socketFactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+            }
         }
     }
 
@@ -121,12 +136,19 @@ public final class SslSupport {
     }
 
     private static X509TrustManager composite(final X509TrustManager systemTm,
-                                                final X509TrustManager bundledTm) {
+                                                 final X509TrustManager bundledTm) {
+        if (systemTm == null) return bundledTm;
+        if (bundledTm == null) return systemTm;
+
         return new X509TrustManager() {
             @Override
             public void checkClientTrusted(X509Certificate[] chain, String authType)
                     throws CertificateException {
-                systemTm.checkClientTrusted(chain, authType);
+                try {
+                    systemTm.checkClientTrusted(chain, authType);
+                } catch (CertificateException e) {
+                    bundledTm.checkClientTrusted(chain, authType);
+                }
             }
 
             @Override
@@ -135,7 +157,6 @@ public final class SslSupport {
                 try {
                     systemTm.checkServerTrusted(chain, authType);
                 } catch (CertificateException e) {
-                    if (bundledTm == null) throw e;
                     bundledTm.checkServerTrusted(chain, authType);
                     Log.i(App.TAG, "TLS_BUNDLED_ROOT_USED");
                 }
@@ -143,7 +164,22 @@ public final class SslSupport {
 
             @Override
             public X509Certificate[] getAcceptedIssuers() {
-                return systemTm.getAcceptedIssuers();
+                List<X509Certificate> issuers = new ArrayList<>();
+                X509Certificate[] systemIssuers = systemTm.getAcceptedIssuers();
+                X509Certificate[] bundledIssuers = bundledTm.getAcceptedIssuers();
+                if (systemIssuers != null) {
+                    for (X509Certificate cert : systemIssuers) {
+                        issuers.add(cert);
+                    }
+                }
+                if (bundledIssuers != null) {
+                    for (X509Certificate cert : bundledIssuers) {
+                        if (!issuers.contains(cert)) {
+                            issuers.add(cert);
+                        }
+                    }
+                }
+                return issuers.toArray(new X509Certificate[0]);
             }
         };
     }
