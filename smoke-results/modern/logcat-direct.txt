@@ -1,513 +1,581 @@
---------- beginning of main
-10-31 08:30:51.642   108   108 E ClientCache: failed to get buffer, invalid process token
-10-31 08:30:51.642   108   108 E ClientCache: failed to get buffer, could not retrieve buffer
-10-31 08:30:51.642   108   108 E ClientCache: failed to get buffer, invalid process token
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a1f0
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1b270
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1ccb0
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a130
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c24a50
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2b950
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c30090
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c302d0
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2d570
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c24a50
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c24a50
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c302d0
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c30090
-10-31 08:30:51.643   108   116 W TransactionTracing: Could not find layer handle 0x74c250c30090
-10-31 08:30:51.645   108   108 E BpTransactionCompletedListener: Failed to transact (-32)
 --------- beginning of system
-10-31 08:30:51.646   245   268 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
-10-31 08:30:51.649   871  1302 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.649   871  1302 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.649   871  1302 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.649   871  1302 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.649   871  1302 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.649   871  1302 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.649   871  1302 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.649   871  1302 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.656   871  1302 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:51.679   245   988 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10077; state: DISABLED
-10-31 08:30:51.679   245   988 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 2000
-10-31 08:30:51.680   245   988 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
-10-31 08:30:51.681   245   988 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10077; state: ENABLED
-10-31 08:30:51.682   245   268 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10077; state: DISABLED
-10-31 08:30:51.682   245   268 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10077; state: DISABLED
-10-31 08:30:51.682   245   268 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10077; state: DISABLED
-10-31 08:30:51.682   245   268 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10077; state: ENABLED
-10-31 08:30:51.682   245   275 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10077; state: ENABLED
-10-31 08:30:51.688   153   153 D Zygote  : Forked child process 2767
-10-31 08:30:51.689   245   275 I ActivityManager: Start proc 2767:com.wushisan.algertv.phone/u0a77 for next-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
-10-31 08:30:51.694  2767  2767 I Zygote  : seccomp disabled by setenforce 0
-10-31 08:30:51.695  2767  2767 W n.algertv.phone: Unexpected CPU variant for x86: x86_64.
-10-31 08:30:51.695  2767  2767 W n.algertv.phone: Known variants: atom, sandybridge, silvermont, kabylake, default
-10-31 08:30:51.696   138   148 I adbd    : jdwp connection from 2767
-10-31 08:30:51.701  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10077; state: ENABLED
-10-31 08:30:51.707  2767  2767 V GraphicsEnvironment: ANGLE Developer option for 'com.wushisan.algertv.phone' set to: 'default'
-10-31 08:30:51.707  2767  2767 V GraphicsEnvironment: ANGLE GameManagerService for com.wushisan.algertv.phone: false
-10-31 08:30:51.707  2767  2767 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-10-31 08:30:51.708  2767  2767 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 08:30:51.709  2767  2767 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 08:30:51.710   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2efb0
-10-31 08:30:51.710   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1b510
-10-31 08:30:51.712   556   779 W Parcel  : Expecting binder but got null!
-10-31 08:30:51.714  2767  2767 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-31 08:30:51.716   245   261 D CoreBackPreview: Window{f675c13 u0 Splash Screen com.wushisan.algertv.phone}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@caa4849, mPriority=0}
-10-31 08:30:51.717   556   676 D SplashScreenView: Build android.window.SplashScreenView{95e3040 V.E...... ......ID 0,0-0,0}
-10-31 08:30:51.717   556   676 D SplashScreenView: Icon: view: android.widget.ImageView{14e3b79 V.ED..... ......I. 0,0-0,0 #10204dd android:id/splashscreen_icon_view} drawable: com.android.wm.shell.startingsurface.SplashscreenIconDrawableFactory$ImmobileIconDrawable@d0460be size: 320
-10-31 08:30:51.717   556   676 D SplashScreenView: Branding: view: android.view.View{14b451f G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-31 08:30:51.741  2767  2767 I AlgerTV : App onCreate
-10-31 08:30:51.748  2767  2785 D libEGL  : dlopen (libGLESv2_angle.so) success at 0xd8a796f094ae8615
-10-31 08:30:51.753  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10077; state: ENABLED
-10-31 08:30:51.754  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10077; state: ENABLED
-10-31 08:30:51.758  2767  2767 I AlgerTV : HOME_LOAD_START
-10-31 08:30:51.758  2767  2767 I AlgerTV : HOME_CACHE_HIT
-10-31 08:30:51.760  2767  2767 I AlgerTV : SMOKE_DIRECT_PLAY phone
-10-31 08:30:51.760  2767  2787 D TrafficStats: tagSocket(66) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.761  2767  2790 D TrafficStats: tagSocket(70) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.761  2767  2789 D TrafficStats: tagSocket(67) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.761  2767  2786 D TrafficStats: tagSocket(71) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.762  2767  2788 D TrafficStats: tagSocket(73) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.764  2767  2767 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
-10-31 08:30:51.764  2767  2767 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-31 08:30:51.765   245   261 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10077
-10-31 08:30:51.765   245   261 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10077; state: DISABLED
-10-31 08:30:51.765   245   261 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10077; state: DISABLED
-10-31 08:30:51.765   245   261 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10077; state: ENABLED
-10-31 08:30:51.766   245   261 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10077; state: DISABLED
-10-31 08:30:51.766   245   261 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
-10-31 08:30:51.767   245   261 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10077; state: DISABLED
-10-31 08:30:51.767   245   261 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10077; state: DISABLED
-10-31 08:30:51.767   245   261 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10077; state: DISABLED
-10-31 08:30:51.767   245   261 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10077; state: DISABLED
-10-31 08:30:51.774  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10077; state: DISABLED
-10-31 08:30:51.778  2767  2783 W Parcel  : Expecting binder but got null!
-10-31 08:30:51.778   245  1815 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10077; state: DISABLED
-10-31 08:30:51.779   245  1815 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10077; state: DISABLED
-10-31 08:30:51.779   245  1815 D CoreBackPreview: Window{9ac98b2 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@425cb80, mPriority=0}
-10-31 08:30:51.781   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.781   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.781   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.781   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.781   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.781   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.781   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.781   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.787  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10077; state: ENABLED
-10-31 08:30:51.789   245  1815 I MediaSessionStack: addSession to bottom of stack | record: com.wushisan.algertv.phone/AlgerPhone (userId=0)
-10-31 08:30:51.791  2767  2767 I AlgerTV : PlaybackService(phone) onCreate
-10-31 08:30:51.791  2767  2767 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
-10-31 08:30:51.791  2767  2767 E MediaPlayerNative: error (-38, 0)
-10-31 08:30:51.793   556   779 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:51.794  2767  2767 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
-10-31 08:30:51.795  2767  2767 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-10-31 08:30:51.795  2767  2767 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-10-31 08:30:51.796  2767  2767 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@5cd1161): Cookies: null
-10-31 08:30:51.797   164  1814 D NuPlayerDriver: NuPlayerDriver(0xf08c18d0) created, clientPid(2767)
-10-31 08:30:51.799  2767  2767 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-10-31 08:30:51.799  2767  2801 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@5a22486
-10-31 08:30:51.799  2767  2801 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@5cd1161): cookieHandler: java.net.CookieManager@5a22486 Cookies: null
-10-31 08:30:51.800   245   988 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (535306)
-10-31 08:30:51.852   245   261 D ConnectivityService: requestNetwork for uid/pid:10077/2767 activeRequest: null callbackRequest: 39 [NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-10-31 08:30:51.852   245   501 D ConnectivityService: NetReassign [40 : null → 100]
-10-31 08:30:51.852   245   493 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
-10-31 08:30:51.852   245   493 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
-10-31 08:30:51.852   245   493 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
-10-31 08:30:51.853   245   500 D EthernetNetworkFactory: eth0: onNetworkNeeded for request: NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
-10-31 08:30:51.853   245   500 D EthernetNetworkFactory: IpClient already started
-10-31 08:30:51.856  2767  2781 D TrafficStats: tagSocket(69) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:51.859  2767  2783 D libEGL  : dlopen (libGLESv2_angle.so) success at 0xd8a796f094ae8615
-10-31 08:30:51.874  2767  2783 W libEGL  : ANGLE Warn:vulkan_icd.cpp:311 (ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
-10-31 08:30:51.874    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
-10-31 08:30:51.877  2767  2783 I ANGLE   : Version (2.1.1 git hash: b93a9f24aa3f), Renderer (Vulkan 1.2.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)))
-10-31 08:30:51.877    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:30:51.877  2767  2783 I Gralloc4: mapper 4.x is not supported
-10-31 08:30:51.877    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:30:51.877  2767  2783 W Gralloc3: mapper 3.x is not supported
-10-31 08:30:51.878    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
-10-31 08:30:51.879    20    20 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
-10-31 08:30:51.879  2767  2783 W Gralloc4: allocator 4.x is not supported
-10-31 08:30:51.879    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
-10-31 08:30:51.879  2767  2783 W Gralloc3: allocator 3.x is not supported
-10-31 08:30:51.880  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.880  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.880  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.880  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.880  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.880  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.880  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.880  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.881  2767  2783 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
-10-31 08:30:51.885   108   115 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
-10-31 08:30:51.886  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.886  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.886  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.886  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.886  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:51.886  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.886  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:51.886  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:51.892  2767  2783 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:51.996   245   245 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
-10-31 08:30:51.998   556   556 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
-10-31 08:30:51.999   245   988 I MR2ServiceImpl: startScan | manager: 1
-10-31 08:30:51.999   556   687 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
-10-31 08:30:52.000   556   687 D MediaDeviceManager: Can not get LocalBluetoothLeBroadcast
-10-31 08:30:52.000   556   687 D MediaDeviceManager: Can not get LocalBluetoothLeBroadcast
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown center_vertical_guideline
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown action_button_guideline
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown icon
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown media_seamless
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown media_action_barrier_start
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown media_action_barrier_end
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown media_action_barrier_top
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown remove_text
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown settings
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown dismiss
-10-31 08:30:52.015   556   556 W ConstraintSet: id unknown cancel
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown center_vertical_guideline
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown action_button_guideline
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown icon
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown media_seamless
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown media_action_barrier_start
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown media_action_barrier_end
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown media_action_barrier_top
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown remove_text
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown settings
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown dismiss
-10-31 08:30:52.019   556   556 W ConstraintSet: id unknown cancel
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown center_vertical_guideline
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown action_button_guideline
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown icon
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown media_seamless
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown media_action_barrier_start
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown media_action_barrier_end
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown media_action_barrier_top
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown remove_text
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown settings
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown dismiss
-10-31 08:30:52.021   556   556 W ConstraintSet: id unknown cancel
-10-31 08:30:52.024   556  1138 D libEGL  : dlopen (libGLESv2_angle.so) success at 0xd8a796f094ae8615
-10-31 08:30:52.024   556  1138 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
-10-31 08:30:52.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a5b0
-10-31 08:30:52.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1b270
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown center_vertical_guideline
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown action_button_guideline
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown icon
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown media_seamless
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown media_action_barrier_start
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown media_action_barrier_end
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown media_action_barrier_top
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown remove_text
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown settings
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown dismiss
-10-31 08:30:52.243   556   556 W ConstraintSet: id unknown cancel
-10-31 08:30:52.323    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:30:52.323    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:30:52.328  2767  2834 D libEGL  : dlopen (libGLESv2_angle.so) success at 0xd8a796f094ae8615
-10-31 08:30:52.335  2767  2783 W Parcel  : Expecting binder but got null!
-10-31 08:30:52.336   245   988 D CoreBackPreview: Window{3990a61 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@141b247, mPriority=0}
-10-31 08:30:52.346  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:52.346  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:52.346  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:52.346  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:52.346  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:52.346  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:52.346  2767  2783 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:52.346  2767  2783 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:52.352  2767  2783 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:52.417  2767  2767 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x748d09621390, mCurrentState=4
-10-31 08:30:52.417  2767  2767 E MediaPlayerNative: error (-38, 0)
-10-31 08:30:52.419   245   265 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +739ms
-10-31 08:30:52.426  2767  2767 E MediaPlayer: Error (-38,0)
-10-31 08:30:52.426  2767  2767 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
-10-31 08:30:52.426   164  1814 D NuPlayerDriver: reset(0xf08c18d0) at state 3
-10-31 08:30:52.427   164  2816 D NuPlayerDriver: notifyResetComplete(0xf08c18d0)
-10-31 08:30:52.427   164  2833 I NuCachedSource2: caching reached eos.
-10-31 08:30:52.427   164  1814 D NuPlayerDriver: reset(0xf08c18d0) at state 0
-10-31 08:30:52.427  2767  2767 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-10-31 08:30:52.427  2767  2767 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-10-31 08:30:52.427  2767  2767 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-10-31 08:30:52.427  2767  2767 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-10-31 08:30:52.428   164  2817 W Parcel  : Expecting binder but got null!
-10-31 08:30:52.428   164  2817 E GenericSource: initFromDataSource, cannot create extractor!
-10-31 08:30:52.428   164  2817 E GenericSource: Failed to init from data source!
-10-31 08:30:52.428   164  2817 W AMessage: failed to post message as target looper for handler 0 is gone.
-10-31 08:30:52.430  2767  2767 W AlgerTV : service sees error: 播放失败，自动跳到下一首
-10-31 08:30:52.430  2767  2767 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10077; state: ENABLED
-10-31 08:30:52.443   108   116 W TransactionTracing: Could not find layer handle 0x74c250c26190
-10-31 08:30:52.443   108   116 W TransactionTracing: Could not find layer handle 0x74c250c302d0
-10-31 08:30:52.454   245   261 D CompatibilityChangeReporter: Compat change id reported: 214016041; UID 10077; state: ENABLED
-10-31 08:30:52.509   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1c410
-10-31 08:30:52.709   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1c4d0
-10-31 08:30:52.709   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1d550
-10-31 08:30:52.849   245   261 D CoreBackPreview: Window{f675c13 u0 Splash Screen com.wushisan.algertv.phone EXITING}: Setting back callback null
-10-31 08:30:52.850   245   988 W InputManager-JNI: Input channel object 'f675c13 Splash Screen com.wushisan.algertv.phone (client)' was disposed without first being removed with the input manager!
-10-31 08:30:52.899   556   675 W FrameTracker: Missing HWUI jank callback for vsyncId: 6016, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown center_vertical_guideline
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown action_button_guideline
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown icon
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown media_seamless
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown media_action_barrier_start
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown media_action_barrier_end
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown media_action_barrier_top
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown remove_text
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown settings
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown dismiss
-10-31 08:30:52.910   556   556 W ConstraintSet: id unknown cancel
-10-31 08:30:53.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2dd50
-10-31 08:30:53.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a1f0
-10-31 08:30:53.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1ca10
-10-31 08:30:53.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1ca10
-10-31 08:30:53.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a1f0
-10-31 08:30:53.690  2767  2767 I AlgerTV : HOME_META_OK id=1978921795 ms=1932
-10-31 08:30:53.909   245   988 D CoreBackPreview: Window{9135ec0 u0 Toast}: Setting back callback null
-10-31 08:30:53.910   245   988 W InputManager-JNI: Input channel object '9135ec0 Toast (client)' was disposed without first being removed with the input manager!
-10-31 08:30:53.911   245   988 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@bedef1a
-10-31 08:30:53.912   556   556 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastHide()
-10-31 08:30:53.912   556   556 W ToastPresenter: android.os.DeadObjectException
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:141)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:283)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:4)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
-10-31 08:30:53.912   556   556 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
-10-31 08:30:53.913   556   779 W Parcel  : Expecting binder but got null!
-10-31 08:30:53.914   245   261 D CoreBackPreview: Window{cbccc28 u0 Toast}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@16be2e6, mPriority=0}
-10-31 08:30:53.914   556   556 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastShow()
-10-31 08:30:53.914   556   556 W ToastPresenter: android.os.DeadObjectException
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastShown(ITransientNotificationCallback.java:130)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.widget.ToastPresenter.show(ToastPresenter.java:256)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:228)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:11)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
-10-31 08:30:53.914   556   556 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
-10-31 08:30:53.916   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:53.916   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:53.916   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:53.916   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:53.916   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:53.916   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:53.916   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:53.916   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:53.917   556   779 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:53.934  2767  2767 I AlgerTV : HOME_META_OK id=60198 ms=2176
-10-31 08:30:53.935  2767  2767 I AlgerTV : HOME_META_OK id=180106 ms=2177
-10-31 08:30:53.982  2767  2767 I AlgerTV : HOME_META_OK id=745956260 ms=2224
-10-31 08:30:54.113  2767  2767 I AlgerTV : HOME_META_OK id=2809513713 ms=2355
-10-31 08:30:54.343  2767  2767 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
-10-31 08:30:54.572  2767  2767 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
-10-31 08:30:54.627  2767  2767 I AlgerTV : HOME_META_OK id=60131 ms=2869
-10-31 08:30:54.853  2767  2767 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
-10-31 08:30:54.966  2767  2767 I AlgerTV : HOME_META_OK id=11641012 ms=3208
-10-31 08:30:55.032  2767  2767 I AlgerTV : HOME_META_OK id=71384707 ms=3274
-10-31 08:30:55.615   245  1547 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 08:30:55.702  2767  2767 I AlgerTV : HOME_META_OK id=2884035 ms=3944
-10-31 08:30:55.806  2767  2767 I AlgerTV : HOME_META_OK id=3778678 ms=4048
-10-31 08:30:56.509   245   988 D CoreBackPreview: Window{cbccc28 u0 Toast}: Setting back callback null
-10-31 08:30:56.510   245   988 W InputManager-JNI: Input channel object 'cbccc28 Toast (client)' was disposed without first being removed with the input manager!
-10-31 08:30:56.511   245   988 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@bf76379
-10-31 08:30:56.511   556   556 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastHide()
-10-31 08:30:56.511   556   556 W ToastPresenter: android.os.DeadObjectException
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:141)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:283)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:4)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
-10-31 08:30:56.511   556   556 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
-10-31 08:30:56.512   556   779 W Parcel  : Expecting binder but got null!
-10-31 08:30:56.513   245   988 D CoreBackPreview: Window{2bcad1f u0 Toast}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f01be35, mPriority=0}
-10-31 08:30:56.515   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:56.515   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:56.515   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:56.515   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:56.515   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
-10-31 08:30:56.515   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:56.515   556   779 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
-10-31 08:30:56.515   556   779 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
-10-31 08:30:56.516   556   779 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-31 08:30:56.576   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2ceb0
-10-31 08:30:56.576   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1e810
-10-31 08:30:56.576   108   116 W TransactionTracing: Could not find layer handle 0x74c250c275d0
-10-31 08:30:56.781  2767  2767 I AlgerTV : HOME_META_OK id=3779629 ms=5023
-10-31 08:30:56.868   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@c9b57e6
-10-31 08:30:56.965  2767  2767 I AlgerTV : HOME_META_OK id=991319590 ms=5207
-10-31 08:30:57.000  2767  2767 I AlgerTV : HOME_META_OK id=19723756 ms=5242
-10-31 08:30:57.000  2767  2767 I AlgerTV : HOME_DONE ms=5242 meta=13/13 fallback=false
-10-31 08:30:57.001  2767  2844 I AlgerTV : HOME_CACHE_SAVED bytes=1992
-10-31 08:30:57.453  2767  2845 D TrafficStats: tagSocket(69) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:57.454  2767  2851 D TrafficStats: tagSocket(79) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:57.454  2767  2854 D TrafficStats: tagSocket(80) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:57.552  2767  2846 D TrafficStats: tagSocket(76) with statsTag=0xffffffff, statsUid=-1
-10-31 08:30:59.109   245   988 D CoreBackPreview: Window{2bcad1f u0 Toast}: Setting back callback null
-10-31 08:30:59.110   245   988 W InputManager-JNI: Input channel object '2bcad1f Toast (client)' was disposed without first being removed with the input manager!
-10-31 08:30:59.111   245   988 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@4e8d196
-10-31 08:30:59.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c2dd50
-10-31 08:30:59.176   108   116 W TransactionTracing: Could not find layer handle 0x74c250c1a1f0
-10-31 08:30:59.453   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@58278f4
-10-31 08:31:02.039   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@58a7a92
-10-31 08:31:04.623   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@bc83060
-10-31 08:31:04.712   165   181 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-10-31 08:31:04.712   165   181 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-10-31 08:31:05.109   776  1112 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 08:31:05.109   776  1112 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-10-31 08:31:07.209   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@2d1adde
-10-31 08:31:07.760  1245  1460 W MediaProvider: isAppCloneUserPair for user 0: false
-10-31 08:31:07.760  1245  1460 V MediaProvider: Inserted id:1000000027 less than next row id backup:1000001000.
-10-31 08:31:07.762  2857  2857 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
-10-31 08:31:07.762  1245  1428 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
-10-31 08:31:07.762  1245  1428 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.762  1245  1428 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1723)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda7.run(Unknown Source:4)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:31:07.762  1245  1428 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:31:07.763  1245  1428 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
-10-31 08:31:07.763  1245  1428 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.763  1245  1428 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:690)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:743)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:31:07.763  1245  1428 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:31:07.770    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:31:07.770  2857  2859 I Gralloc4: mapper 4.x is not supported
-10-31 08:31:07.770    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
-10-31 08:31:07.770  2857  2859 W Gralloc3: mapper 3.x is not supported
-10-31 08:31:07.834   245   274 D OomAdjuster: Not killing cached processes
-10-31 08:31:07.837  1245  1754 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 08:31:07.840  1245  1754 V MediaProvider: Inserted id:1000000027 less than next row id backup:1000001000.
-10-31 08:31:07.842  1245  1754 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 08:31:07.842  1245  1428 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
-10-31 08:31:07.842  1245  1428 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.842  1245  1428 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:690)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:773)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:31:07.842  1245  1428 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:31:09.793   245   245 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@12ca33f
-10-31 08:31:12.869  1245  1428 D PickerSyncController: Fetching SyncRequestParams. Authority: com.android.providers.media.photopicker. LatestMediaCollectionInfo: Bundle[{last_media_sync_generation=36, media_collection_id=1307:5e0a14bf-7331-4d01-bdd6-e5d7a2f3efcb:external_primary}]. CachedMediaCollectionInfo: Bundle[{last_media_sync_generation=15, media_collection_id=1307:5e0a14bf-7331-4d01-bdd6-e5d7a2f3efcb:external_primary}]
-10-31 08:31:12.869  1245  1428 D PickerSyncController: SyncRequestParams. Authority: com.android.providers.media.photopicker. Result: SYNC_TYPE_INCREMENTAL
-10-31 08:31:12.869  1245  1428 I PickerSyncController: Executing SyncAdd. authority: com.android.providers.media.photopicker
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: Failed to insert picker db media. ContentValues: standard_mime_type_extension=0 size_bytes=529208 date_taken_ms=1793435451000 duration_ms=0 sync_generation=33 mime_type=image/png is_favorite=0 local_id=1000000020 is_visible=1
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: media.local_id, media.is_visible (code 2067 SQLITE_CONSTRAINT_UNIQUE)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.DatabaseUtils.executeInsert(DatabaseUtils.java:199)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.database.sqlite.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:629)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.insertMedia(PickerDbFacade.java:394)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.upsertMedia(PickerDbFacade.java:408)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.executeInternal(PickerDbFacade.java:368)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$DbWriteOperation.execute(PickerDbFacade.java:287)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.executePagedSync(PickerSyncController.java:715)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.executeSyncAdd(PickerSyncController.java:526)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.syncAllMediaFromProvider(PickerSyncController.java:464)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.syncAllMedia(PickerSyncController.java:152)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController$$ExternalSyntheticLambda0.run(Unknown Source:2)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.os.Handler.handleCallback(Handler.java:942)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.os.Looper.loopOnce(Looper.java:201)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.os.Looper.loop(Looper.java:288)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:31:12.870  1245  1428 D PickerDbFacade: Retrying failed insert as update. ContentValues: standard_mime_type_extension=0 size_bytes=529208 date_taken_ms=1793435451000 duration_ms=0 sync_generation=33 mime_type=image/png is_favorite=0 local_id=1000000020 is_visible=1
-10-31 08:31:12.870  1245  1428 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=15}]. Result count: 2. Cursor count: 2
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Executing SyncRemove. authority: com.android.providers.media.photopicker
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=15}]. Result count: 0. Cursor count: 0
-10-31 08:31:12.871  1245  1428 D PickerSyncController: Fetching SyncRequestParams. Null cloud authority. Result: SYNC_TYPE_RESET
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Executing SyncReset. authority: null
-10-31 08:31:12.871  1245  1428 I PickerSyncController: SyncReset. Authority: null. Result count: 0
-10-31 08:31:12.871  1245  1428 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Executing SyncAlbumReset. authority: com.android.providers.media.photopicker. albumId: null
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Successfully executed SyncResetAlbum. authority: com.android.providers.media.photopicker. albumId: null. Result count: 0
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Executing SyncAlbumReset. authority: null. albumId: null
-10-31 08:31:12.871  1245  1428 I PickerSyncController: Successfully executed SyncResetAlbum. authority: null. albumId: null. Result count: 0
+11-01 05:26:02.895   234   663 V ActivityManager: Got obituary of 1981:com.wushisan.algertv.phone
+--------- beginning of main
+11-01 05:26:02.895   234   663 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10077/1981, [NetworkRequest [ REQUEST id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]], android.os.BinderProxy@89d1031)
+11-01 05:26:02.895   234   297 I MediaSessionStack: removeSession | record: com.wushisan.algertv.phone/AlgerPhone (userId=0)
+11-01 05:26:02.895   234   496 D ConnectivityService: releasing NetworkRequest [ REQUEST id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ] (release request)
+11-01 05:26:02.895   234   256 W ActivityManager: setHasOverlayUi called on unknown pid: 1981
+11-01 05:26:02.895   234   495 D EthernetNetworkFactory: eth0: onNetworkUnneeded for request: NetworkRequest [ REQUEST id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
+11-01 05:26:02.896   107   107 E ClientCache: failed to get buffer, invalid process token
+11-01 05:26:02.896   107   107 E ClientCache: failed to get buffer, could not retrieve buffer
+11-01 05:26:02.896   148   148 I Zygote  : Process 1981 exited due to signal 9 (Killed)
+11-01 05:26:02.896   107   107 E ClientCache: failed to get buffer, invalid process token
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91416110
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91418e10
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9142c9d0
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91419830
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9142ebf0
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91429c10
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91421150
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91424810
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141b630
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9142ebf0
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9142ebf0
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141b630
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91421150
+11-01 05:26:02.896   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91421150
+11-01 05:26:02.897   107   107 E BpTransactionCompletedListener: Failed to transact (-32)
+11-01 05:26:02.898   234   256 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
+11-01 05:26:02.899   862  1353 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:02.899   862  1353 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:02.899   862  1353 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:02.899   862  1353 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:02.899   862  1353 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:02.899   862  1353 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:02.899   862  1353 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:02.899   862  1353 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:02.906   862  1353 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:02.920   234  1656 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10077; state: DISABLED
+11-01 05:26:02.920   234  1656 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 2000
+11-01 05:26:02.920   234  1656 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+11-01 05:26:02.921   234  1656 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10077; state: ENABLED
+11-01 05:26:02.924   234   256 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10077; state: DISABLED
+11-01 05:26:02.924   234   256 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10077; state: DISABLED
+11-01 05:26:02.924   234   256 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10077; state: DISABLED
+11-01 05:26:02.924   234   256 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10077; state: ENABLED
+11-01 05:26:02.924   234   263 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10077; state: ENABLED
+11-01 05:26:02.930   148   148 D Zygote  : Forked child process 2784
+11-01 05:26:02.930   234   263 I ActivityManager: Start proc 2784:com.wushisan.algertv.phone/u0a77 for next-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+11-01 05:26:02.937  2784  2784 I Zygote  : seccomp disabled by setenforce 0
+11-01 05:26:02.938  2784  2784 W n.algertv.phone: Unexpected CPU variant for x86: x86_64.
+11-01 05:26:02.938  2784  2784 W n.algertv.phone: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-01 05:26:02.939   122   134 I adbd    : jdwp connection from 2784
+11-01 05:26:02.943  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10077; state: ENABLED
+11-01 05:26:02.943   196   529 E statsd  : Found dropped events: 1 error -19 last atom tag 240 from uid 10077
+11-01 05:26:02.948  2784  2784 V GraphicsEnvironment: ANGLE Developer option for 'com.wushisan.algertv.phone' set to: 'default'
+11-01 05:26:02.948  2784  2784 V GraphicsEnvironment: ANGLE GameManagerService for com.wushisan.algertv.phone: false
+11-01 05:26:02.948  2784  2784 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-01 05:26:02.949  2784  2784 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:02.949  2784  2784 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:02.952  2784  2784 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 05:26:02.963   107   121 W TransactionTracing: Could not find layer handle 0x7fdb914171f0
+11-01 05:26:02.963   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91419fb0
+11-01 05:26:02.965   552   741 W Parcel  : Expecting binder but got null!
+11-01 05:26:02.966   234  2316 D CoreBackPreview: Window{999a8b4 u0 Splash Screen com.wushisan.algertv.phone}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d469052, mPriority=0}
+11-01 05:26:02.968   552   673 D SplashScreenView: Build android.window.SplashScreenView{a1917e8 V.E...... ......ID 0,0-0,0}
+11-01 05:26:02.968   552   673 D SplashScreenView: Icon: view: android.widget.ImageView{7680e01 V.ED..... ......I. 0,0-0,0 #10204dd android:id/splashscreen_icon_view} drawable: com.android.wm.shell.startingsurface.SplashscreenIconDrawableFactory$ImmobileIconDrawable@15874a6 size: 320
+11-01 05:26:02.968   552   673 D SplashScreenView: Branding: view: android.view.View{4986ee7 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-01 05:26:02.972  2784  2784 I AlgerTV : App onCreate
+11-01 05:26:02.976  2784  2803 D libEGL  : dlopen (libGLESv2_angle.so) success at 0x88ec7e2383eeb34b
+11-01 05:26:02.980  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10077; state: ENABLED
+11-01 05:26:02.981  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10077; state: ENABLED
+11-01 05:26:02.984  2784  2784 I AlgerTV : HOME_LOAD_START
+11-01 05:26:02.984  2784  2784 I AlgerTV : HOME_CACHE_HIT
+11-01 05:26:02.986  2784  2784 I AlgerTV : SMOKE_DIRECT_PLAY phone
+11-01 05:26:02.988  2784  2808 D TrafficStats: tagSocket(67) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:02.988  2784  2804 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:02.988  2784  2806 D TrafficStats: tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:02.988  2784  2805 D TrafficStats: tagSocket(71) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:02.988  2784  2807 D TrafficStats: tagSocket(66) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:02.990  2784  2784 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
+11-01 05:26:02.990  2784  2784 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+11-01 05:26:02.991   234  2382 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10077
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10077; state: DISABLED
+11-01 05:26:02.991   234  2382 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10077; state: ENABLED
+11-01 05:26:02.992   234  2382 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10077; state: DISABLED
+11-01 05:26:02.992   234  2382 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+11-01 05:26:02.992   234  2382 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10077; state: DISABLED
+11-01 05:26:02.992   234  2382 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10077; state: DISABLED
+11-01 05:26:02.992   234  2382 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10077; state: DISABLED
+11-01 05:26:02.992   234  2382 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10077; state: DISABLED
+11-01 05:26:02.999  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10077; state: DISABLED
+11-01 05:26:03.002  2784  2801 W Parcel  : Expecting binder but got null!
+11-01 05:26:03.002   234  2382 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10077; state: DISABLED
+11-01 05:26:03.003   234  2382 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10077; state: DISABLED
+11-01 05:26:03.003   234  2382 D CoreBackPreview: Window{f93c476 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a52a6e4, mPriority=0}
+11-01 05:26:03.008   234  1656 D ConnectivityService: requestNetwork for uid/pid:10077/2784 activeRequest: null callbackRequest: 39 [NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-01 05:26:03.008   234   496 D ConnectivityService: NetReassign [40 : null → 100]
+11-01 05:26:03.008   234   488 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
+11-01 05:26:03.008   234   488 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
+11-01 05:26:03.008   234   488 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
+11-01 05:26:03.008   234   495 D EthernetNetworkFactory: eth0: onNetworkNeeded for request: NetworkRequest [ REQUEST id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10077 RequestorUid: 10077 RequestorPkg: com.wushisan.algertv.phone UnderlyingNetworks: Null] ]
+11-01 05:26:03.009   234   495 D EthernetNetworkFactory: IpClient already started
+11-01 05:26:03.015  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10077; state: ENABLED
+11-01 05:26:03.016   234  1656 I MediaSessionStack: addSession to bottom of stack | record: com.wushisan.algertv.phone/AlgerPhone (userId=0)
+11-01 05:26:03.017  2784  2784 I AlgerTV : PlaybackService(phone) onCreate
+11-01 05:26:03.018  2784  2784 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
+11-01 05:26:03.018  2784  2784 E MediaPlayerNative: error (-38, 0)
+11-01 05:26:03.020  2784  2784 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
+11-01 05:26:03.021  2784  2784 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-01 05:26:03.021  2784  2784 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-01 05:26:03.021  2784  2784 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@db7d2fc): Cookies: null
+11-01 05:26:03.022   170  1736 D NuPlayerDriver: NuPlayerDriver(0xeafc0760) created, clientPid(2784)
+11-01 05:26:03.025  2784  2784 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+11-01 05:26:03.026  2784  2799 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@4a537da
+11-01 05:26:03.026  2784  2799 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@db7d2fc): cookieHandler: java.net.CookieManager@4a537da Cookies: null
+11-01 05:26:03.026   234  2382 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (292801)
+11-01 05:26:03.034   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.034   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.034   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.034   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.034   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.034   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.034   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.034   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.042  2784  2801 D libEGL  : dlopen (libGLESv2_angle.so) success at 0x88ec7e2383eeb34b
+11-01 05:26:03.043   552   741 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:03.057  2784  2801 W libEGL  : ANGLE Warn:vulkan_icd.cpp:311 (ChoosePhysicalDevice): Preferred device ICD not found. Using default physicalDevice instead.
+11-01 05:26:03.057    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+11-01 05:26:03.059  2784  2801 I ANGLE   : Version (2.1.1 git hash: b93a9f24aa3f), Renderer (Vulkan 1.2.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)))
+11-01 05:26:03.059    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:03.059  2784  2801 I Gralloc4: mapper 4.x is not supported
+11-01 05:26:03.059    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:03.059  2784  2801 W Gralloc3: mapper 3.x is not supported
+11-01 05:26:03.060    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+11-01 05:26:03.060    20    20 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+11-01 05:26:03.060  2784  2801 W Gralloc4: allocator 4.x is not supported
+11-01 05:26:03.060    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+11-01 05:26:03.061  2784  2801 W Gralloc3: allocator 3.x is not supported
+11-01 05:26:03.061  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.061  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.061  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.061  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.061  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.061  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.061  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.061  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.062  2784  2801 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-01 05:26:03.065   107   319 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+11-01 05:26:03.066  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.066  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.066  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.066  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.066  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.066  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.066  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.066  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.071  2784  2801 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:03.092  2784  2798 D TrafficStats: tagSocket(75) with statsTag=0xffffffff, statsUid=-1
+11-01 05:26:03.221   234   234 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+11-01 05:26:03.224   552   552 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
+11-01 05:26:03.224   234  2382 I MR2ServiceImpl: startScan | manager: 1
+11-01 05:26:03.225   552   680 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+11-01 05:26:03.225   552   680 D MediaDeviceManager: Can not get LocalBluetoothLeBroadcast
+11-01 05:26:03.225   552   680 D MediaDeviceManager: Can not get LocalBluetoothLeBroadcast
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown action_button_guideline
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown icon
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown media_seamless
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown media_action_barrier_start
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown media_action_barrier_end
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown media_action_barrier_top
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown remove_text
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown settings
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown dismiss
+11-01 05:26:03.234   552   552 W ConstraintSet: id unknown cancel
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown action_button_guideline
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown icon
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown media_seamless
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown media_action_barrier_start
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown media_action_barrier_end
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown media_action_barrier_top
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown remove_text
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown settings
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown dismiss
+11-01 05:26:03.237   552   552 W ConstraintSet: id unknown cancel
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown action_button_guideline
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown icon
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown media_seamless
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown media_action_barrier_start
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown media_action_barrier_end
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown media_action_barrier_top
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown remove_text
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown settings
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown dismiss
+11-01 05:26:03.238   552   552 W ConstraintSet: id unknown cancel
+11-01 05:26:03.243   552  1157 D libEGL  : dlopen (libGLESv2_angle.so) success at 0x88ec7e2383eeb34b
+11-01 05:26:03.243   552  1157 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-01 05:26:03.410    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:03.410    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:03.414  2784  2850 D libEGL  : dlopen (libGLESv2_angle.so) success at 0x88ec7e2383eeb34b
+11-01 05:26:03.420  2784  2801 W Parcel  : Expecting binder but got null!
+11-01 05:26:03.421   234  2382 D CoreBackPreview: Window{b34730a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9e74998, mPriority=0}
+11-01 05:26:03.427  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.427  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.427  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.427  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.427  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:03.427  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.427  2784  2801 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:03.427  2784  2801 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:03.429   552   552 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:03.429   552   552 W ConstraintSet: id unknown action_button_guideline
+11-01 05:26:03.429   552   552 W ConstraintSet: id unknown icon
+11-01 05:26:03.429   552   552 W ConstraintSet: id unknown media_seamless
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown media_action_barrier_start
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown media_action_barrier_end
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown media_action_barrier_top
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown remove_text
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown settings
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown dismiss
+11-01 05:26:03.430   552   552 W ConstraintSet: id unknown cancel
+11-01 05:26:03.430   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91420250
+11-01 05:26:03.430   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91419d10
+11-01 05:26:03.430   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91419d10
+11-01 05:26:03.430   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91420250
+11-01 05:26:03.433  2784  2801 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:03.486  2784  2784 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x7d1b482250c0, mCurrentState=4
+11-01 05:26:03.486  2784  2784 E MediaPlayerNative: error (-38, 0)
+11-01 05:26:03.487  2784  2784 E MediaPlayer: Error (-38,0)
+11-01 05:26:03.487  2784  2784 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
+11-01 05:26:03.488   170  1736 D NuPlayerDriver: reset(0xeafc0760) at state 3
+11-01 05:26:03.490   234   253 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +567ms
+11-01 05:26:03.490   170  2835 D NuPlayerDriver: notifyResetComplete(0xeafc0760)
+11-01 05:26:03.490   170  1736 D NuPlayerDriver: reset(0xeafc0760) at state 0
+11-01 05:26:03.491  2784  2784 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-01 05:26:03.491  2784  2784 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-01 05:26:03.491  2784  2784 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-01 05:26:03.491  2784  2784 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-01 05:26:03.491   170  2836 E GenericSource: Failed to create data source!
+11-01 05:26:03.491   170  2836 W AMessage: failed to post message as target looper for handler 0 is gone.
+11-01 05:26:03.493  2784  2784 W AlgerTV : service sees error: 播放失败，自动跳到下一首
+11-01 05:26:03.493  2784  2784 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10077; state: ENABLED
+11-01 05:26:03.497   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91418e10
+11-01 05:26:03.504   234  1198 D CompatibilityChangeReporter: Compat change id reported: 214016041; UID 10077; state: ENABLED
+11-01 05:26:03.563   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91424450
+11-01 05:26:03.763   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141cfb0
+11-01 05:26:03.966   234  2382 D CoreBackPreview: Window{999a8b4 u0 Splash Screen com.wushisan.algertv.phone EXITING}: Setting back callback null
+11-01 05:26:03.967   234  2316 W InputManager-JNI: Input channel object '999a8b4 Splash Screen com.wushisan.algertv.phone (client)' was disposed without first being removed with the input manager!
+11-01 05:26:04.017   552   672 W FrameTracker: Missing HWUI jank callback for vsyncId: 5763, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-01 05:26:04.017   552   672 W FrameTracker: Missing HWUI jank callback for vsyncId: 5835, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-01 05:26:04.096   552   552 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:04.096   552   552 W ConstraintSet: id unknown action_button_guideline
+11-01 05:26:04.096   552   552 W ConstraintSet: id unknown icon
+11-01 05:26:04.096   552   552 W ConstraintSet: id unknown media_seamless
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown media_action_barrier_start
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown media_action_barrier_end
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown media_action_barrier_top
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown remove_text
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown settings
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown dismiss
+11-01 05:26:04.097   552   552 W ConstraintSet: id unknown cancel
+11-01 05:26:04.275  2784  2784 I AlgerTV : HOME_META_OK id=1978921795 ms=1291
+11-01 05:26:04.296   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141b090
+11-01 05:26:04.296   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141cfb0
+11-01 05:26:04.296   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91424810
+11-01 05:26:04.296   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91424810
+11-01 05:26:04.296   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141cfb0
+11-01 05:26:04.696  2784  2784 I AlgerTV : HOME_META_OK id=60198 ms=1712
+11-01 05:26:04.888  2784  2784 I AlgerTV : HOME_META_OK id=180106 ms=1904
+11-01 05:26:04.909  2784  2784 I AlgerTV : HOME_META_OK id=745956260 ms=1925
+11-01 05:26:05.030   234  2316 D CoreBackPreview: Window{32ea78 u0 Toast}: Setting back callback null
+11-01 05:26:05.030   234  2316 W InputManager-JNI: Input channel object '32ea78 Toast (client)' was disposed without first being removed with the input manager!
+11-01 05:26:05.031   234  2382 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@527ce3f
+11-01 05:26:05.032   552   552 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastHide()
+11-01 05:26:05.032   552   552 W ToastPresenter: android.os.DeadObjectException
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:141)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:283)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:4)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-01 05:26:05.032   552   552 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-01 05:26:05.033   552   741 W Parcel  : Expecting binder but got null!
+11-01 05:26:05.034   234  2382 D CoreBackPreview: Window{51f9455 u0 Toast}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4d50f5b, mPriority=0}
+11-01 05:26:05.034   552   552 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastShow()
+11-01 05:26:05.034   552   552 W ToastPresenter: android.os.DeadObjectException
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastShown(ITransientNotificationCallback.java:130)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.widget.ToastPresenter.show(ToastPresenter.java:256)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:228)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:11)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-01 05:26:05.034   552   552 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-01 05:26:05.036   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:05.036   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:05.036   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:05.036   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:05.036   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:05.036   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:05.036   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:05.036   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:05.036   552   741 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:05.096   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91419230
+11-01 05:26:05.096   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141a130
+11-01 05:26:05.096   107   121 W TransactionTracing: Could not find layer handle 0x7fdb91418a50
+11-01 05:26:05.097  2784  2784 I AlgerTV : HOME_META_OK id=2809513713 ms=2113
+11-01 05:26:06.874   234  1544 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-01 05:26:07.024  2784  2784 I AlgerTV : HOME_META_OK id=60131 ms=4040
+11-01 05:26:07.049  2784  2784 I AlgerTV : HOME_META_OK id=11641012 ms=4065
+11-01 05:26:07.105  2784  2784 I AlgerTV : HOME_META_OK id=71384707 ms=4121
+11-01 05:26:07.189  2784  2784 I AlgerTV : HOME_META_OK id=19723756 ms=4205
+11-01 05:26:07.273  2784  2784 I AlgerTV : HOME_META_OK id=3778678 ms=4289
+11-01 05:26:07.630   234  2316 D CoreBackPreview: Window{51f9455 u0 Toast}: Setting back callback null
+11-01 05:26:07.630   234  2316 W InputManager-JNI: Input channel object '51f9455 Toast (client)' was disposed without first being removed with the input manager!
+11-01 05:26:07.631   234  2316 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@1a830c2
+11-01 05:26:07.631   552   552 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastHide()
+11-01 05:26:07.631   552   552 W ToastPresenter: android.os.DeadObjectException
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:141)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:283)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:4)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-01 05:26:07.631   552   552 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-01 05:26:07.632   552   741 W Parcel  : Expecting binder but got null!
+11-01 05:26:07.633   234  2316 D CoreBackPreview: Window{df0ca10 u0 Toast}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@34c970e, mPriority=0}
+11-01 05:26:07.633   552   552 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastShow()
+11-01 05:26:07.633   552   552 W ToastPresenter: android.os.DeadObjectException
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastShown(ITransientNotificationCallback.java:130)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.widget.ToastPresenter.show(ToastPresenter.java:256)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:228)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:11)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-01 05:26:07.633   552   552 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-01 05:26:07.635   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:07.635   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:07.635   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:07.635   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:07.635   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:07.635   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:07.635   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:07.635   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:07.635   552   741 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:08.148   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@371500c
+11-01 05:26:08.914  2784  2784 I AlgerTV : HOME_META_OK id=991319590 ms=5930
+11-01 05:26:09.029  2784  2784 I AlgerTV : HOME_META_OK id=3779629 ms=6045
+11-01 05:26:09.033  2784  2784 I AlgerTV : HOME_META_OK id=2884035 ms=6049
+11-01 05:26:09.033  2784  2784 I AlgerTV : HOME_DONE ms=6049 meta=13/13 fallback=false
+11-01 05:26:09.034  2784  2859 I AlgerTV : HOME_CACHE_SAVED bytes=1992
+11-01 05:26:10.230   234  2382 D CoreBackPreview: Window{df0ca10 u0 Toast}: Setting back callback null
+11-01 05:26:10.230   234  2382 W InputManager-JNI: Input channel object 'df0ca10 Toast (client)' was disposed without first being removed with the input manager!
+11-01 05:26:10.231   234  2382 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@b34854b
+11-01 05:26:10.231   552   552 W ToastPresenter: Error calling back com.wushisan.algertv.phone to notify onToastHide()
+11-01 05:26:10.231   552   552 W ToastPresenter: android.os.DeadObjectException
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:141)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:283)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:4)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:600)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:328)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:86)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1229)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:827)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7918)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-01 05:26:10.231   552   552 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-01 05:26:10.232   552   741 W Parcel  : Expecting binder but got null!
+11-01 05:26:10.233   234  2382 D CoreBackPreview: Window{40be041 u0 Toast}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@cc42b27, mPriority=0}
+11-01 05:26:10.234   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:10.234   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:10.234   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:10.234   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:10.235   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 43 usage b00: 3
+11-01 05:26:10.235   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:10.235   552   741 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+11-01 05:26:10.235   552   741 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+11-01 05:26:10.235   552   741 E OpenGLRenderer: Unable to match the desired swap behavior.
+11-01 05:26:10.567   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@ff9258a
+11-01 05:26:12.763   234  2316 D CoreBackPreview: Window{40be041 u0 Toast}: Setting back callback null
+11-01 05:26:12.763   234  2316 W InputManager-JNI: Input channel object '40be041 Toast (client)' was disposed without first being removed with the input manager!
+11-01 05:26:12.765   234  2316 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@512d740
+11-01 05:26:12.829   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141c4d0
+11-01 05:26:12.829   107   121 W TransactionTracing: Could not find layer handle 0x7fdb914289b0
+11-01 05:26:12.829   107   121 W TransactionTracing: Could not find layer handle 0x7fdb9141b630
+11-01 05:26:13.151   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@6f58018
+11-01 05:26:15.739   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@ccc1056
+11-01 05:26:17.332   171   194 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+11-01 05:26:17.332   171   194 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+11-01 05:26:17.730   770  1057 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:26:17.730   770  1057 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:26:18.323   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@7ce85c4
+11-01 05:26:18.991  1247  1471 W MediaProvider: isAppCloneUserPair for user 0: false
+11-01 05:26:18.991  1247  1471 V MediaProvider: Inserted id:1000000027 less than next row id backup:1000001000.
+11-01 05:26:18.992  2861  2861 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+11-01 05:26:18.993  1247  1440 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
+11-01 05:26:18.993  1247  1440 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:18.993  1247  1440 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1723)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda7.run(Unknown Source:4)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:18.993  1247  1440 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:26:18.993  1247  1440 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
+11-01 05:26:18.994  1247  1440 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:18.994  1247  1440 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:690)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:743)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:18.994  1247  1440 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:26:19.000    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:19.000  2861  2863 I Gralloc4: mapper 4.x is not supported
+11-01 05:26:19.000    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+11-01 05:26:19.000  2861  2863 W Gralloc3: mapper 3.x is not supported
+11-01 05:26:19.048   234   262 D OomAdjuster: Not killing cached processes
+11-01 05:26:19.051  1247  1714 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 05:26:19.054  1247  1714 V MediaProvider: Inserted id:1000000027 less than next row id backup:1000001000.
+11-01 05:26:19.055  1247  1714 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 05:26:19.056  1247  1440 E StorageManager: Failed to set extended attributes for /storage/emulated/0/modern-direct.png to set project id.: Operation not supported on transport endpoint
+11-01 05:26:19.056  1247  1440 W MediaProvider: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:19.056  1247  1440 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/modern-direct.png
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:712)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:690)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:773)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:19.056  1247  1440 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:26:20.908   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@210dbe2
+11-01 05:26:23.492   234   234 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@3d95229
+11-01 05:26:24.071  1247  1440 D PickerSyncController: Fetching SyncRequestParams. Authority: com.android.providers.media.photopicker. LatestMediaCollectionInfo: Bundle[{last_media_sync_generation=36, media_collection_id=1307:dd4b0bf3-5105-4850-9ab7-0c7fcaa12830:external_primary}]. CachedMediaCollectionInfo: Bundle[{last_media_sync_generation=15, media_collection_id=1307:dd4b0bf3-5105-4850-9ab7-0c7fcaa12830:external_primary}]
+11-01 05:26:24.071  1247  1440 D PickerSyncController: SyncRequestParams. Authority: com.android.providers.media.photopicker. Result: SYNC_TYPE_INCREMENTAL
+11-01 05:26:24.071  1247  1440 I PickerSyncController: Executing SyncAdd. authority: com.android.providers.media.photopicker
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: Failed to insert picker db media. ContentValues: standard_mime_type_extension=0 size_bytes=530483 date_taken_ms=1793510762000 duration_ms=0 sync_generation=33 mime_type=image/png is_favorite=0 local_id=1000000020 is_visible=1
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: media.local_id, media.is_visible (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.DatabaseUtils.executeInsert(DatabaseUtils.java:199)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.database.sqlite.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:629)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.insertMedia(PickerDbFacade.java:394)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.upsertMedia(PickerDbFacade.java:408)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$AddMediaOperation.executeInternal(PickerDbFacade.java:368)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.data.PickerDbFacade$DbWriteOperation.execute(PickerDbFacade.java:287)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.executePagedSync(PickerSyncController.java:715)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.executeSyncAdd(PickerSyncController.java:526)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.syncAllMediaFromProvider(PickerSyncController.java:464)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController.syncAllMedia(PickerSyncController.java:152)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at com.android.providers.media.photopicker.PickerSyncController$$ExternalSyntheticLambda0.run(Unknown Source:2)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.os.Looper.loop(Looper.java:288)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:26:24.071  1247  1440 D PickerDbFacade: Retrying failed insert as update. ContentValues: standard_mime_type_extension=0 size_bytes=530483 date_taken_ms=1793510762000 duration_ms=0 sync_generation=33 mime_type=image/png is_favorite=0 local_id=1000000020 is_visible=1
+11-01 05:26:24.072  1247  1440 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=15}]. Result count: 2. Cursor count: 2
+11-01 05:26:24.072  1247  1440 I PickerSyncController: Executing SyncRemove. authority: com.android.providers.media.photopicker
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=15}]. Result count: 0. Cursor count: 0
+11-01 05:26:24.096  1247  1440 D PickerSyncController: Fetching SyncRequestParams. Null cloud authority. Result: SYNC_TYPE_RESET
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Executing SyncReset. authority: null
+11-01 05:26:24.096  1247  1440 I PickerSyncController: SyncReset. Authority: null. Result count: 0
+11-01 05:26:24.096  1247  1440 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Executing SyncAlbumReset. authority: com.android.providers.media.photopicker. albumId: null
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Successfully executed SyncResetAlbum. authority: com.android.providers.media.photopicker. albumId: null. Result count: 0
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Executing SyncAlbumReset. authority: null. albumId: null
+11-01 05:26:24.096  1247  1440 I PickerSyncController: Successfully executed SyncResetAlbum. authority: null. albumId: null. Result count: 0

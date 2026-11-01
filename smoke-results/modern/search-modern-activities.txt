@@ -1,19 +1,19 @@
 ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
 Display #0 (activities from top to bottom):
-  * Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
-    mLastPausedActivity: ActivityRecord{1780b93 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
+  * Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+    mLastPausedActivity: ActivityRecord{2c1e15 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
     mLastNonFullscreenBounds=Rect(132, 256 - 588, 976)
     isSleeping=false
-    topResumedActivity=ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
-    * Hist  #1: ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+    topResumedActivity=ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+    * Hist  #1: ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
       packageName=com.wushisan.algertv.phone processName=com.wushisan.algertv.phone
       launchedFromUid=10077 launchedFromPackage=com.wushisan.algertv.phone launchedFromFeature=null userId=0
-      app=ProcessRecord{e1543c9 2890:com.wushisan.algertv.phone/u0a77}
+      app=ProcessRecord{3570f1b 2894:com.wushisan.algertv.phone/u0a77}
       Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity }
-      rootOfTask=false task=Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
+      rootOfTask=false task=Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
       taskAffinity=10077:com.wushisan.algertv.phone
       mActivityComponent=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity
-      baseDir=/data/app/~~c12yEEjCXXHEPORtCsFxuA==/com.wushisan.algertv.phone-Qc9-xgcZe6oRnr9BvgTq0A==/base.apk
+      baseDir=/data/app/~~N5deWQPa6Gz_eZu-giCCpA==/com.wushisan.algertv.phone-O4zRAMz-Yk3-pHAhHS7vQw==/base.apk
       dataDir=/data/user/0/com.wushisan.algertv.phone
       stateNotNeeded=false componentSpecified=false mActivityType=standard
       compat={320dpi} labelRes=0x7f0e001b icon=0x7f0c0000 theme=0x7f0f00a1
@@ -24,7 +24,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff22c55e
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=ff000000
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=1 lastLaunchTime=-3s189ms
+      launchFailed=false launchCount=1 lastLaunchTime=-3s153ms
       mHaveState=false mIcicle=null
       state=RESUMED stopped=false delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -32,7 +32,7 @@ Display #0 (activities from top to bottom):
       frozenBeforeDestroy=false forceNewConfig=false
       mActivityType=standard
       mImeInsetsFrozenUntilStartInput=false
-      windows=[Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}]
+      windows=[Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}]
       windowType=2
       mOccludesParent=true
       overrideOrientation=SCREEN_ORIENTATION_PORTRAIT
@@ -40,7 +40,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
       startingData=null firstWindowDrawn=true mIsExiting=false
-      nowVisible=true lastVisibleTime=-2s532ms
+      nowVisible=true lastVisibleTime=-2s519ms
       resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -50,15 +50,15 @@ Display #0 (activities from top to bottom):
       areBoundsLetterboxed=false
       mCameraCompatControlState=hidden
       mCameraCompatControlEnabled=false
-    * Hist  #0: ActivityRecord{1780b93 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
+    * Hist  #0: ActivityRecord{2c1e15 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
       packageName=com.wushisan.algertv.phone processName=com.wushisan.algertv.phone
       launchedFromUid=2000 launchedFromPackage=com.android.shell launchedFromFeature=null userId=0
-      app=ProcessRecord{e1543c9 2890:com.wushisan.algertv.phone/u0a77}
+      app=ProcessRecord{3570f1b 2894:com.wushisan.algertv.phone/u0a77}
       Intent { flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
-      rootOfTask=true task=Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
+      rootOfTask=true task=Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
       taskAffinity=10077:com.wushisan.algertv.phone
       mActivityComponent=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity
-      baseDir=/data/app/~~c12yEEjCXXHEPORtCsFxuA==/com.wushisan.algertv.phone-Qc9-xgcZe6oRnr9BvgTq0A==/base.apk
+      baseDir=/data/app/~~N5deWQPa6Gz_eZu-giCCpA==/com.wushisan.algertv.phone-O4zRAMz-Yk3-pHAhHS7vQw==/base.apk
       dataDir=/data/user/0/com.wushisan.algertv.phone
       stateNotNeeded=false componentSpecified=false mActivityType=standard
       compat={320dpi} labelRes=0x7f0e001b icon=0x7f0c0000 theme=0x7f0f00a1
@@ -69,7 +69,7 @@ Display #0 (activities from top to bottom):
       taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff22c55e
         backgroundColor=ff303030 statusBarColor=ff000000 navigationBarColor=ff000000
        backgroundColorFloating=ff424242
-      launchFailed=false launchCount=0 lastLaunchTime=-14s258ms
+      launchFailed=false launchCount=0 lastLaunchTime=-14s185ms
       mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=3788]
       state=STOPPED stopped=true delayedResume=false finishing=false
       keysPaused=false inHistory=true idle=true
@@ -77,7 +77,7 @@ Display #0 (activities from top to bottom):
       frozenBeforeDestroy=false forceNewConfig=false
       mActivityType=standard
       mImeInsetsFrozenUntilStartInput=true
-      windows=[Window{366037e u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}]
+      windows=[Window{115f50b u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}]
       windowType=2
       mOccludesParent=true
       overrideOrientation=SCREEN_ORIENTATION_PORTRAIT
@@ -85,7 +85,7 @@ Display #0 (activities from top to bottom):
       mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
       mAppStopped=true
       mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-      nowVisible=false lastVisibleTime=-13s395ms
+      nowVisible=false lastVisibleTime=-13s382ms
       resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
       mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
       supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -96,17 +96,17 @@ Display #0 (activities from top to bottom):
       mCameraCompatControlState=hidden
       mCameraCompatControlEnabled=false
 
-  * Task{a1211ae #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
-    * Task{e05603f #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
-      mLastPausedActivity: ActivityRecord{5d47655 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
+  * Task{84beb2d #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+    * Task{55844fb #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+      mLastPausedActivity: ActivityRecord{b655f71 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
       mLastNonFullscreenBounds=Rect(132, 256 - 588, 976)
       isSleeping=false
-      * Hist  #0: ActivityRecord{5d47655 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
+      * Hist  #0: ActivityRecord{b655f71 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
         packageName=com.android.launcher3 processName=com.android.launcher3
         launchedFromUid=0 launchedFromPackage=null launchedFromFeature=null userId=0
-        app=ProcessRecord{9865a31 871:com.android.launcher3/u0a60}
+        app=ProcessRecord{7c20dd5 862:com.android.launcher3/u0a60}
         Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.uioverrides.QuickstepLauncher (has extras) }
-        rootOfTask=true task=Task{e05603f #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher}
+        rootOfTask=true task=Task{55844fb #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher}
         taskAffinity=null
         mActivityComponent=com.android.launcher3/.uioverrides.QuickstepLauncher
         baseDir=/system/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk
@@ -121,7 +121,7 @@ Display #0 (activities from top to bottom):
         taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff2f0f4
           backgroundColor=fff2f0f4 statusBarColor=0 navigationBarColor=0
          backgroundColorFloating=fff2f0f4
-        launchFailed=false launchCount=0 lastLaunchTime=-2m21s269ms
+        launchFailed=false launchCount=0 lastLaunchTime=-2m20s26ms
         mHaveState=true mIcicle=Bundle[mParcelledData.dataSize=5016]
         state=STOPPED stopped=true delayedResume=false finishing=false
         keysPaused=false inHistory=true idle=true
@@ -129,7 +129,7 @@ Display #0 (activities from top to bottom):
         frozenBeforeDestroy=false forceNewConfig=false
         mActivityType=home
         mImeInsetsFrozenUntilStartInput=true
-        windows=[Window{4339793 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}]
+        windows=[Window{ce29f9c u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}]
         windowType=2
         mOccludesParent=true
         overrideOrientation=SCREEN_ORIENTATION_NOSENSOR
@@ -137,8 +137,8 @@ Display #0 (activities from top to bottom):
         mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=false reportedVisible=false
         mAppStopped=true
         mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
-        nowVisible=false lastVisibleTime=-2m20s65ms
-        connections={ConnectionRecord{d80b5b8 u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@907401b}}
+        nowVisible=false lastVisibleTime=-2m18s918ms
+        connections={ConnectionRecord{4276610 u0 com.android.launcher3/com.android.quickstep.TouchInteractionService:@c439ad3}}
         resizeMode=RESIZE_MODE_RESIZEABLE
         mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
         supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
@@ -149,38 +149,38 @@ Display #0 (activities from top to bottom):
         mCameraCompatControlState=hidden
         mCameraCompatControlEnabled=false
 
-  * Task{45d346a #2 type=undefined U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=2}
+  * Task{3fb1fe3 #2 type=undefined U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=2}
     mCreatedByOrganizer=true
-    * Task{72a0ed1 #4 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+    * Task{4d3675e #4 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
       mBounds=Rect(0, 1280 - 720, 1920)
       mCreatedByOrganizer=true
       isSleeping=false
-    * Task{5a3cd5b #3 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+    * Task{ab0b899 #3 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
       mCreatedByOrganizer=true
       isSleeping=false
 
   Resumed activities in task display areas (from top to bottom):
-    Resumed: ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+    Resumed: ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
 
-  ResumedActivity: ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+  ResumedActivity: ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
 
 ActivityTaskSupervisor state:
-  topDisplayFocusedRootTask=Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
+  topDisplayFocusedRootTask=Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
   Display: mDisplayId=0 (organized)
     init=720x1280 320dpi mMinSizeOfResizeableTaskDp=220 cur=720x1280 app=720x1184 rng=720x672-1184x1136
     deferred=false mLayoutNeeded=true mTouchExcludeRegion=SkRegion((0,0,720,1280))
 
-  mLastOrientationSource=WindowedMagnification:0:31@120904624
-  deepestLastOrientationSource=ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+  mLastOrientationSource=WindowedMagnification:0:31@124330839
+  deepestLastOrientationSource=ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
   overrideConfig={1.0 ?mcc?mnc [en_US] ldltr sw360dp w360dp h568dp 320dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1184) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.63 fontWeightAdjustment=0}
-  mLayoutSeq=214
-  mCurrentFocus=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-  mFocusedApp=ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+  mLayoutSeq=222
+  mCurrentFocus=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+  mFocusedApp=ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
 
   mHoldScreenWindow=null
-  mObscuringWindow=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+  mObscuringWindow=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
   mLastWakeLockHoldingWindow=null
-  mLastWakeLockObscuringWindow=Window{3990a61 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity}
+  mLastWakeLockObscuringWindow=Window{b34730a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity}
 
   displayId=0
   mWallpaperTarget=null
@@ -231,23 +231,23 @@ ActivityTaskSupervisor state:
   Task display areas in top down Z order:
     TaskDisplayArea DefaultTaskDisplayArea
       overrideConfig={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mDisplayRotation=undefined mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=undefined} ?fontWeightAdjustment}
-      mPreferredTopFocusableRootTask=Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
-      mLastFocusedRootTask=Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
+      mPreferredTopFocusableRootTask=Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
+      mLastFocusedRootTask=Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
       Application tokens in top down Z order:
-      * Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      * Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
         bounds=[0,0][720,1280]
-        * ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
-        * ActivityRecord{1780b93 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
-      * Task{a1211ae #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+        * ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}
+        * ActivityRecord{2c1e15 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} t10}
+      * Task{84beb2d #1 type=home U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
         bounds=[0,0][720,1280]
-        * Task{e05603f #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
+        * Task{55844fb #7 type=home I=com.android.launcher3/.uioverrides.QuickstepLauncher U=0 rootTaskId=1 visible=false visibleRequested=false mode=fullscreen translucent=true sz=1}
           bounds=[0,0][720,1280]
-          * ActivityRecord{5d47655 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
-      * Task{45d346a #2 type=undefined U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=2}
+          * ActivityRecord{b655f71 u0 com.android.launcher3/.uioverrides.QuickstepLauncher} t7}
+      * Task{3fb1fe3 #2 type=undefined U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=2}
         bounds=[0,0][720,1280]
-        * Task{72a0ed1 #4 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        * Task{4d3675e #4 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
           bounds=[0,1280][720,1920]
-        * Task{5a3cd5b #3 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        * Task{ab0b899 #3 type=undefined U=0 rootTaskId=2 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
           bounds=[0,0][720,1280]
 
   no ScreenRotationAnimation 
@@ -271,23 +271,23 @@ ActivityTaskSupervisor state:
     mHdmiPlugged=false
     mLastBehavior=DEFAULT
     mShowingDream=false mDreamingLockscreen=false
-    mStatusBar=Window{f948b50 u0 StatusBar}
-    mExpandedPanel=Window{a787276 u0 NotificationShade}
+    mStatusBar=Window{3d608f u0 StatusBar}
+    mExpandedPanel=Window{9f6d19f u0 NotificationShade}
     isKeyguardShowing=false
-    mNavigationBar=Window{86466a0 u0 NavigationBar0}
+    mNavigationBar=Window{b042fbe u0 NavigationBar0}
     mNavBarOpacityMode=0
     mNavigationBarCanMove=true
     mNavigationBarPosition=4
-    mFocusedWindow=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-    mTopFullscreenOpaqueWindowState=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-    mSystemBarColorApps={ActivityRecord{7115c9a u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}}
-    mNavBarColorWindowCandidate=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-    mNavBarBackgroundWindow=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+    mFocusedWindow=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+    mTopFullscreenOpaqueWindowState=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+    mSystemBarColorApps={ActivityRecord{d0a7924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity} t10}}
+    mNavBarColorWindowCandidate=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+    mNavBarBackgroundWindow=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
     mLastStatusBarAppearanceRegions=
       AppearanceRegion{ bounds=[0,0][720,1280]}
     mLastLetterboxDetails=
     mStatusBarBackgroundWindows=
-      Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+      Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
     mTopIsFullscreen=false
     mForceShowNavigationBarEnabled=false mAllowLockscreenWhenOn=false
     mRemoteInsetsControllerControlsSystemBars=false
@@ -301,7 +301,7 @@ ActivityTaskSupervisor state:
       mSwipeStartThreshold=Rect(48, 48 - 48, 48)
       mSwipeDistanceThreshold=48
     Looper state:
-      Looper (android.ui, tid 21) {db2e791}
+      Looper (android.ui, tid 21) {7f5142a}
         (Total messages: 0, polling=true, quitting=false)
 
   DisplayRotation
@@ -325,7 +325,7 @@ ActivityTaskSupervisor state:
     mFixedToUserRotation=false
 
   InputConsumers:
-    name=recents_animation_input_consumer pid=871 user=UserHandle{0}
+    name=recents_animation_input_consumer pid=862 user=UserHandle{0}
 
   WindowInsetsStateController
     InsetsState
@@ -344,66 +344,66 @@ ActivityTaskSupervisor state:
         InsetsSource type=ITYPE_BOTTOM_TAPPABLE_ELEMENT frame=[0,1184][720,1280] visible=true insetsRoundedCornerFrame=false
         InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false insetsRoundedCornerFrame=false
     Control map:
-      ITYPE_IME -> Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-      ITYPE_NAVIGATION_BAR -> Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
-      ITYPE_STATUS_BAR -> Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+      ITYPE_IME -> Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+      ITYPE_NAVIGATION_BAR -> Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+      ITYPE_STATUS_BAR -> Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
     InsetsSourceProviders:
       ImeInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false insetsRoundedCornerFrame=false
         mSourceFrame=Rect(40, 1184 - 680, 1280)
-        mControl=InsetsSourceControl type=ITYPE_IME mLeash=Surface(name=Surface(name=48cac9 InputMethod)/@0xe62cef - animation-leash of insets_animation)/@0xa07c323 mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl type=ITYPE_IME mLeash=Surface(name=Surface(name=b107db9 InputMethod)/@0xa52f15f - animation-leash of insets_animation)/@0x772f525 mInitiallyVisible=false mSurfacePosition=Point(40, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{48cac9 u0 InputMethod}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=48cac9 InputMethod)/@0xe62cef - animation-leash of insets_animation)/@0xa07c323
-        mControlTarget=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+        mWindowContainer=Window{b107db9 u0 InputMethod}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=b107db9 InputMethod)/@0xa52f15f - animation-leash of insets_animation)/@0x772f525
+        mControlTarget=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
         mImeShowing=false
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_BOTTOM_TAPPABLE_ELEMENT frame=[0,1184][720,1280] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 1184 - 720, 1280)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{86466a0 u0 NavigationBar0}
+        mWindowContainer=Window{b042fbe u0 NavigationBar0}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_TOP_TAPPABLE_ELEMENT frame=[0,0][720,48] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 0 - 720, 48)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{f948b50 u0 StatusBar}
+        mWindowContainer=Window{3d608f u0 StatusBar}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_BOTTOM_MANDATORY_GESTURES frame=[0,1184][720,1280] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 1184 - 720, 1280)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{86466a0 u0 NavigationBar0}
+        mWindowContainer=Window{b042fbe u0 NavigationBar0}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_TOP_MANDATORY_GESTURES frame=[0,0][720,48] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 0 - 720, 48)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{f948b50 u0 StatusBar}
+        mWindowContainer=Window{3d608f u0 StatusBar}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_RIGHT_GESTURES frame=[720,0][720,1280] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(720, 0 - 720, 1280)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{86466a0 u0 NavigationBar0}
+        mWindowContainer=Window{b042fbe u0 NavigationBar0}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_LEFT_GESTURES frame=[0,0][0,1280] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 0 - 0, 1280)
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{86466a0 u0 NavigationBar0}
+        mWindowContainer=Window{b042fbe u0 NavigationBar0}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_NAVIGATION_BAR frame=[0,1184][720,1280] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 1184 - 720, 1280)
         mOverrideFrames={2011=Rect(0, 1184 - 720, 1280)}
-        mControl=InsetsSourceControl type=ITYPE_NAVIGATION_BAR mLeash=Surface(name=Surface(name=86466a0 NavigationBar0)/@0xc066e1e - animation-leash of insets_animation)/@0x2d4f020 mInitiallyVisible=true mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl type=ITYPE_NAVIGATION_BAR mLeash=Surface(name=Surface(name=b042fbe NavigationBar0)/@0xf87f76c - animation-leash of insets_animation)/@0x241d6fa mInitiallyVisible=true mSurfacePosition=Point(0, 1184) mInsetsHint=Insets{left=0, top=0, right=0, bottom=96} mSkipAnimationOnce=false
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{86466a0 u0 NavigationBar0}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=86466a0 NavigationBar0)/@0xc066e1e - animation-leash of insets_animation)/@0x2d4f020
-        mControlTarget=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+        mWindowContainer=Window{b042fbe u0 NavigationBar0}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=b042fbe NavigationBar0)/@0xf87f76c - animation-leash of insets_animation)/@0x241d6fa
+        mControlTarget=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
       WindowContainerInsetsSourceProvider
         mSource=InsetsSource type=ITYPE_STATUS_BAR frame=[0,0][720,48] visible=true insetsRoundedCornerFrame=false
         mSourceFrame=Rect(0, 0 - 720, 48)
-        mControl=InsetsSourceControl type=ITYPE_STATUS_BAR mLeash=Surface(name=Surface(name=f948b50 StatusBar)/@0x769676f - animation-leash of insets_animation)/@0xe942dd9 mInitiallyVisible=true mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
+        mControl=InsetsSourceControl type=ITYPE_STATUS_BAR mLeash=Surface(name=Surface(name=3d608f StatusBar)/@0xb2570fa - animation-leash of insets_animation)/@0x4e4e4ab mInitiallyVisible=true mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
         mIsLeashReadyForDispatching=true
-        mWindowContainer=Window{f948b50 u0 StatusBar}
-        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=f948b50 StatusBar)/@0x769676f - animation-leash of insets_animation)/@0xe942dd9
-        mControlTarget=Window{d7db8c1 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
+        mWindowContainer=Window{3d608f u0 StatusBar}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=3d608f StatusBar)/@0xb2570fa - animation-leash of insets_animation)/@0x4e4e4ab
+        mControlTarget=Window{6f63e53 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity}
 
   KeyguardController:
     mKeyguardShowing=false
@@ -425,12 +425,12 @@ ActivityTaskSupervisor state:
   mNoHistoryActivities=[]
 
   TaskOrganizerController:
-      android.window.ITaskOrganizer$Stub$Proxy@5709f93 uid=10062:
-        (fullscreen) Task{a1211ae #1 type=home}
-        (fullscreen) Task{45d346a #2 type=undefined}
-        (multi-window) Task{5a3cd5b #3 type=undefined}
-        (multi-window) Task{72a0ed1 #4 type=undefined}
-        (fullscreen) Task{fb3f7cd #10 type=standard A=10077:com.wushisan.algertv.phone}
+      android.window.ITaskOrganizer$Stub$Proxy@7a848f6 uid=10062:
+        (fullscreen) Task{84beb2d #1 type=home}
+        (fullscreen) Task{3fb1fe3 #2 type=undefined}
+        (multi-window) Task{ab0b899 #3 type=undefined}
+        (multi-window) Task{4d3675e #4 type=undefined}
+        (fullscreen) Task{bf551ff #10 type=standard A=10077:com.wushisan.algertv.phone}
 
-  VisibleActivityProcess:[ ProcessRecord{e1543c9 2890:com.wushisan.algertv.phone/u0a77}]
+  VisibleActivityProcess:[ ProcessRecord{3570f1b 2894:com.wushisan.algertv.phone/u0a77}]
   NumNonAppVisibleWindowUidMap:[ 10062:2]
