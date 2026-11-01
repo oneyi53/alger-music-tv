@@ -42,8 +42,9 @@ android {
             // 5.1's store, so on the real TV every request failed and
             // home sat on its loading row; plus a home watchdog so the
             // loading row can never be permanent.
-            versionCode 6
-            versionName '1.0.5'
+            // 1.0.6: Kugou exact-match play URL first, GDStudio fallback.
+            versionCode 7
+            versionName '1.0.6'
         }
         phone {
             dimension 'device'
@@ -59,8 +60,9 @@ android {
             // while a track is playing" (user report on 1.2; root cause
             // and fix documented in PUSH_PLAN section 15).
             targetSdk 34
-            versionCode 4
-            versionName '1.3'
+            // 1.4: same Kugou-first play URL chain as TV 1.0.6.
+            versionCode 5
+            versionName '1.4'
         }
     }
 

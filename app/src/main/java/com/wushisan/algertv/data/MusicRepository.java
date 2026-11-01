@@ -28,6 +28,7 @@ import okhttp3.Response;
 /**
  * Data layer.
  *
+ * Play URL chain (2026-11-01): Kugou exact-match first, GDStudio second.
  * Primary (and only built-in) source: GDStudio API
  * (https://music-api.gdstudio.xyz/api.php, source=netease) — search / playlist /
  * play URL (320k) / lyric / cover pic, all verified end to end.
@@ -661,18 +662,75 @@ public class MusicRepository {
                 }
             });
         } else {
-            resolvePlayUrlGds(song, cb);
+            // Default chain (no custom API): Kugou exact match first, because
+            // it is a plain no-login MP3 that does not depend on the NetEase
+            // link that has been failing on the TV; GDStudio is the fallback
+            // for songs Kugou cannot match exactly.
+            final Song s = song;
+            resolvePlayUrlKugou(song, new Result<String>() {
+                @Override
+                public void onSuccess(String url) {
+                    cb.onSuccess(url);
+                }
+
+                @Override
+                public void onError(String message) {
+                    Log.w(App.TAG, "URL_KG_FAIL id=" + s.id + " -> GDS: " + message);
+                    resolvePlayUrlGds(s, cb, false);
+                }
+            });
         }
     }
 
     private void resolvePlayUrlGds(final Song song, final Result<String> cb) {
+        resolvePlayUrlGds(song, cb, true);
+    }
+
+    /**
+     * GDStudio (NetEase) play URL, with Kugou fallback.
+     * If allowKugouFallback is true, a GDStudio failure, an empty URL, or a
+     * suspiciously small file (trial/preview segment, not the full track)
+     * falls through to Kugou; if Kugou also fails, the original GDStudio
+     * error is reported (or the trial URL is used as a last resort).
+     */
+    private void resolvePlayUrlGds(final Song song, final Result<String> cb,
+                                   final boolean allowKugouFallback) {
         getJson(clientGds, GDS_BASE + "?types=url&source=netease&id=" + song.id + "&br=320",
                 new Result<JSONObject>() {
                     @Override
                     public void onSuccess(JSONObject json) {
-                        String url = optStr(json, "url");
-                        if (url != null && url.length() > 0) {
+                        final String url = optStr(json, "url");
+                        long size = json.optLong("size", 0);
+                        boolean trial = false;
+                        if (url != null && url.length() > 0 && size > 0 && song.durationMs > 0) {
+                            // A full 320k track is ~40000 bytes/sec. Anything
+                            // under half of that is a trial/preview segment.
+                            long expected = song.durationMs / 1000 * 40000;
+                            trial = size < expected / 2;
+                        }
+                        if (url != null && url.length() > 0 && !trial) {
                             Log.i(App.TAG, "URL_GDS_OK id=" + song.id);
+                            cb.onSuccess(url);
+                        } else if (allowKugouFallback) {
+                            Log.w(App.TAG, "URL_GDS_FALLBACK id=" + song.id
+                                    + " trial=" + trial + " size=" + size);
+                            final String gdsUrl = url;
+                            resolvePlayUrlKugou(song, new Result<String>() {
+                                @Override
+                                public void onSuccess(String kgUrl) {
+                                    cb.onSuccess(kgUrl);
+                                }
+
+                                @Override
+                                public void onError(String message) {
+                                    if (gdsUrl != null && gdsUrl.length() > 0) {
+                                        cb.onSuccess(gdsUrl);
+                                    } else {
+                                        cb.onError(message);
+                                    }
+                                }
+                            });
+                        } else if (url != null && url.length() > 0) {
                             cb.onSuccess(url);
                         } else {
                             cb.onError("无播放地址（可能无版权）");
@@ -681,9 +739,145 @@ public class MusicRepository {
 
                     @Override
                     public void onError(String message) {
+                        if (allowKugouFallback) {
+                            Log.w(App.TAG, "URL_GDS_FAIL id=" + song.id + " -> KG: " + message);
+                            resolvePlayUrlKugou(song, new Result<String>() {
+                                @Override
+                                public void onSuccess(String kgUrl) {
+                                    cb.onSuccess(kgUrl);
+                                }
+
+                                @Override
+                                public void onError(String kgMessage) {
+                                    cb.onError(message);
+                                }
+                            });
+                        } else {
+                            cb.onError(message);
+                        }
+                    }
+                });
+    }
+
+    // ------------------------------------------------------------ Kugou fallback
+    //
+    // No login, plain MP3, verified live 2026-11-01:
+    //   search: songsearch.kugou.com/song_search_v2?keyword=...&page=1&pagesize=10
+    //   info:   m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash=<FileHash>
+    // Only an exact song-name + first-artist match is used, so a wrong
+    // version is never played in place of the requested track. If no exact
+    // match exists, this reports an error and the caller falls back to
+    // GDStudio. The info endpoint normalises an HQ hash to the 128k file,
+    // so the 128k FileHash is used directly.
+
+    private void resolvePlayUrlKugou(final Song song, final Result<String> cb) {
+        if (song.name == null || song.name.length() == 0) {
+            cb.onError("kugou: no song name");
+            return;
+        }
+        String firstArtist = firstArtist(song.artistsText);
+        String query = song.name + (firstArtist.length() > 0 ? " " + firstArtist : "");
+        getJson(clientGds, "https://songsearch.kugou.com/song_search_v2?keyword="
+                        + enc(query) + "&page=1&pagesize=10",
+                new Result<JSONObject>() {
+                    @Override
+                    public void onSuccess(JSONObject json) {
+                        List<String> hashes = new ArrayList<String>();
+                        try {
+                            JSONObject data = json.optJSONObject("data");
+                            JSONArray lists = data == null ? null : data.optJSONArray("lists");
+                            if (lists != null) {
+                                String bestHash = null;
+                                int bestScore = -1;
+                                List<String> rest = new ArrayList<String>();
+                                for (int i = 0; i < lists.length(); i++) {
+                                    JSONObject item = lists.optJSONObject(i);
+                                    if (item == null) continue;
+                                    String hash = optStr(item, "FileHash");
+                                    if (hash == null || hash.length() == 0) continue;
+                                    String oriName = optStr(item, "OriSongName");
+                                    if (oriName == null) oriName = optStr(item, "SongName");
+                                    String singer = optStr(item, "SingerName");
+                                    int score = 0;
+                                    if (oriName != null && oriName.equals(song.name)) score += 20;
+                                    else if (oriName != null && (oriName.contains(song.name)
+                                            || song.name.contains(oriName))) score += 5;
+                                    if (firstArtist.length() > 0 && singer != null
+                                            && singer.contains(firstArtist)) score += 10;
+                                    if (score >= 30) {
+                                        if (bestScore < score) {
+                                            if (bestHash != null) rest.add(bestHash);
+                                            bestHash = hash;
+                                            bestScore = score;
+                                        } else {
+                                            rest.add(hash);
+                                        }
+                                    }
+                                }
+                                if (bestHash != null) {
+                                    hashes.add(bestHash);
+                                    hashes.addAll(rest);
+                                }
+                            }
+                        } catch (Exception ignored) {
+                        }
+                        if (hashes.isEmpty()) {
+                            Log.w(App.TAG, "URL_KG_NO_MATCH name=" + song.name);
+                            cb.onError("kugou: no exact match");
+                            return;
+                        }
+                        tryKugouHash(song, hashes, 0, cb);
+                    }
+
+                    @Override
+                    public void onError(String message) {
+                        Log.w(App.TAG, "URL_KG_SEARCH_FAIL: " + message);
                         cb.onError(message);
                     }
                 });
+    }
+
+    private void tryKugouHash(final Song song, final List<String> hashes,
+                              final int index, final Result<String> cb) {
+        if (index >= hashes.size()) {
+            cb.onError("kugou: all candidates failed");
+            return;
+        }
+        final String hash = hashes.get(index);
+        getJson(clientGds, "https://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash=" + hash,
+                new Result<JSONObject>() {
+                    @Override
+                    public void onSuccess(JSONObject json) {
+                        String url = optStr(json, "url");
+                        if (url == null || url.length() == 0) {
+                            JSONArray backup = json.optJSONArray("backup_url");
+                            if (backup != null && backup.length() > 0) {
+                                url = backup.optString(0);
+                            }
+                        }
+                        int payType = json.optInt("pay_type", 0);
+                        if (url != null && url.length() > 0 && url.contains(".mp3")
+                                && payType == 0) {
+                            Log.i(App.TAG, "URL_KG_OK name=" + song.name + " hash=" + hash);
+                            cb.onSuccess(url);
+                        } else {
+                            Log.w(App.TAG, "URL_KG_CANDIDATE_FAIL hash=" + hash
+                                    + " pay_type=" + payType);
+                            tryKugouHash(song, hashes, index + 1, cb);
+                        }
+                    }
+
+                    @Override
+                    public void onError(String message) {
+                        tryKugouHash(song, hashes, index + 1, cb);
+                    }
+                });
+    }
+
+    private static String firstArtist(String artistsText) {
+        if (artistsText == null) return "";
+        String[] parts = artistsText.split("[、,，/&;；]");
+        return parts.length > 0 ? parts[0].trim() : "";
     }
 
     private void resolvePlayUrlCustom(String base, final Song song, final Result<String> cb) {
