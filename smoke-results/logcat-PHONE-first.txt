@@ -1,79 +1,92 @@
---------- beginning of system
-11-01 04:37:58.157   271   298 I chatty  : uid=1000(system) Binder:271_1 expire 1 line
-11-01 04:37:58.157   271   298 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}, surfaceController Surface(name=com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher)/@0xc8e94c8
 --------- beginning of main
-11-01 04:37:58.162   702   702 D RecentsOrientedState: current RecentsOrientedState: [this=RecentsOrientedState@ffdbd56 mOrientationHandler=PortraitPagedViewHandler@53e01d7 mDisplayRotation=0 mTouchRotation=0 mRecentsActivityRotation=0 isRecentsActivityRotationAllowed=false mSystemRotation=false mFlags=291]
-11-01 04:37:58.195   271  1104 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}, surfaceController Surface(name=com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher)/@0xc8e94c8
-11-01 04:37:58.197   271   617 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}, surfaceController Surface(name=com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher)/@0xc8e94c8
-11-01 04:37:58.199   271   617 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{2f8e33a u0 NavigationBar0}, surfaceController Surface(name=NavigationBar0)/@0x60f7396
-11-01 04:37:58.199   271   617 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}, surfaceController Surface(name=com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher)/@0xc8e94c8
-11-01 04:37:58.201   271   617 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} from uid 0
-11-01 04:37:58.201  2031  2033 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:37:58.202   271   305 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}, surfaceController Surface(name=com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher)/@0xc8e94c8
-11-01 04:37:58.218   702   702 D RecentsOrientedState: current RecentsOrientedState: [this=RecentsOrientedState@fa43d3 mOrientationHandler=PortraitPagedViewHandler@53e01d7 mDisplayRotation=0 mTouchRotation=0 mRecentsActivityRotation=0 isRecentsActivityRotationAllowed=false mSystemRotation=false mFlags=291]
-11-01 04:37:58.218   702   702 D RecentsOrientedState: current RecentsOrientedState: [this=RecentsOrientedState@fa43d3 mOrientationHandler=PortraitPagedViewHandler@53e01d7 mDisplayRotation=0 mTouchRotation=0 mRecentsActivityRotation=0 isRecentsActivityRotationAllowed=false mSystemRotation=false mFlags=291]
-11-01 04:37:58.221    98    98 E SurfaceFlinger: [com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active_legacy.{w=1440, h=1080}
-11-01 04:37:58.223    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
-11-01 04:37:58.235   457   457 D KeyguardViewMediator: adjustStatusBarLocked: mShowing=false mOccluded=false isSecure=false force=false --> flags=0x0
-11-01 04:37:58.238   702   768 D LoaderTask: loadWorkspace: loading default favorites
-11-01 04:37:58.246   702   702 D ConfigMonitor: Configuration changed.
-11-01 04:37:58.253   702  1355 E FrameEvents: updateAcquireFence: Did not find frame.
-11-01 04:37:58.260   702  1355 E FrameEvents: updateAcquireFence: Did not find frame.
-11-01 04:37:58.264   271   617 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{2b43af u0 StatusBar}, surfaceController Surface(name=StatusBar)/@0x5d01b17
-11-01 04:37:58.267   702   702 D LoaderResults: Too many consecutive reloads, skipping obsolete data-bind
-11-01 04:37:58.267   702   702 I chatty  : uid=10108(com.android.launcher3) identical 4 lines
-11-01 04:37:58.267   702   702 D LoaderResults: Too many consecutive reloads, skipping obsolete data-bind
-11-01 04:37:58.267   702   768 D LoaderTask: loadWorkspace: loading default favorites
-11-01 04:37:58.289   271   305 I WindowManager: Screen frozen for +301ms due to Window{532c4d3 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
-11-01 04:37:58.289   702   702 D LoaderResults: Too many consecutive reloads, skipping obsolete data-bind
-11-01 04:37:58.289   702   702 I chatty  : uid=10108(com.android.launcher3) identical 4 lines
-11-01 04:37:58.289   702   702 D LoaderResults: Too many consecutive reloads, skipping obsolete data-bind
-11-01 04:37:58.321   271   305 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
-11-01 04:37:58.330   457   457 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
-11-01 04:37:58.330   457   457 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
-11-01 04:37:58.331   457   457 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
-11-01 04:37:58.332   457   457 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-11-01 04:37:58.334   457   457 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
-11-01 04:37:58.337   457   457 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null wifi
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null bt
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null dnd
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null rotation
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null battery
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null airplane
-11-01 04:37:58.349   457   457 E QSAnimator: tileView is null cast
-11-01 04:37:58.350   457   457 E QSAnimator: tileView is null screenrecord
-11-01 04:37:58.350   457   457 E QSAnimator: tileView is null dbg:mem
-11-01 04:37:58.353    70    70 D hwcomposer: VSYNC event status:0
-11-01 04:37:58.355    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
-11-01 04:37:58.555    98    98 I chatty  : uid=1000(system) /system/bin/surfaceflinger identical 3 lines
-11-01 04:37:58.621    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
-11-01 04:37:58.741   271   303 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
-11-01 04:37:59.298   737   979 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:37:59.298   737   979 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:38:00.000   457   457 D KeyguardClockSwitch: Updating clock: 438
-11-01 04:38:00.023   457   457 D KeyguardClockSwitch: Updating clock: 438
-11-01 04:38:00.346   271   304 I system_server: Explicit concurrent copying GC freed 80182(3838KB) AllocSpace objects, 36(952KB) LOS objects, 75% free, 8027KB/31MB, paused 24us total 20.965ms
-11-01 04:38:00.346   271   282 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.wm.-$$Lambda$ju_KnYxEFekr6LzoWamCeaO5FHQ
-11-01 04:38:00.346   271   282 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
-11-01 04:38:10.282    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:38:10.282  2042  2042 I Gralloc4: mapper 4.x is not supported
-11-01 04:38:10.282    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-11-01 04:38:10.282  2042  2042 W Gralloc3: mapper 3.x is not supported
-11-01 04:38:10.524  2046  2048 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:38:10.525  1229  1770 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-11-01 04:38:10.529  1229  1770 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-11-01 04:38:10.530  1229  1775 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-11-01 04:38:10.530  1229  1775 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-11-01 04:38:10.530  1229  1775 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-11-01 04:38:10.530  1229  1775 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 04:44:45.787  1234  1765 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.wushisan.algertv.phone flg=0x1000010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-01 04:44:45.787  1234  1765 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.wushisan.algertv.phone flg=0x1000010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+--------- beginning of system
+11-01 04:44:45.804   273   971 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity} from uid 0
+11-01 04:44:45.808  2357  2359 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 04:44:45.811   273   307 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
+11-01 04:44:45.811   273   307 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
+11-01 04:44:45.811   273   314 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+11-01 04:44:45.817   142   142 D Zygote  : Forked child process 2360
+11-01 04:44:45.818  2360  2360 I Zygote  : seccomp disabled by setenforce 0
+11-01 04:44:45.818   273   314 I ActivityManager: Start proc 2360:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+11-01 04:44:45.820  2158  2164 I adbd    : jdwp connection from 2360
+11-01 04:44:45.822   273  2189 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+11-01 04:44:45.829  2360  2360 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 04:44:45.829  2360  2360 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 04:44:45.833  2360  2360 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 04:44:45.836    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
+11-01 04:44:45.864  2360  2360 I AlgerTV : App onCreate
+11-01 04:44:45.884  2360  2360 I AlgerTV : HOME_LOAD_START
+11-01 04:44:45.884  2360  2360 I AlgerTV : HOME_SEED
+11-01 04:44:45.925    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+11-01 04:44:45.926   273   306 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-01 04:44:45.930   273   306 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-01 04:44:46.166    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 04:44:46.166  2360  2383 I Gralloc4: mapper 4.x is not supported
+11-01 04:44:46.166    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 04:44:46.166  2360  2383 W Gralloc3: mapper 3.x is not supported
+11-01 04:44:46.167    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 04:44:46.178   273   312 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity: +371ms
+11-01 04:44:46.182    98   324 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10117 pid=2360
+11-01 04:44:46.182    98   324 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10117 => denied (5994 us)
+11-01 04:44:46.183  2360  2360 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=0: HTTP 503
+11-01 04:44:46.183  2360  2360 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
+11-01 04:44:46.375  2360  2360 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+11-01 04:44:46.433  2360  2360 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+11-01 04:44:46.597  2360  2360 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+11-01 04:44:46.684  2360  2360 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+11-01 04:44:46.826  2360  2360 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
+11-01 04:44:46.901  2360  2360 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
+11-01 04:44:47.068  2360  2360 W AlgerTV : HOME_META_FAIL id=2884035 attempt=0: HTTP 503
+11-01 04:44:47.114  2360  2360 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
+11-01 04:44:47.305  2360  2360 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=1: HTTP 503
+11-01 04:44:47.372  2360  2360 W AlgerTV : HOME_META_FAIL id=745956260 attempt=1: HTTP 503
+11-01 04:44:47.569  2360  2360 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
+11-01 04:44:47.573   273   307 I system_server: Explicit concurrent copying GC freed 26014(1512KB) AllocSpace objects, 11(704KB) LOS objects, 75% free, 8225KB/32MB, paused 39us total 22.947ms
+11-01 04:44:47.636  2360  2360 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
+11-01 04:44:47.769  2360  2360 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
+11-01 04:44:47.836  2360  2360 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
+11-01 04:44:47.972  2360  2360 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
+11-01 04:44:48.022  2360  2360 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
+11-01 04:44:48.188  2360  2360 W AlgerTV : HOME_META_FAIL id=2884035 attempt=1: HTTP 503
+11-01 04:44:48.240  2360  2360 W AlgerTV : HOME_META_FAIL id=991319590 attempt=1: HTTP 503
+11-01 04:44:48.482  2360  2360 I AlgerTV : HOME_META_OK id=60198 ms=2598
+11-01 04:44:48.570  2360  2360 I AlgerTV : HOME_META_OK id=180106 ms=2686
+11-01 04:44:48.623  2360  2360 I AlgerTV : HOME_META_OK id=1978921795 ms=2739
+11-01 04:44:48.623  2360  2360 I AlgerTV : HOME_DONE ms=2739 meta=3/13 fallback=false
+11-01 04:44:48.624  2360  2409 I AlgerTV : HOME_CACHE_SAVED bytes=1023
+11-01 04:44:48.639  2360  2360 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
+11-01 04:44:48.640   273   971 D ConnectivityService: requestNetwork for uid/pid:10117/2360 NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
+11-01 04:44:48.640   273   399 D ConnectivityService: NetReassign [24 : null → 100]
+11-01 04:44:48.640   273   395 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 04:44:48.641   273   425 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 04:44:48.641   806   806 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 04:44:48.641   273   395 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 04:44:48.642   465   465 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 04:44:48.643   806   806 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 04:44:48.643   806   806 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 04:44:48.854   273  1105 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-01 04:44:52.379   701   972 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 04:44:52.379   701   972 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 04:44:57.883    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 04:44:57.883  2422  2422 I Gralloc4: mapper 4.x is not supported
+11-01 04:44:57.883    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 04:44:57.883  2422  2422 W Gralloc3: mapper 3.x is not supported
+11-01 04:44:58.015  2426  2428 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 04:44:58.020  1234  1765 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 04:44:58.024  1234  1765 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 04:44:58.025  1234  1771 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+11-01 04:44:58.025  1234  1771 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:44:58.025  1234  1771 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+11-01 04:44:58.025  1234  1771 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)

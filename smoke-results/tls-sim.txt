@@ -1,9 +1,40 @@
+11-01 04:43:39.162  1885  1885 I AlgerTV : HOME_DONE ms=4557 meta=12/13 fallback=false
 restarting adbd as root
 tls-sim shell id: uid=0(root) gid=0(root) groups=0(root),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid)
 /system/etc/security/cacerts/6187b673.0
 /system/etc/security/cacerts/6187b673.0
 ls: /system/etc/security/cacerts/6187b673.0: No such file or directory
 ls: /apex/com.android.conscrypt/cacerts/6187b673.0: No such file or directory
+11-01 04:44:31.063  2202  2202 I AlgerTV : HOME_LOAD_START
+11-01 04:44:31.064  2202  2202 I AlgerTV : HOME_SEED
+11-01 04:44:31.071  2202  2202 I AlgerTV : HOME_ROWS_BUILT fallback=false
+11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
+11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=0: HTTP 503
+11-01 04:44:31.584  2202  2202 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+11-01 04:44:31.589  2202  2202 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+11-01 04:44:31.804  2202  2202 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+11-01 04:44:31.817  2202  2202 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+11-01 04:44:31.984  2202  2202 I AlgerTV : HOME_META_OK id=1978921795 ms=921
+11-01 04:44:32.013  2202  2202 I AlgerTV : HOME_META_OK id=60198 ms=950
+11-01 04:44:32.052  2202  2202 I AlgerTV : HOME_META_OK id=180106 ms=989
+11-01 04:44:32.239  2202  2202 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
+11-01 04:44:32.463  2202  2202 W AlgerTV : HOME_META_FAIL id=745956260 attempt=1: HTTP 503
+11-01 04:44:32.511  2202  2202 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=1: HTTP 503
+11-01 04:44:32.681  2202  2202 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
+11-01 04:44:32.738  2202  2202 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
+11-01 04:44:32.897  2202  2202 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
+11-01 04:44:32.959  2202  2202 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
+11-01 04:44:33.068  2202  2202 I AlgerTV : HOME_META_OK id=19723756 ms=2005
+11-01 04:44:33.097  2202  2202 I AlgerTV : HOME_META_OK id=3779629 ms=2034
+11-01 04:44:33.171  2202  2202 I AlgerTV : HOME_META_OK id=2884035 ms=2108
+11-01 04:44:33.682  2202  2202 I AlgerTV : HOME_META_OK id=991319590 ms=2619
+11-01 04:44:33.682  2202  2202 I AlgerTV : HOME_DONE ms=2619 meta=7/13 fallback=false
+11-01 04:44:33.683  2202  2202 I AlgerTV : HOME_ROWS_BUILT fallback=false
+11-01 04:44:33.683  2202  2256 I AlgerTV : HOME_CACHE_SAVED bytes=1412
+11-01 04:44:31.001  2202  2202 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
+11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=0: HTTP 503
+11-01 04:44:31.584  2202  2202 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
 umount: /apex/com.android.conscrypt/cacerts: No such file or directory
 umount: /system/etc/security/cacerts/6187b673.0: Invalid argument
 umount: /apex/com.android.conscrypt/cacerts/6187b673.0: No such file or directory

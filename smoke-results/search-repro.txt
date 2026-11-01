@@ -1,3 +1,3 @@
-SEARCH_ENTRY_XY=notfound
-    mResumedActivity: ActivityRecord{3821ff9 u0 com.android.launcher3/.uioverrides.QuickstepLauncher t7}
-SEARCH_CHIP_XY=notfound
+SEARCH_ENTRY_XY=540 331
+    mResumedActivity: ActivityRecord{2ddf099 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneSearchActivity t14}
+SEARCH_CHIP_XY=146 387
