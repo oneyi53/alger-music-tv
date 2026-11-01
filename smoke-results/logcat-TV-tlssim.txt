@@ -1,99 +1,101 @@
---------- beginning of main
-11-01 04:44:30.967  2158  2164 I adbd    : jdwp connection from 782
-11-01 04:44:30.968  2158  2164 I adbd    : jdwp connection from 749
-11-01 04:44:30.968  2158  2164 I adbd    : jdwp connection from 1025
-11-01 04:44:30.968  2158  2164 I adbd    : jdwp connection from 806
-11-01 04:44:30.968  2158  2164 I adbd    : jdwp connection from 465
-11-01 04:44:30.970  2158  2164 I adbd    : jdwp connection from 1152
-11-01 04:44:30.971  2158  2164 I adbd    : jdwp connection from 1234
-11-01 04:44:30.971  2158  2164 I adbd    : jdwp connection from 701
-11-01 04:44:30.971  2158  2164 I adbd    : jdwp connection from 443
-11-01 04:44:30.971  2158  2164 I adbd    : jdwp connection from 273
-11-01 04:44:30.973   465   465 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{2ab616d I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
 --------- beginning of system
-11-01 04:44:30.974   273   388 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity} from uid 0
-11-01 04:44:30.977  2199  2201 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:44:30.980   273   307 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
-11-01 04:44:30.980   273   307 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: DISABLED
-11-01 04:44:30.980   273   314 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
-11-01 04:44:30.984   142   142 D Zygote  : Forked child process 2202
-11-01 04:44:30.985  2202  2202 I Zygote  : seccomp disabled by setenforce 0
-11-01 04:44:30.985  2202  2202 I libc    : SetHeapTaggingLevel: tag level set to 0
-11-01 04:44:30.985   273   314 I ActivityManager: Start proc 2202:com.wushisan.algertv/u0a116 for pre-top-activity {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity}
-11-01 04:44:30.987  2158  2164 I adbd    : jdwp connection from 2202
-11-01 04:44:30.990   273   388 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-11-01 04:44:30.993  2202  2202 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-11-01 04:44:30.997  2202  2202 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-11-01 04:44:30.997  2202  2202 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-11-01 04:44:31.001  2202  2202 I AlgerTV : TLS_SUPPORT_READY bundled=true
-11-01 04:44:31.007  2158  2164 I adbd    : jdwp connection from 1637
-11-01 04:44:31.007  2158  2164 I adbd    : jdwp connection from 1374
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1850
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 874
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1341
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1197
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1743
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1664
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1072
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1714
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1395
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1428
-11-01 04:44:31.008  2158  2164 I adbd    : jdwp connection from 1593
-11-01 04:44:31.009  2158  2164 I adbd    : jdwp connection from 486
-11-01 04:44:31.009  2158  2164 I adbd    : jdwp connection from 1691
-11-01 04:44:31.009  2158  2164 I adbd    : jdwp connection from 1774
-11-01 04:44:31.033  2202  2202 I AlgerTV : App onCreate
-11-01 04:44:31.063  2202  2202 I AlgerTV : HOME_LOAD_START
-11-01 04:44:31.064  2202  2202 I AlgerTV : HOME_SEED
-11-01 04:44:31.071  2202  2202 I AlgerTV : HOME_ROWS_BUILT fallback=false
-11-01 04:44:31.107    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-11-01 04:44:31.439    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:44:31.439  2202  2224 I Gralloc4: mapper 4.x is not supported
-11-01 04:44:31.439    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-11-01 04:44:31.439  2202  2224 W Gralloc3: mapper 3.x is not supported
-11-01 04:44:31.440    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
-11-01 04:44:31.448  2202  2202 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=0: HTTP 503
-11-01 04:44:31.448   273   312 I ActivityTaskManager: Displayed com.wushisan.algertv/.ui.MainActivity: +473ms
-11-01 04:44:31.510  2202  2202 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv
-11-01 04:44:31.511   273   388 D ConnectivityService: requestNetwork for uid/pid:10116/2202 NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ]
-11-01 04:44:31.511   273   399 D ConnectivityService: NetReassign [22 : null → 100]
-11-01 04:44:31.511   273   395 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-11-01 04:44:31.511   273   425 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-11-01 04:44:31.511   273   395 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-11-01 04:44:31.511   806   806 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-11-01 04:44:31.512   465   465 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-11-01 04:44:31.513   806   806 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-11-01 04:44:31.513   806   806 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-11-01 04:44:31.584  2202  2202 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
-11-01 04:44:31.589  2202  2202 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
-11-01 04:44:31.719  2158  2254 I adbd    : host-18: read thread spawning
-11-01 04:44:31.719  2158  2255 I adbd    : host-18: write thread spawning
-11-01 04:44:31.719  2158  2158 I adbd    : host-18: already offline
-11-01 04:44:31.719  2158  2158 I adbd    : authentication not required
-11-01 04:44:31.804  2202  2202 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
-11-01 04:44:31.817  2202  2202 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
-11-01 04:44:31.984  2202  2202 I AlgerTV : HOME_META_OK id=1978921795 ms=921
-11-01 04:44:32.013  2202  2202 I AlgerTV : HOME_META_OK id=60198 ms=950
-11-01 04:44:32.052  2202  2202 I AlgerTV : HOME_META_OK id=180106 ms=989
-11-01 04:44:32.239  2202  2202 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
-11-01 04:44:32.375   701   972 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:44:32.375   701   972 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:44:32.463  2202  2202 W AlgerTV : HOME_META_FAIL id=745956260 attempt=1: HTTP 503
-11-01 04:44:32.468  2158  2160 I adbd    : adbd_auth: received a new framework connection
-11-01 04:44:32.468  2158  2160 I adbd    : adbd_auth: received new framework fd 47 (current = -1)
-11-01 04:44:32.511  2202  2202 W AlgerTV : HOME_META_FAIL id=2809513713 attempt=1: HTTP 503
-11-01 04:44:32.681  2202  2202 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
-11-01 04:44:32.738  2202  2202 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
-11-01 04:44:32.897  2202  2202 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
-11-01 04:44:32.959  2202  2202 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
-11-01 04:44:33.068  2202  2202 I AlgerTV : HOME_META_OK id=19723756 ms=2005
-11-01 04:44:33.097  2202  2202 I AlgerTV : HOME_META_OK id=3779629 ms=2034
-11-01 04:44:33.171  2202  2202 I AlgerTV : HOME_META_OK id=2884035 ms=2108
-11-01 04:44:33.682  2202  2202 I AlgerTV : HOME_META_OK id=991319590 ms=2619
-11-01 04:44:33.682  2202  2202 I AlgerTV : HOME_DONE ms=2619 meta=7/13 fallback=false
-11-01 04:44:33.683  2202  2202 I AlgerTV : HOME_ROWS_BUILT fallback=false
-11-01 04:44:33.683  2202  2256 I AlgerTV : HOME_CACHE_SAVED bytes=1412
-11-01 04:44:33.980   273  1105 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-11-01 04:44:42.155   153   166 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-11-01 04:44:42.155   153   166 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+11-01 05:25:39.590   270   572 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity} from uid 0
+--------- beginning of main
+11-01 05:25:39.592  2223  2225 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:25:39.593   270   304 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
+11-01 05:25:39.593   270   304 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: DISABLED
+11-01 05:25:39.593   270   311 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
+11-01 05:25:39.598   139   139 D Zygote  : Forked child process 2226
+11-01 05:25:39.599  2226  2226 I Zygote  : seccomp disabled by setenforce 0
+11-01 05:25:39.599  2226  2226 I libc    : SetHeapTaggingLevel: tag level set to 0
+11-01 05:25:39.599   270   311 I ActivityManager: Start proc 2226:com.wushisan.algertv/u0a116 for pre-top-activity {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity}
+11-01 05:25:39.601  2182  2188 I adbd    : jdwp connection from 2226
+11-01 05:25:39.603   270   332 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 270
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 1167
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 458
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 816
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 1247
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 438
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 725
+11-01 05:25:39.605  2182  2188 I adbd    : jdwp connection from 791
+11-01 05:25:39.606  2182  2188 I adbd    : jdwp connection from 1038
+11-01 05:25:39.606  2182  2188 I adbd    : jdwp connection from 749
+11-01 05:25:39.607  2226  2226 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+11-01 05:25:39.610  2226  2226 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:25:39.610  2226  2226 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:25:39.613  2226  2226 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 05:25:39.638  2182  2188 I adbd    : jdwp connection from 1295
+11-01 05:25:39.638  2182  2188 I adbd    : jdwp connection from 1650
+11-01 05:25:39.638  2182  2188 I adbd    : jdwp connection from 1702
+11-01 05:25:39.638  2182  2188 I adbd    : jdwp connection from 485
+11-01 05:25:39.643  2226  2226 I AlgerTV : App onCreate
+11-01 05:25:39.644  2182  2188 I adbd    : jdwp connection from 1675
+11-01 05:25:39.644  2182  2188 I adbd    : jdwp connection from 1439
+11-01 05:25:39.644  2182  2188 I adbd    : jdwp connection from 1787
+11-01 05:25:39.644  2182  2188 I adbd    : jdwp connection from 1725
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1865
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1413
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1605
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1059
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1755
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1583
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1361
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 882
+11-01 05:25:39.645  2182  2188 I adbd    : jdwp connection from 1384
+11-01 05:25:39.660  2226  2226 I AlgerTV : HOME_LOAD_START
+11-01 05:25:39.660  2226  2226 I AlgerTV : HOME_SEED
+11-01 05:25:39.666  2226  2226 I AlgerTV : HOME_ROWS_BUILT fallback=false
+11-01 05:25:39.695    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+11-01 05:25:40.001    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:25:40.001  2226  2248 I Gralloc4: mapper 4.x is not supported
+11-01 05:25:40.001    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 05:25:40.001  2226  2248 W Gralloc3: mapper 3.x is not supported
+11-01 05:25:40.002    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:25:40.010  2226  2226 W AlgerTV : HOME_META_FAIL id=180106 attempt=0: HTTP 503
+11-01 05:25:40.010  2226  2226 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
+11-01 05:25:40.010   270   309 I ActivityTaskManager: Displayed com.wushisan.algertv/.ui.MainActivity: +419ms
+11-01 05:25:40.021  2226  2226 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv
+11-01 05:25:40.021   270   574 D ConnectivityService: requestNetwork for uid/pid:10116/2226 NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ]
+11-01 05:25:40.022   270   394 D ConnectivityService: NetReassign [22 : null → 100]
+11-01 05:25:40.022   270   420 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:25:40.022   816   816 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:25:40.022   270   390 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:25:40.023   270   390 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:25:40.023   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 05:25:40.023   816   816 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 05:25:40.023   816   816 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 05:25:40.088  2226  2226 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+11-01 05:25:40.088  2226  2226 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+11-01 05:25:40.209  2226  2226 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+11-01 05:25:40.258  2226  2226 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+11-01 05:25:40.357  2182  2278 I adbd    : host-18: read thread spawning
+11-01 05:25:40.357  2182  2279 I adbd    : host-18: write thread spawning
+11-01 05:25:40.357  2182  2182 I adbd    : host-18: already offline
+11-01 05:25:40.357  2182  2182 I adbd    : authentication not required
+11-01 05:25:40.387  2226  2226 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
+11-01 05:25:40.439  2226  2226 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
+11-01 05:25:40.602  2226  2226 I AlgerTV : HOME_META_OK id=60198 ms=942
+11-01 05:25:40.733  2226  2226 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
+11-01 05:25:40.739  2226  2226 I AlgerTV : HOME_META_OK id=745956260 ms=1079
+11-01 05:25:40.870  2226  2226 I AlgerTV : HOME_META_OK id=2809513713 ms=1210
+11-01 05:25:40.985  2226  2226 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=1: HTTP 503
+11-01 05:25:41.055  2226  2226 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
+11-01 05:25:41.106  2182  2184 I adbd    : adbd_auth: received a new framework connection
+11-01 05:25:41.106  2182  2184 I adbd    : adbd_auth: received new framework fd 48 (current = -1)
+11-01 05:25:41.121  2226  2226 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
+11-01 05:25:41.226  2226  2226 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
+11-01 05:25:41.357  2226  2226 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
+11-01 05:25:41.406  2226  2226 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
+11-01 05:25:41.535  2226  2226 I AlgerTV : HOME_META_OK id=2884035 ms=1875
+11-01 05:25:41.550  2226  2226 I AlgerTV : HOME_META_OK id=180106 ms=1890
+11-01 05:25:41.639  2226  2226 I AlgerTV : HOME_META_OK id=60131 ms=1979
+11-01 05:25:42.033  2226  2226 I AlgerTV : HOME_META_OK id=991319590 ms=2372
+11-01 05:25:42.033  2226  2226 I AlgerTV : HOME_DONE ms=2373 meta=7/13 fallback=false
+11-01 05:25:42.033  2226  2226 I AlgerTV : HOME_ROWS_BUILT fallback=false
+11-01 05:25:42.033  2226  2280 I AlgerTV : HOME_CACHE_SAVED bytes=1409
+11-01 05:25:42.134   749   982 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:25:42.134   749   982 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:25:42.629   270  1116 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-01 05:25:52.010   151   172 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+11-01 05:25:52.010   151   172 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory

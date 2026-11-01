@@ -1,8 +1,8 @@
 === uname ===
 Linux runnervm9u1px 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 19:06:39 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
 total 8.0K
-drwxr-xr-x 3 runner runner 4.0K Nov  1 04:42 phone
-drwxr-xr-x 3 runner runner 4.0K Nov  1 04:42 tv
+drwxr-xr-x 3 runner runner 4.0K Nov  1 05:23 phone
+drwxr-xr-x 3 runner runner 4.0K Nov  1 05:23 tv
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -23,7 +23,7 @@ Get:5 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-libzipar
 Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libprotobuf32t64 arm64 3.21.12-8.2ubuntu0.4 [859 kB]
 Get:7 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 adb arm64 1:34.0.4-1build3 [272 kB]
 Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 android-sdk-platform-tools-common all 28.0.2+9 [6402 B]
-Fetched 2004 kB in 1s (2638 kB/s)
+Fetched 2004 kB in 1s (1937 kB/s)
 Selecting previously unselected package android-liblog:arm64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 218279 files and directories currently installed.)
 Preparing to unpack .../0-android-liblog_1%3a34.0.4-1build3_arm64.deb ...
@@ -84,7 +84,7 @@ Unable to find image 'redroid/redroid:11.0.0-latest' locally
 06cb3c383cf0: Pull complete
 Digest: sha256:60b0810684be4578733a847be3314c50b70f73bc92405b5a627ebe9b633ebb5e
 Status: Downloaded newer image for redroid/redroid:11.0.0-latest
-cd5b69b105b905234d7f1d9ccb00cf1e4953a5ffb013b220313ef8f80e8dcd5b
+b8bb7e18151966bae53067fef91a5e0e79ec3fd36ba46e5d057b3d7caf671f47
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 connected to localhost:5555
@@ -102,7 +102,7 @@ Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity }
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
 --- TV direct-URL pipeline (source-independent) ---
 Starting: Intent { cmp=com.wushisan.algertv/.ui.MainActivity (has extras) }
-/home/runner/work/_temp/4770d05b-ddf9-4966-846b-3344bbc6c0ba.sh: line 130: [: 0
+/home/runner/work/_temp/996c8e67-2f3f-4186-b4dd-a457bc479a65.sh: line 130: [: 0
 0: integer expression expected
 --- TV TLS sim (dual-store ISRG Root X1 removal) ---
 Success
@@ -114,16 +114,14 @@ Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
 --- PHONE search repro ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity }
-/home/runner/work/_temp/4770d05b-ddf9-4966-846b-3344bbc6c0ba.sh: line 309: PPID: readonly variable
+/home/runner/work/_temp/996c8e67-2f3f-4186-b4dd-a457bc479a65.sh: line 309: PPID: readonly variable
 --- PHONE direct-URL pipeline ---
 Starting: Intent { cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras) }
-/home/runner/work/_temp/4770d05b-ddf9-4966-846b-3344bbc6c0ba.sh: line 335: [: 0
-0: integer expression expected
 REDROID_BOOTED
 TV_INSTALL_OK
-TV_FIRST_ALIVE pid=1885
+TV_FIRST_ALIVE pid=1900
 TV_FIRST_FATAL_COUNT=0
-TV_PROCESS_ALIVE pid=1977
+TV_PROCESS_ALIVE pid=1992
 TV_FATAL_COUNT=0
 TV_AUTOPLAY_UNCONFIRMED
 TV_FIRST_TRACK load=none start=none errors=0
@@ -133,8 +131,8 @@ TV_DIRECT_PLAYER_ERRORS=1
 TV_DIRECT_POSITION p1=0
 0 p2=0
 0
-TV_DIRECT_ALIVE pid=2058
-TV_HOME_BASE_META=12
+TV_DIRECT_ALIVE pid=2079
+TV_HOME_BASE_META=6
 TV_TLS_PRE_SYSTEM_X1=present
 TV_TLS_ISO_SYSTEM=ok
 TV_TLS_ISO_APEX=absent
@@ -145,19 +143,17 @@ TV_TLS_BUNDLED_HITS=0
 TV_TLS_SSL_ERRS=0
 TV_TLS_SIM_INCONCLUSIVE
 PHONE_INSTALL_OK
-PHONE_FIRST_ALIVE pid=2360
+PHONE_FIRST_ALIVE pid=2353
 PHONE_FIRST_FATAL_COUNT=0
-PHONE_PROCESS_ALIVE pid=2448
+PHONE_PROCESS_ALIVE pid=2434
 PHONE_FATAL_COUNT=0
 PHONE_SEARCH_OPEN_OK
 PHONE_SEARCH_RESULTS=7
 PHONE_SEARCH_ANR_COUNT=0
 PHONE_SEARCH_FATAL_COUNT=0
-PHONE_SEARCH_ALIVE pid=2535
+PHONE_SEARCH_ALIVE pid=2527
 PHONE_DIRECT_NOT_STARTED
 PHONE_DIRECT_PLAYER_ERRORS=1
-PHONE_DIRECT_POSITION p1=0
-0 p2=0
-0
-PHONE_DIRECT_ALIVE pid=2734
-SMOKE_DONE date=2026-11-01T04:45:59Z sha=f567d89aa2da767c6c355de8c6b76388b4dbcfb4
+PHONE_DIRECT_POSITION p1=none p2=none
+PHONE_DIRECT_ALIVE pid=2886
+SMOKE_DONE date=2026-11-01T05:27:07Z sha=f567d89aa2da767c6c355de8c6b76388b4dbcfb4

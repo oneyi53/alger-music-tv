@@ -1,203 +1,571 @@
 --------- beginning of system
-11-01 04:45:37.977   273  1643 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 0
-11-01 04:45:37.987   273   307 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
-11-01 04:45:37.987   273   307 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
-11-01 04:45:37.987   273   314 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+11-01 05:26:46.243   270   573 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (has extras)} from uid 0
 --------- beginning of main
-11-01 04:45:37.989  2731  2733 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:45:37.995   142   142 D Zygote  : Forked child process 2734
-11-01 04:45:37.996  2734  2734 I Zygote  : seccomp disabled by setenforce 0
-11-01 04:45:37.996   273   314 I ActivityManager: Start proc 2734:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
-11-01 04:45:37.999  2158  2164 I adbd    : jdwp connection from 2734
-11-01 04:45:38.001   273  1643 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-11-01 04:45:38.003   273   307 I ActivityManager: Killing 1341:com.android.managedprovisioning/u0a65 (adj 985): empty #17
-11-01 04:45:38.009   142   142 I Zygote  : Process 1341 exited due to signal 9 (Killed)
-11-01 04:45:38.011  2734  2734 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-11-01 04:45:38.011  2734  2734 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-11-01 04:45:38.015  2734  2734 I AlgerTV : TLS_SUPPORT_READY bundled=true
-11-01 04:45:38.047  2734  2734 I AlgerTV : App onCreate
-11-01 04:45:38.067  2734  2734 I AlgerTV : HOME_LOAD_START
-11-01 04:45:38.067  2734  2734 I AlgerTV : HOME_CACHE_HIT
-11-01 04:45:38.070  2734  2734 I AlgerTV : SMOKE_DIRECT_PLAY phone
-11-01 04:45:38.072   273  2529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:45:38.072   273  2529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:45:38.073  2734  2734 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
-11-01 04:45:38.073  2734  2734 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-11-01 04:45:38.074   273  1643 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10117
-11-01 04:45:38.095  2734  2734 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
-11-01 04:45:38.098   273  2529 D ConnectivityService: requestNetwork for uid/pid:10117/2734 NetworkRequest [ TRACK_DEFAULT id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
-11-01 04:45:38.100   273   399 D ConnectivityService: NetReassign [27 : null → 100]
-11-01 04:45:38.100   273   395 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-11-01 04:45:38.100   273   395 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-11-01 04:45:38.101   273   425 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-11-01 04:45:38.101   806   806 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
-11-01 04:45:38.102   806   806 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-11-01 04:45:38.102   806   806 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-11-01 04:45:38.102   465   465 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-11-01 04:45:38.110   443   443 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
-11-01 04:45:38.111  2734  2734 I AlgerTV : PlaybackService(phone) onCreate
-11-01 04:45:38.111   443   443 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-11-01 04:45:38.111  2734  2734 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
-11-01 04:45:38.111  2734  2734 E MediaPlayerNative: error (-38, 0)
-11-01 04:45:38.112   443   443 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
-11-01 04:45:38.113   443   443 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv.phone at key: 1
-11-01 04:45:38.115  2734  2734 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
-11-01 04:45:38.116  2734  2734 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-11-01 04:45:38.116  2734  2734 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-11-01 04:45:38.116  2734  2734 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@c70912a): Cookies: null
-11-01 04:45:38.117   152   227 D NuPlayerDriver: NuPlayerDriver(0xecc41410) created, clientPid(2734)
-11-01 04:45:38.119  2734  2734 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-11-01 04:45:38.119  2734  2754 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@8a4cb1b
-11-01 04:45:38.119  2734  2754 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@c70912a): cookieHandler: java.net.CookieManager@8a4cb1b Cookies: null
-11-01 04:45:38.119   273  1643 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (395877)
-11-01 04:45:38.134    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-11-01 04:45:38.315   273   273 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
-11-01 04:45:38.315   273   273 I chatty  : uid=1000 system_server identical 1 line
-11-01 04:45:38.315   273   273 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
-11-01 04:45:38.315   273   273 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
-11-01 04:45:38.320   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-11-01 04:45:38.323   465   465 I chatty  : uid=10109(com.android.systemui) identical 2 lines
-11-01 04:45:38.324   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-11-01 04:45:38.325   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=395982, actions=822, custom actions=[], active item id=-1, error=null}
-11-01 04:45:38.325   465   465 V MediaTimeout: schedule timeout for 0|com.wushisan.algertv.phone|1001|null|10117
-11-01 04:45:38.325   465   465 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
-11-01 04:45:38.328   443   914 D BluetoothDatabase: getBondedDevicesOrdered: Invalid address for device LocalStorage
-11-01 04:45:38.370   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:38.370   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:38.370   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:38.371   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:38.371   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:38.371   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:38.371   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:38.391   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:38.395   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:38.398   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:38.399   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:38.539    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:45:38.540  2734  2756 I Gralloc4: mapper 4.x is not supported
-11-01 04:45:38.540    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-11-01 04:45:38.540  2734  2756 W Gralloc3: mapper 3.x is not supported
-11-01 04:45:38.541    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:45:38.698  2734  2734 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
-11-01 04:45:38.698  2734  2734 W AlgerTV : HOME_META_FAIL id=60198 attempt=0: HTTP 503
-11-01 04:45:38.698  2734  2734 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
-11-01 04:45:38.698  2734  2734 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
-11-01 04:45:38.698  2734  2734 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0xb400ec1102031d50, mCurrentState=4
-11-01 04:45:38.699  2734  2734 E MediaPlayerNative: error (-38, 0)
-11-01 04:45:38.700   273   312 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +721ms
-11-01 04:45:38.710  2734  2734 E MediaPlayer: Error (-38,0)
-11-01 04:45:38.710  2734  2734 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
-11-01 04:45:38.710   152   227 D NuPlayerDriver: reset(0xecc41410) at state 3
-11-01 04:45:38.711   152  2798 I NuCachedSource2: caching reached eos.
-11-01 04:45:38.711   152  2783 D NuPlayerDriver: notifyResetComplete(0xecc41410)
-11-01 04:45:38.711   152  1769 D NuPlayerDriver: reset(0xecc41410) at state 0
-11-01 04:45:38.711   152  2784 E GenericSource: initFromDataSource, cannot create extractor!
-11-01 04:45:38.711   152  2784 E GenericSource: Failed to init from data source!
-11-01 04:45:38.711   152  2784 W AMessage: failed to post message as target looper for handler 0 is gone.
-11-01 04:45:38.711  2734  2734 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-11-01 04:45:38.711  2734  2734 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-11-01 04:45:38.711  2734  2734 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-11-01 04:45:38.711  2734  2734 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-11-01 04:45:38.713   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=396579, actions=822, custom actions=[], active item id=-1, error=null}
-11-01 04:45:38.714  2734  2734 W AlgerTV : service sees error: 播放失败，自动跳到下一首
-11-01 04:45:38.715  2734  2734 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10117; state: ENABLED
-11-01 04:45:38.719   465   465 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=396583, actions=822, custom actions=[], active item id=-1, error=null}
-11-01 04:45:38.773  2734  2734 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
-11-01 04:45:38.776  2734  2734 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
-11-01 04:45:38.916   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-11-01 04:45:38.974   465   465 I chatty  : uid=10109(com.android.systemui) identical 2 lines
-11-01 04:45:38.974   465   465 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:38.976   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:38.989  2734  2734 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
-11-01 04:45:38.995  2734  2734 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:39.036   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:39.037   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:39.041   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:39.102   465   465 W ConstraintSet: id unknown center_vertical_guideline
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown media_action_barrier
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown media_text
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown remove_text
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown settings
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown cancel
-11-01 04:45:39.103   465   465 W ConstraintSet: id unknown dismiss
-11-01 04:45:39.204  2734  2734 W AlgerTV : HOME_META_FAIL id=2884035 attempt=0: HTTP 503
-11-01 04:45:39.222  2734  2734 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
-11-01 04:45:39.646  2734  2734 I AlgerTV : HOME_META_OK id=1978921795 ms=1579
-11-01 04:45:39.687  2734  2734 I AlgerTV : HOME_META_OK id=180106 ms=1620
-11-01 04:45:39.915  2734  2734 I AlgerTV : HOME_META_OK id=2809513713 ms=1848
-11-01 04:45:40.188  2734  2734 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
-11-01 04:45:40.402  2734  2734 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
-11-01 04:45:40.620  2734  2734 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
-11-01 04:45:40.719   273  2440 W NotificationService: Toast already killed. pkg=com.wushisan.algertv.phone token=android.os.BinderProxy@821c668
-11-01 04:45:40.835  2734  2734 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
-11-01 04:45:41.075   273  2306 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:45:41.261  2734  2734 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
-11-01 04:45:41.425  2734  2734 W AlgerTV : HOME_META_FAIL id=2884035 attempt=1: HTTP 503
-11-01 04:45:41.475  2734  2734 W AlgerTV : HOME_META_FAIL id=991319590 attempt=1: HTTP 503
-11-01 04:45:41.886  2734  2734 I AlgerTV : HOME_META_OK id=60198 ms=3819
-11-01 04:45:41.963  2734  2734 I AlgerTV : HOME_META_OK id=71384707 ms=3896
-11-01 04:45:42.011  2734  2734 I AlgerTV : HOME_META_OK id=745956260 ms=3944
-11-01 04:45:42.011  2734  2734 I AlgerTV : HOME_DONE ms=3944 meta=6/13 fallback=false
-11-01 04:45:42.012  2734  2801 I AlgerTV : HOME_CACHE_SAVED bytes=1313
-11-01 04:45:42.033   273  1105 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-11-01 04:45:42.156   153   166 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-11-01 04:45:42.156   153   166 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-11-01 04:45:42.220   273   307 W WindowManager: Unable to start animation, surface is null or no children.
-11-01 04:45:51.719   273   273 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@8c82f9e
-11-01 04:45:52.400   701   972 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:45:52.400   701   972 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
-11-01 04:45:54.062    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-11-01 04:45:54.062  2803  2803 I Gralloc4: mapper 4.x is not supported
-11-01 04:45:54.062    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-11-01 04:45:54.062  2803  2803 W Gralloc3: mapper 3.x is not supported
-11-01 04:45:54.166  2807  2809 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-11-01 04:45:54.169  1234  1765 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-11-01 04:45:54.172  1234  1765 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-11-01 04:45:54.173  1234  1771 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-11-01 04:45:54.174  1234  1771 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-11-01 04:45:54.174  1234  1771 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-11-01 04:45:54.174  1234  1771 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:26:46.247  2728  2730 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:26:46.248   270   304 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
+11-01 05:26:46.248   270   304 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
+11-01 05:26:46.249   270   311 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+11-01 05:26:46.254   139   139 D Zygote  : Forked child process 2731
+11-01 05:26:46.254   270   311 I ActivityManager: Start proc 2731:com.wushisan.algertv.phone/u0a117 for pre-top-activity {com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+11-01 05:26:46.255  2731  2731 I Zygote  : seccomp disabled by setenforce 0
+11-01 05:26:46.257  2182  2188 I adbd    : jdwp connection from 2731
+11-01 05:26:46.259   270   332 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+11-01 05:26:46.266  2731  2731 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:46.266  2731  2731 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:46.270  2731  2731 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 05:26:46.300  2731  2731 I AlgerTV : App onCreate
+11-01 05:26:46.319  2731  2731 I AlgerTV : HOME_LOAD_START
+11-01 05:26:46.320  2731  2731 I AlgerTV : HOME_CACHE_HIT
+11-01 05:26:46.322  2731  2731 I AlgerTV : SMOKE_DIRECT_PLAY phone
+11-01 05:26:46.325   270   332 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:26:46.325   270   332 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:26:46.326  2731  2731 I AlgerTV : PLAYER_LOAD id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3 name=Smoke Direct
+11-01 05:26:46.326  2731  2731 I AlgerTV : URL_DIRECT id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+11-01 05:26:46.326   270   573 I ActivityTaskManager: START u0 {cmp=com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity} from uid 10117
+11-01 05:26:46.348  2731  2731 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv.phone
+11-01 05:26:46.349   270  2722 D ConnectivityService: requestNetwork for uid/pid:10117/2731 NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ]
+11-01 05:26:46.349   270   394 D ConnectivityService: NetReassign [30 : null → 100]
+11-01 05:26:46.349   270   390 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 05:26:46.349   270   390 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 05:26:46.350   270   420 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 05:26:46.353   816   816 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] with score 70 and providerId 1
+11-01 05:26:46.359   816   816 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 05:26:46.359   816   816 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 05:26:46.359   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 05:26:46.359   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+11-01 05:26:46.359  2731  2731 I AlgerTV : PlaybackService(phone) onCreate
+11-01 05:26:46.360  2731  2731 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=1
+11-01 05:26:46.360  2731  2731 E MediaPlayerNative: error (-38, 0)
+11-01 05:26:46.361   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
+11-01 05:26:46.363   438   438 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
+11-01 05:26:46.364   438   438 I AvrcpMediaPlayerList: Adding wrapped media player: com.wushisan.algertv.phone at key: 1
+11-01 05:26:46.367  2731  2731 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0x0, mCurrentState=0
+11-01 05:26:46.368  2731  2731 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-01 05:26:46.368  2731  2731 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-01 05:26:46.368  2731  2731 V MediaHTTPService: MediaHTTPService(android.media.MediaHTTPService@d92e5ae): Cookies: null
+11-01 05:26:46.369   149   621 D NuPlayerDriver: NuPlayerDriver(0xed741d70) created, clientPid(2731)
+11-01 05:26:46.374  2731  2731 I AlgerTV : PLAYER_PREPARING id=direct:https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+11-01 05:26:46.374   270   573 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (557536)
+11-01 05:26:46.375  2731  2750 V MediaHTTPService: makeHTTPConnection: CookieManager created: java.net.CookieManager@68253e5
+11-01 05:26:46.375  2731  2750 V MediaHTTPService: makeHTTPConnection(android.media.MediaHTTPService@d92e5ae): cookieHandler: java.net.CookieManager@68253e5 Cookies: null
+11-01 05:26:46.379   270   394 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] (release request)
+11-01 05:26:46.381   816   816 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 05:26:46.381   816   816 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 05:26:46.381   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 05:26:46.387    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+11-01 05:26:46.568   270   270 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+11-01 05:26:46.568   270   270 I chatty  : uid=1000 system_server identical 1 line
+11-01 05:26:46.568   270   270 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+11-01 05:26:46.569   270   270 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+11-01 05:26:46.572   458   458 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:46.574   458   458 I chatty  : uid=10108(com.android.systemui) identical 2 lines
+11-01 05:26:46.574   458   458 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:46.577   458   458 V MediaTimeout: processState: PlaybackState {state=2, position=0, buffered position=0, speed=1.0, updated=557644, actions=822, custom actions=[], active item id=-1, error=null}
+11-01 05:26:46.577   458   458 V MediaTimeout: schedule timeout for 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:46.577   458   458 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
+11-01 05:26:46.590   438  1121 D BluetoothDatabase: getBondedDevicesOrdered: Invalid address for device LocalStorage
+11-01 05:26:46.681   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:46.682   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:46.700   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:46.705   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:46.708   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:46.756    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:26:46.756  2731  2753 I Gralloc4: mapper 4.x is not supported
+11-01 05:26:46.756    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 05:26:46.756  2731  2753 W Gralloc3: mapper 3.x is not supported
+11-01 05:26:46.757    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:26:46.897  2731  2731 W AlgerTV : HOME_META_FAIL id=745956260 attempt=0: HTTP 503
+11-01 05:26:46.897  2731  2731 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
+11-01 05:26:46.897  2731  2731 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
+11-01 05:26:46.897  2731  2731 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
+11-01 05:26:46.897  2731  2731 E MediaPlayerNative: Attempt to call getDuration in wrong state: mPlayer=0xb400e2d3db81fe30, mCurrentState=4
+11-01 05:26:46.897  2731  2731 E MediaPlayerNative: error (-38, 0)
+11-01 05:26:46.898   270   309 I ActivityTaskManager: Displayed com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity: +654ms
+11-01 05:26:46.907  2731  2731 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
+11-01 05:26:46.908  2731  2731 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
+11-01 05:26:46.908  2731  2731 E MediaPlayer: Error (-38,0)
+11-01 05:26:46.908  2731  2731 E AlgerTV : PLAYER_ERROR what=-38 extra=0 idx=0
+11-01 05:26:46.908   149  1780 D NuPlayerDriver: reset(0xed741d70) at state 3
+11-01 05:26:49.329   270   573 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:26:50.839   270  1116 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-01 05:26:51.265  2731  2752 I n.algertv.phon: Waiting for a blocking GC ProfileSaver
+11-01 05:26:51.286  2731  2752 I n.algertv.phon: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 20.719ms
+11-01 05:26:51.951   270   346 I WindowManager: Input event dispatching timed out sending to com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity.  Reason: 9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true)
+11-01 05:26:51.968   270   346 D WindowManager: notifyANR took 18ms
+11-01 05:26:51.968   270   346 W InputDispatcher: Canceling events for 9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server) because it is unresponsive
+11-01 05:26:51.971   270  2796 I ActivityManager: dumpStackTraces pids={438=true, 485=true, 725=true, 882=true, 1038=true, 1059=true, 1167=true, 1247=true, 1295=true, 1361=true, 1384=true, 1413=true, 1439=true, 1605=true, 1650=true, 1675=true, 1702=true, 1725=true, 1755=true, 1787=true, 1865=true, 2226=true} nativepids=[28, 77, 80, 141, 142, 147, 148, 149, 151, 156, 160, 161, 438]
+11-01 05:26:52.010   151   172 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+11-01 05:26:52.010   151   172 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+11-01 05:26:52.196   270  2796 I ActivityManager: Skipping next CPU consuming process, not a java proc: 270
+11-01 05:26:52.196   270  2796 I ActivityManager: Dumping to /data/anr/anr_2026-11-01-05-26-52-196
+11-01 05:26:52.196   270  2796 I ActivityManager: Collecting stacks for pid 2731
+11-01 05:26:52.197   270  2796 I system_server: libdebuggerd_client: started dumping process 2731
+11-01 05:26:52.197    47    47 I tombstoned: registered intercept for pid 2731 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.197  2731  2741 I n.algertv.phon: Thread[6,tid=2741,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b80ee90,peer=0x12c40730,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.197  2731  2741 I n.algertv.phon: 
+11-01 05:26:52.345    47    47 I tombstoned: received crash request for pid 2731
+11-01 05:26:52.345    47    47 I tombstoned: found intercept fd 512 for pid 2731 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.345  2731  2741 I n.algertv.phon: Wrote stack traces to tombstoned
+11-01 05:26:52.345   270  2796 I system_server: libdebuggerd_client: done dumping process 2731
+11-01 05:26:52.346   270  2796 I ActivityManager: Collecting stacks for pid 270
+11-01 05:26:52.347   270  2796 I system_server: libdebuggerd_client: started dumping process 270
+11-01 05:26:52.347    47    47 I tombstoned: registered intercept for pid 270 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.347   270   276 I system_server: Thread[2,tid=276,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b80d2c0,peer=0x138c0150,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.347   270   276 I system_server: 
+11-01 05:26:52.404    47    47 I tombstoned: received crash request for pid 270
+11-01 05:26:52.404    47    47 I tombstoned: found intercept fd 512 for pid 270 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.404   270   276 I system_server: Wrote stack traces to tombstoned
+11-01 05:26:52.404   270  2796 I system_server: libdebuggerd_client: done dumping process 270
+11-01 05:26:52.405   270  2796 I ActivityManager: Collecting stacks for pid 816
+11-01 05:26:52.406   270  2796 I system_server: libdebuggerd_client: started dumping process 816
+11-01 05:26:52.406    47    47 I tombstoned: registered intercept for pid 816 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.406   816   824 I m.android.phon: Thread[5,tid=824,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b810a60,peer=0x13b001b0,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.406   816   824 I m.android.phon: 
+11-01 05:26:52.425    47    47 I tombstoned: received crash request for pid 816
+11-01 05:26:52.425    47    47 I tombstoned: found intercept fd 512 for pid 816 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.425   816   824 I m.android.phon: Wrote stack traces to tombstoned
+11-01 05:26:52.425   270  2796 I system_server: libdebuggerd_client: done dumping process 816
+11-01 05:26:52.426   270  2796 I ActivityManager: Collecting stacks for pid 791
+11-01 05:26:52.426   270  2796 I system_server: libdebuggerd_client: started dumping process 791
+11-01 05:26:52.426    47    47 I tombstoned: registered intercept for pid 791 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.426   791   796 I com.android.se: Thread[5,tid=796,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b812630,peer=0x12e401b0,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.426   791   796 I com.android.se: 
+11-01 05:26:52.443    47    47 I tombstoned: received crash request for pid 791
+11-01 05:26:52.443    47    47 I tombstoned: found intercept fd 512 for pid 791 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.443   791   796 I com.android.se: Wrote stack traces to tombstoned
+11-01 05:26:52.443   270  2796 I system_server: libdebuggerd_client: done dumping process 791
+11-01 05:26:52.444   270  2796 I ActivityManager: Collecting stacks for pid 749
+11-01 05:26:52.444   270  2796 I system_server: libdebuggerd_client: started dumping process 749
+11-01 05:26:52.444    47    47 I tombstoned: registered intercept for pid 749 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.445   749   760 I rkstack.proces: Thread[6,tid=760,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b80d2c0,peer=0x131001b0,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.445   749   760 I rkstack.proces: 
+11-01 05:26:52.462    47    47 I tombstoned: received crash request for pid 749
+11-01 05:26:52.462    47    47 I tombstoned: found intercept fd 512 for pid 749 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.463   749   760 I rkstack.proces: Wrote stack traces to tombstoned
+11-01 05:26:52.463   270  2796 I system_server: libdebuggerd_client: done dumping process 749
+11-01 05:26:52.463   270  2796 I ActivityManager: Collecting stacks for pid 458
+11-01 05:26:52.464   270  2796 I system_server: libdebuggerd_client: started dumping process 458
+11-01 05:26:52.464    47    47 I tombstoned: registered intercept for pid 458 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.464   458   468 I ndroid.systemu: Thread[6,tid=468,WaitingInMainSignalCatcherLoop,Thread*=0xb400e2d50b806380,peer=0x13e001b0,"Signal Catcher"]: reacting to signal 3
+11-01 05:26:52.464   458   468 I ndroid.systemu: 
+11-01 05:26:52.642    47    47 I tombstoned: received crash request for pid 458
+11-01 05:26:52.642    47    47 I tombstoned: found intercept fd 512 for pid 458 and type kDebuggerdJavaBacktrace
+11-01 05:26:52.642   458   468 I ndroid.systemu: Wrote stack traces to tombstoned
+11-01 05:26:52.642   270  2796 I system_server: libdebuggerd_client: done dumping process 458
+11-01 05:26:52.643   270  2796 I ActivityManager: Collecting stacks for native pid 28
+11-01 05:26:52.643   270  2796 I system_server: libdebuggerd_client: started dumping process 28
+11-01 05:26:52.643    47    47 I tombstoned: registered intercept for pid 28 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.643    28    28 I libc    : Requested dump for tid 28 (Binder:28_2)
+11-01 05:26:52.651  2800  2800 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.652    47    47 I tombstoned: received crash request for pid 28
+11-01 05:26:52.652    47    47 I tombstoned: found intercept fd 512 for pid 28 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.652  2800  2800 I crash_dump64: performing dump of process 28 (target tid = 28)
+11-01 05:26:52.657   270  2796 I system_server: libdebuggerd_client: done dumping process 28
+11-01 05:26:52.657   270  2796 I ActivityManager: Collecting stacks for native pid 77
+11-01 05:26:52.658   270  2796 I system_server: libdebuggerd_client: started dumping process 77
+11-01 05:26:52.658    47    47 I tombstoned: registered intercept for pid 77 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.658    77    77 I libc    : Requested dump for tid 77 (audioserver)
+11-01 05:26:52.667  2805  2805 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.667    47    47 I tombstoned: received crash request for pid 77
+11-01 05:26:52.667    47    47 I tombstoned: found intercept fd 512 for pid 77 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.667  2805  2805 I crash_dump64: performing dump of process 77 (target tid = 77)
+11-01 05:26:52.675   270  2796 I system_server: libdebuggerd_client: done dumping process 77
+11-01 05:26:52.676   270  2796 I ActivityManager: Collecting stacks for native pid 80
+11-01 05:26:52.676   270  2796 I system_server: libdebuggerd_client: started dumping process 80
+11-01 05:26:52.676    47    47 I tombstoned: registered intercept for pid 80 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.677    80    80 I libc    : Requested dump for tid 80 (surfaceflinger)
+11-01 05:26:52.688  2810  2810 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.688    47    47 I tombstoned: received crash request for pid 80
+11-01 05:26:52.688    47    47 I tombstoned: found intercept fd 512 for pid 80 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.688  2810  2810 I crash_dump64: performing dump of process 80 (target tid = 80)
+11-01 05:26:52.726   270  2796 I system_server: libdebuggerd_client: done dumping process 80
+11-01 05:26:52.727   270  2796 I ActivityManager: Collecting stacks for native pid 141
+11-01 05:26:52.727   270  2796 I system_server: libdebuggerd_client: started dumping process 141
+11-01 05:26:52.729    47    47 I tombstoned: registered intercept for pid 141 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.729   141   141 I libc    : Requested dump for tid 141 (cameraserver)
+11-01 05:26:52.736  2815  2815 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.736    47    47 I tombstoned: received crash request for pid 141
+11-01 05:26:52.736    47    47 I tombstoned: found intercept fd 512 for pid 141 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.737  2815  2815 I crash_dump32: performing dump of process 141 (target tid = 141)
+11-01 05:26:52.746   270  2796 I system_server: libdebuggerd_client: done dumping process 141
+11-01 05:26:52.746   270  2796 I ActivityManager: Collecting stacks for native pid 142
+11-01 05:26:52.746   270  2796 I system_server: libdebuggerd_client: started dumping process 142
+11-01 05:26:52.746    47    47 I tombstoned: registered intercept for pid 142 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.746   142   142 I libc    : Requested dump for tid 142 (drmserver)
+11-01 05:26:52.752  2821  2821 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.752    47    47 I tombstoned: received crash request for pid 142
+11-01 05:26:52.752    47    47 I tombstoned: found intercept fd 512 for pid 142 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.752  2821  2821 I crash_dump32: performing dump of process 142 (target tid = 142)
+11-01 05:26:52.758   270  2796 I system_server: libdebuggerd_client: done dumping process 142
+11-01 05:26:52.758   270  2796 I ActivityManager: Collecting stacks for native pid 147
+11-01 05:26:52.758   270  2796 I system_server: libdebuggerd_client: started dumping process 147
+11-01 05:26:52.758    47    47 I tombstoned: registered intercept for pid 147 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.759    47    47 I tombstoned: received crash request for pid 147
+11-01 05:26:52.759    47    47 I tombstoned: found intercept fd 512 for pid 147 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.780   270  2796 I system_server: libdebuggerd_client: done dumping process 147
+11-01 05:26:52.781   270  2796 I ActivityManager: Collecting stacks for native pid 148
+11-01 05:26:52.781   270  2796 I system_server: libdebuggerd_client: started dumping process 148
+11-01 05:26:52.781    47    47 I tombstoned: registered intercept for pid 148 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.781   148   148 I libc    : Requested dump for tid 148 (mediametrics)
+11-01 05:26:52.787  2826  2826 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.787    47    47 I tombstoned: received crash request for pid 148
+11-01 05:26:52.787    47    47 I tombstoned: found intercept fd 512 for pid 148 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.788  2826  2826 I crash_dump64: performing dump of process 148 (target tid = 148)
+11-01 05:26:52.792   270  2796 I system_server: libdebuggerd_client: done dumping process 148
+11-01 05:26:52.792   270  2796 I ActivityManager: Collecting stacks for native pid 149
+11-01 05:26:52.793   270  2796 I system_server: libdebuggerd_client: started dumping process 149
+11-01 05:26:52.793    47    47 I tombstoned: registered intercept for pid 149 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.793   149   149 I libc    : Requested dump for tid 149 (mediaserver)
+11-01 05:26:52.800  2831  2831 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.800    47    47 I tombstoned: received crash request for pid 149
+11-01 05:26:52.800    47    47 I tombstoned: found intercept fd 512 for pid 149 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.800  2831  2831 I crash_dump32: performing dump of process 149 (target tid = 149)
+11-01 05:26:52.814   270  2796 I system_server: libdebuggerd_client: done dumping process 149
+11-01 05:26:52.815   270  2796 I ActivityManager: Collecting stacks for native pid 151
+11-01 05:26:52.815   270  2796 I system_server: libdebuggerd_client: started dumping process 151
+11-01 05:26:52.816    47    47 I tombstoned: registered intercept for pid 151 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.816   151   151 I libc    : Requested dump for tid 151 (Binder:151_4)
+11-01 05:26:52.823  2836  2836 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.823    47    47 I tombstoned: received crash request for pid 151
+11-01 05:26:52.823    47    47 I tombstoned: found intercept fd 512 for pid 151 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.823  2836  2836 I crash_dump64: performing dump of process 151 (target tid = 151)
+11-01 05:26:52.834   270  2796 I system_server: libdebuggerd_client: done dumping process 151
+11-01 05:26:52.834   270  2796 I ActivityManager: Collecting stacks for native pid 156
+11-01 05:26:52.835   270  2796 I system_server: libdebuggerd_client: started dumping process 156
+11-01 05:26:52.835    47    47 I tombstoned: registered intercept for pid 156 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.835    47    47 I tombstoned: received crash request for pid 156
+11-01 05:26:52.835    47    47 I tombstoned: found intercept fd 512 for pid 156 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.901   270  2796 I system_server: libdebuggerd_client: done dumping process 156
+11-01 05:26:52.901   270  2796 I ActivityManager: Collecting stacks for native pid 160
+11-01 05:26:52.901   270  2796 I system_server: libdebuggerd_client: started dumping process 160
+11-01 05:26:52.902    47    47 I tombstoned: registered intercept for pid 160 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.902    47    47 I tombstoned: received crash request for pid 160
+11-01 05:26:52.902    47    47 I tombstoned: found intercept fd 512 for pid 160 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.933   270  2796 I system_server: libdebuggerd_client: done dumping process 160
+11-01 05:26:52.934   270  2796 I ActivityManager: Collecting stacks for native pid 161
+11-01 05:26:52.934   270  2796 I system_server: libdebuggerd_client: started dumping process 161
+11-01 05:26:52.934    47    47 I tombstoned: registered intercept for pid 161 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.934   161   161 I libc    : Requested dump for tid 161 (Binder:161_2)
+11-01 05:26:52.941  2841  2841 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.941    47    47 I tombstoned: received crash request for pid 161
+11-01 05:26:52.941    47    47 I tombstoned: found intercept fd 512 for pid 161 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.941  2841  2841 I crash_dump64: performing dump of process 161 (target tid = 161)
+11-01 05:26:52.947   270  2796 I system_server: libdebuggerd_client: done dumping process 161
+11-01 05:26:52.948   270  2796 I ActivityManager: Collecting stacks for native pid 438
+11-01 05:26:52.948   270  2796 I system_server: libdebuggerd_client: started dumping process 438
+11-01 05:26:52.949    47    47 I tombstoned: registered intercept for pid 438 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.949   438   438 I libc    : Requested dump for tid 438 (droid.bluetooth)
+11-01 05:26:52.971  2846  2846 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+11-01 05:26:52.971    47    47 I tombstoned: received crash request for pid 438
+11-01 05:26:52.971    47    47 I tombstoned: found intercept fd 512 for pid 438 and type kDebuggerdNativeBacktrace
+11-01 05:26:52.971  2846  2846 I crash_dump64: performing dump of process 438 (target tid = 438)
+11-01 05:26:53.137   270  2796 I system_server: libdebuggerd_client: done dumping process 438
+11-01 05:26:53.137   270  2796 I ActivityManager: Done dumping
+11-01 05:26:53.138   270  2796 E ActivityManager: ANR in com.wushisan.algertv.phone (com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity)
+11-01 05:26:53.138   270  2796 E ActivityManager: PID: 2731
+11-01 05:26:53.138   270  2796 E ActivityManager: Reason: Input dispatching timed out (9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true))
+11-01 05:26:53.138   270  2796 E ActivityManager: Parent: com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity
+11-01 05:26:53.138   270  2796 E ActivityManager: Load: 0.4 / 0.45 / 0.23
+11-01 05:26:53.138   270  2796 E ActivityManager: ----- Output from /proc/pressure/memory -----
+11-01 05:26:53.138   270  2796 E ActivityManager: some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+11-01 05:26:53.138   270  2796 E ActivityManager: full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+11-01 05:26:53.138   270  2796 E ActivityManager: ----- End output from /proc/pressure/memory -----
+11-01 05:26:53.138   270  2796 E ActivityManager: 
+11-01 05:26:53.138   270  2796 E ActivityManager: CPU usage from 150611ms to 0ms ago (2026-11-01 05:24:21.357 to 2026-11-01 05:26:51.968):
+11-01 05:26:53.138   270  2796 E ActivityManager:   2.3% 270/system_server: 1.4% user + 0.8% kernel / faults: 60799 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0.9% 80/surfaceflinger: 0.7% user + 0.2% kernel / faults: 87476 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0.4% 149/mediaserver: 0% user + 0.3% kernel / faults: 845 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0.3% 147/media.extractor: 0.2% user + 0.1% kernel / faults: 613 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0.2% 20/servicemanager: 0.2% user + 0% kernel / faults: 5 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0.1% 139/zygote64: 0% user + 0.1% kernel / faults: 8489 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 18/logd: 0% user + 0% kernel / faults: 329 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 71/android.hardware.graphics.composer@2.1-service: 0% user + 0% kernel / faults: 82 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 61/android.hardware.bluetooth@1.1-service.sim: 0% user + 0% kernel / faults: 41 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 151/netd: 0% user + 0% kernel / faults: 2085 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 74/android.hardware.sensors@2.1-service.mock: 0% user + 0% kernel / faults: 27 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 156/media.codec: 0% user + 0% kernel / faults: 1680 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 161/statsd: 0% user + 0% kernel / faults: 198 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 1/init: 0% user + 0% kernel / faults: 301 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 140/zygote: 0% user + 0% kernel / faults: 3131 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 160/media.swcodec: 0% user + 0% kernel / faults: 641 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 77/audioserver: 0% user + 0% kernel / faults: 22 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 148/media.metrics: 0% user + 0% kernel / faults: 205 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 19/lmkd: 0% user + 0% kernel / faults: 1 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 21/hwservicemanager: 0% user + 0% kernel / faults: 16 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 145/installd: 0% user + 0% kernel / faults: 306 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 28/vold: 0% user + 0% kernel / faults: 96 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 33/android.system.suspend@1.0-service: 0% user + 0% kernel / faults: 11 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 70/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 12 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:   0% 141/cameraserver: 0% user + 0% kernel / faults: 49 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 438/com.android.bluetooth: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 458/com.android.systemui: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 485/com.android.permissioncontroller: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 696/webview_zygote: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 725/com.android.launcher3: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 749/com.android.networkstack.process: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 791/com.android.se: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 816/com.android.phone: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 882/com.android.settings: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1038/android.ext.services: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1059/com.android.inputmethod.latin: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1167/com.android.smspush: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1247/com.android.providers.media.module: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1295/com.android.printspooler: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1361/com.android.managedprovisioning: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1384/android.process.media: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1413/com.android.providers.calendar: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1439/android.process.acore: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1605/com.android.gallery3d: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1650/com.android.onetimeinitializer: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1675/com.android.packageinstaller: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1702/com.android.shell: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1725/com.android.traceur: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1755/com.android.externalstorage: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1787/com.android.localtransport: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 1865/com.android.documentsui: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 2182/adbd: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 2226/com.wushisan.algertv: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 2318/abb: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager:  +0% 2731/com.wushisan.algertv.phone: 0% user + 0% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager: 7.9% TOTAL: 5.1% user + 1.9% kernel + 0.8% iowait + 0% softirq
+11-01 05:26:53.138   270  2796 E ActivityManager: CPU usage from 3ms to 225ms later (2026-11-01 05:26:51.971 to 2026-11-01 05:26:52.194):
+11-01 05:26:53.138   270  2796 E ActivityManager:   9.2% 270/system_server: 4.6% user + 4.6% kernel / faults: 174 minor
+11-01 05:26:53.138   270  2796 E ActivityManager:     9.2% 2796/AnrConsumer: 4.6% user + 4.6% kernel
+11-01 05:26:53.138   270  2796 E ActivityManager: 4.5% TOTAL: 2.2% user + 2.2% kernel
+11-01 05:26:53.139   270  2796 D ActivityManager: Completed ANR of com.wushisan.algertv.phone in 1171ms, latency 1ms
+11-01 05:26:53.139   270   302 W ActivityTaskManager:   Force finishing activity com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity
+11-01 05:26:53.160   270  2849 I DropBoxManagerService: add tag=data_app_anr isTagEnabled=true flags=0x2
+11-01 05:26:53.164   270   302 W ActivityTaskManager:   Force finishing activity com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity
+11-01 05:26:53.164    71    71 D hwcomposer: VSYNC event status:1
+11-01 05:26:53.165   270   302 I ActivityManager: Killing 2731:com.wushisan.algertv.phone/u0a117 (adj 0): user request after error
+11-01 05:26:53.168    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:26:53.177   270   346 W InputDispatcher: channel '9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0xd
+11-01 05:26:53.177   270   346 E InputDispatcher: channel '9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-01 05:26:53.178   270  1738 I WindowManager: WIN DEATH: Window{be11924 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity}
+11-01 05:26:53.178   270  1984 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ], android.os.BinderProxy@f1f3d85)
+11-01 05:26:53.178   270  1738 W InputDispatcher: Attempted to unregister already unregistered input channel 'be11924 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhoneMainActivity (server)'
+11-01 05:26:53.179   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+11-01 05:26:53.179   149  2781 E GenericSource: Failed to create data source!
+11-01 05:26:53.179   270  2215 W ActivityManager: Scheduling restart of crashed service com.wushisan.algertv.phone/com.wushisan.algertv.playback.PlaybackService in 1000ms for start-requested
+11-01 05:26:53.179   270   394 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10117 AdministratorUids: [] RequestorUid: 10117 RequestorPackageName: com.wushisan.algertv.phone] ] (release request)
+11-01 05:26:53.179   149  2780 D NuPlayerDriver: notifyResetComplete(0xed741d70)
+11-01 05:26:53.179   139   139 I Zygote  : Process 2731 exited due to signal 9 (Killed)
+11-01 05:26:53.180   149  1780 D NuPlayerDriver: reset(0xed741d70) at state 0
+11-01 05:26:53.183   816   816 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 05:26:53.183   816   816 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 05:26:53.185   270  1984 I WindowManager: WIN DEATH: Window{9ddee16 u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity}
+11-01 05:26:53.185   270  1984 W InputDispatcher: Attempted to unregister already unregistered input channel '9ddee16 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity (server)'
+11-01 05:26:53.186   270  1984 D ConnectivityService: requestNetwork for uid/pid:10116/2226 NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ]
+11-01 05:26:53.188   270   304 W ActivityManager: setHasOverlayUi called on unknown pid: 2731
+11-01 05:26:53.188   270   394 D ConnectivityService: NetReassign [31 : null → 100]
+11-01 05:26:53.188   270   390 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:26:53.188   270   420 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:26:53.188   270   390 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:26:53.189   816   816 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
+11-01 05:26:53.189   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 05:26:53.190   816   816 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
+11-01 05:26:53.190   816   816 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-01 05:26:53.217   458   458 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{69f38a6 I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
+11-01 05:26:53.284   458   458 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-01 05:26:53.286   270   304 W ActivityTaskManager: Current config: {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 420dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1794) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.142} unchanged for IME proc com.android.inputmethod.latin
+11-01 05:26:53.286   270   304 I ActivityTaskManager: Config changes=20000480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.142}
+11-01 05:26:53.287   270   304 W ActivityTaskManager: Current config: {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 420dpi nrml port -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1794) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.142} unchanged for IME proc com.android.inputmethod.latin
+11-01 05:26:53.288   270   304 I WindowManager: Override config changes=20000480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.142} for displayId=0
+11-01 05:26:53.288   270   304 W LocalDisplayAdapter: Unable to find color mode 0, ignoring request.
+11-01 05:26:53.288   270   304 V ActivityTaskManager: Sending to IME proc com.android.inputmethod.latin new config {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.142}
+11-01 05:26:53.289   270   304 W ActivityTaskManager: Current config: {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land -touch -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.142} unchanged for IME proc com.android.inputmethod.latin
+11-01 05:26:53.293   270   304 I InputManager-JNI: Viewport [0] to add: local:0, isActive: true
+11-01 05:26:53.294   270   347 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+11-01 05:26:53.294   270   309 W UsageStatsService: Unexpected activity event reported! (com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher event : 2 instanceId : 193914836)
+11-01 05:26:53.304   725   725 D RecentsOrientedState: current RecentsOrientedState: [this=RecentsOrientedState@d35ed41 mOrientationHandler=PortraitPagedViewHandler@bc18252 mDisplayRotation=0 mTouchRotation=0 mRecentsActivityRotation=0 isRecentsActivityRotationAllowed=false mSystemRotation=false mFlags=291]
+11-01 05:26:53.304   725   725 D RecentsOrientedState: current RecentsOrientedState: [this=RecentsOrientedState@d35ed41 mOrientationHandler=PortraitPagedViewHandler@bc18252 mDisplayRotation=0 mTouchRotation=0 mRecentsActivityRotation=0 isRecentsActivityRotationAllowed=false mSystemRotation=false mFlags=291]
+11-01 05:26:53.320   270   310 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10096; state: DISABLED
+11-01 05:26:53.320   270   310 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10096; state: DISABLED
+11-01 05:26:53.321   270   311 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10096; state: DISABLED
+11-01 05:26:53.325   139   139 D Zygote  : Forked child process 2863
+11-01 05:26:53.325  2863  2863 I Zygote  : seccomp disabled by setenforce 0
+11-01 05:26:53.325  2863  2863 I libc    : SetHeapTaggingLevel: tag level set to 0
+11-01 05:26:53.326   270   311 I ActivityManager: Start proc 2863:com.android.quicksearchbox/u0a96 for broadcast {com.android.quicksearchbox/com.android.quicksearchbox.SearchWidgetProvider}
+11-01 05:26:53.328  2182  2188 I adbd    : jdwp connection from 2863
+11-01 05:26:53.333  2863  2863 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+11-01 05:26:53.333  2863  2863 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-01 05:26:53.333  2863  2863 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-01 05:26:53.333  2863  2863 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-01 05:26:53.334  2863  2863 I .quicksearchbo: The ClassLoaderContext is a special shared library.
+11-01 05:26:53.335  2863  2863 I .quicksearchbo: The ClassLoaderContext is a special shared library.
+11-01 05:26:53.335  2863  2863 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/system/product/app/QuickSearchBox/lib/arm64:/product/lib64:/system/product/lib64
+11-01 05:26:53.337  2863  2863 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:53.337  2863  2863 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:53.357   458   458 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-01 05:26:53.425   458   458 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-01 05:26:53.546    71    71 D hwcomposer: VSYNC event status:0
+11-01 05:26:53.664   270   304 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{58ebea u0 com.wushisan.algertv.phone/com.wushisan.algertv.ui.phone.PhonePlayerActivity t-1 f}}
+11-01 05:26:54.179   270   310 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10117; state: DISABLED
+11-01 05:26:54.179   270   310 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10117; state: ENABLED
+11-01 05:26:54.179   270   311 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10117; state: ENABLED
+11-01 05:26:54.183   139   139 D Zygote  : Forked child process 2886
+11-01 05:26:54.184   270   311 I ActivityManager: Start proc 2886:com.wushisan.algertv.phone/u0a117 for service {com.wushisan.algertv.phone/com.wushisan.algertv.playback.PlaybackService}
+11-01 05:26:54.184  2886  2886 I Zygote  : seccomp disabled by setenforce 0
+11-01 05:26:54.186  2182  2188 I adbd    : jdwp connection from 2886
+11-01 05:26:54.189   270  2722 D CompatibilityChangeReporter: Compat change id reported: 136219221; UID 10117; state: ENABLED
+11-01 05:26:54.194  2886  2886 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:54.195  2886  2886 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-01 05:26:54.197  2886  2886 I AlgerTV : TLS_SUPPORT_READY bundled=true
+11-01 05:26:54.227  2886  2886 I AlgerTV : App onCreate
+11-01 05:26:54.228   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+11-01 05:26:54.229  2886  2886 I AlgerTV : PlaybackService(phone) onCreate
+11-01 05:26:54.230   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 1
+11-01 05:26:54.230   438   438 D AvrcpMediaPlayerList: onActiveSessionsChanged: controller: com.wushisan.algertv.phone
+11-01 05:26:54.230   438   438 D AvrcpMediaPlayerList: Already have a controller for the player: com.wushisan.algertv.phone, updating instead
+11-01 05:26:54.231   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+11-01 05:26:54.232   438   438 V AvrcpMediaPlayerList: onActiveSessionsChanged: number of controllers: 0
+11-01 05:26:54.391   270   270 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+11-01 05:26:54.391   270   270 I chatty  : uid=1000 system_server identical 1 line
+11-01 05:26:54.391   270   270 D NotificationService: 0|com.wushisan.algertv.phone|1001|null|10117: granting content://settings/system/notification_sound
+11-01 05:26:54.391   270   270 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+11-01 05:26:54.394   458   458 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:54.394   458   458 D InterruptionStateProvider: No alerting: filtered notification: 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:54.395   458   458 V MediaTimeout: processState: null
+11-01 05:26:54.395   458   458 V MediaTimeout: schedule timeout for 0|com.wushisan.algertv.phone|1001|null|10117
+11-01 05:26:54.395   458   458 D MediaResumeListener: Checking for service component for com.wushisan.algertv.phone
+11-01 05:26:54.397   438  1121 D BluetoothDatabase: getBondedDevicesOrdered: Invalid address for device LocalStorage
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.402   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.405   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.409   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.421   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.422   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.425   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.429   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.431   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.433   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.435   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.435   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.436   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.436   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.436   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.436   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.436   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.438   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.440   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown center_vertical_guideline
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown media_action_barrier
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown media_text
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown remove_text
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown settings
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown cancel
+11-01 05:26:54.443   458   458 W ConstraintSet: id unknown dismiss
+11-01 05:26:57.289   270  1116 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-01 05:26:59.393    71    71 D hwcomposer: VSYNC event status:1
+11-01 05:26:59.413    71    96 D hwcomposer: hw_composer sent 72 syncs in 63s
+11-01 05:26:59.422   458   458 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{69f38a6 I.E...... ......ID 0,0-720,1280} canPanelBeCollapsed(): false
+11-01 05:26:59.746    71    71 D hwcomposer: VSYNC event status:0
+11-01 05:27:00.001   458   458 D KeyguardClockSwitch: Updating clock: 527
+11-01 05:27:02.156   749   982 E TcpSocketTracker: Expect to get family 10 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:27:02.156   749   982 E TcpSocketTracker: Expect to get family 2 SOCK_DIAG_BY_FAMILY message but get 2
+11-01 05:27:02.316    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 05:27:02.316  2909  2909 I Gralloc4: mapper 4.x is not supported
+11-01 05:27:02.316    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 05:27:02.316  2909  2909 W Gralloc3: mapper 3.x is not supported
+11-01 05:27:02.423  2913  2915 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 05:27:02.425   270  2215 I ActivityManager: Killing 1361:com.android.managedprovisioning/u0a69 (adj 985): empty #17
+11-01 05:27:02.426  1247  1778 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 05:27:02.429  1247  1778 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 05:27:02.430  1247  1784 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+11-01 05:27:02.430  1247  1784 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 05:27:02.430  1247  1784 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+11-01 05:27:02.430  1247  1784 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 05:27:02.431   139   139 I Zygote  : Process 1361 exited due to signal 9 (Killed)
+11-01 05:27:06.466   151  2783 W SocketClient: write error (Broken pipe)
+11-01 05:27:06.466   151  2783 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10117 pid 2731: Broken pipe
