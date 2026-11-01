@@ -1,353 +1,78 @@
 --------- beginning of main
-10-31 08:29:32.014  1865  1865 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 08:29:32.020  1865  1865 E ContextImpl: Tried to access visual service LayoutInflater from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b Visual services, such as WindowManager, WallpaperService or LayoutInflater should be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen.
-10-31 08:29:32.020  1865  1865 E ContextImpl: java.lang.IllegalAccessException: Tried to access visual service LayoutInflater from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:1914)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:803)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.from(LayoutInflater.java:282)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6bUI constants, such as display metrics or window metrics, must be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: java.lang.IllegalArgumentException: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:510)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5317)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5467)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.ViewGroup.<init>(ViewGroup.java:697)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:254)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:250)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:246)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:852)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:774)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:928)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:948)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1002)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:959)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:657)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:532)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.020  1865  1865 E ViewConfiguration: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.020  1865  1865 E ContextImpl: Tried to access visual service WindowManager from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b Visual services, such as WindowManager, WallpaperService or LayoutInflater should be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen.
-10-31 08:29:32.020  1865  1865 E ContextImpl: java.lang.IllegalAccessException: Tried to access visual service WindowManager from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:1914)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:803)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.content.Context.getSystemService(Context.java:3705)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.ViewConfiguration.<init>(ViewConfiguration.java:422)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:520)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.View.<init>(View.java:5317)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.View.<init>(View.java:5467)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.ViewGroup.<init>(ViewGroup.java:697)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.widget.LinearLayout.<init>(LinearLayout.java:254)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.widget.LinearLayout.<init>(LinearLayout.java:250)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.widget.LinearLayout.<init>(LinearLayout.java:246)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.createView(LayoutInflater.java:852)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.createView(LayoutInflater.java:774)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:928)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:948)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1002)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:959)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:657)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:532)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.020  1865  1865 E ContextImpl: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6bUI constants, such as display metrics or window metrics, must be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: java.lang.IllegalArgumentException: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:510)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5317)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5467)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.ViewGroup.<init>(ViewGroup.java:697)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:254)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:250)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.LinearLayout.<init>(LinearLayout.java:246)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:852)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:774)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:928)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:948)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1002)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:959)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1121)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1082)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:680)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:532)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6bUI constants, such as display metrics or window metrics, must be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: java.lang.IllegalArgumentException: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:510)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5317)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5467)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.ImageView.<init>(ImageView.java:195)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.ImageView.<init>(ImageView.java:190)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.widget.ImageView.<init>(ImageView.java:186)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DropBadgeView.<init>(DropBadgeView.java:40)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:852)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1004)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.parseInclude(LayoutInflater.java:1231)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1117)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1082)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1124)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1082)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:680)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:532)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.022  1865  1865 E ViewConfiguration: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6bUI constants, such as display metrics or window metrics, must be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: java.lang.IllegalArgumentException: Tried to access UI constants from a non-visual Context:com.android.documentsui.DocumentsApplication@3a35f6b
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:510)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5317)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.View.<init>(View.java:5467)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.widget.TextView.<init>(TextView.java:1000)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.widget.TextView.<init>(TextView.java:994)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.widget.TextView.<init>(TextView.java:990)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:852)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createView(LayoutInflater.java:774)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:928)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:948)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1002)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:959)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1121)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1082)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1124)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1082)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:680)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:532)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:166)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:145)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at java.lang.reflect.Method.invoke(Native Method)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-10-31 08:29:32.025  1865  1865 E ViewConfiguration: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-10-31 08:29:32.027  1865  1865 D DocumentsApplication: OverlayManager.setEnabled() result: true
+11-01 04:36:39.312   457   457 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
 --------- beginning of system
-10-31 08:29:32.028   272   480 I ActivityManager: Killing 1525:com.android.contacts/u0a93 (adj 985): empty #17
-10-31 08:29:32.033   142   142 I Zygote  : Process 1525 exited due to signal 9 (Killed)
-10-31 08:29:32.038  1119  1780 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.wushisan.algertv flg=0x1000010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
-10-31 08:29:32.039  1119  1780 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.wushisan.algertv flg=0x1000010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
-10-31 08:29:32.043   272  1157 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity} from uid 2000
-10-31 08:29:32.048  1895  1899 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 08:29:32.048   272   306 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
-10-31 08:29:32.048   272   306 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10116; state: DISABLED
-10-31 08:29:32.049   272   313 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
-10-31 08:29:32.050   272   307 W System  : ClassLoader referenced unknown path: 
-10-31 08:29:32.057   142   142 D Zygote  : Forked child process 1900
-10-31 08:29:32.058  1900  1900 I Zygote  : seccomp disabled by setenforce 0
-10-31 08:29:32.058  1900  1900 I libc    : SetHeapTaggingLevel: tag level set to 0
-10-31 08:29:32.059   272   313 I ActivityManager: Start proc 1900:com.wushisan.algertv/u0a116 for pre-top-activity {com.wushisan.algertv/com.wushisan.algertv.ui.MainActivity}
-10-31 08:29:32.061   122   133 I adbd    : jdwp connection from 1900
-10-31 08:29:32.064   272   300 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
-10-31 08:29:32.067  1900  1900 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-10-31 08:29:32.071  1900  1900 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 08:29:32.072  1900  1900 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-10-31 08:29:32.075  1900  1900 I AlgerTV : TLS_SUPPORT_READY bundled=true
-10-31 08:29:32.107  1900  1900 I AlgerTV : App onCreate
-10-31 08:29:32.124  1900  1900 I AlgerTV : HOME_LOAD_START
-10-31 08:29:32.125  1900  1900 I AlgerTV : HOME_SEED
-10-31 08:29:32.132  1900  1900 I AlgerTV : HOME_ROWS_BUILT fallback=false
-10-31 08:29:32.201    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-10-31 08:29:32.515    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 08:29:32.515  1900  1923 I Gralloc4: mapper 4.x is not supported
-10-31 08:29:32.515    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 08:29:32.515  1900  1923 W Gralloc3: mapper 3.x is not supported
-10-31 08:29:32.517    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 08:29:32.524    98   978 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10116 pid=1900
-10-31 08:29:32.524    98   978 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10116 => denied (186 us)
-10-31 08:29:32.524  1900  1900 W AlgerTV : HOME_META_FAIL id=1978921795 attempt=0: HTTP 503
-10-31 08:29:32.524  1900  1900 W AlgerTV : HOME_META_FAIL id=180106 attempt=0: HTTP 503
-10-31 08:29:32.526   272   311 I ActivityTaskManager: Displayed com.wushisan.algertv/.ui.MainActivity: +480ms
-10-31 08:29:32.537  1900  1900 I TetheringManager: registerTetheringEventCallback:com.wushisan.algertv
-10-31 08:29:32.537   272   591 D ConnectivityService: requestNetwork for uid/pid:10116/1900 NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ]
-10-31 08:29:32.538   272   397 D ConnectivityService: NetReassign [19 : null → 100]
-10-31 08:29:32.538   272   426 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-10-31 08:29:32.538   272   393 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-10-31 08:29:32.538   272   393 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-10-31 08:29:32.539   812   812 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.wushisan.algertv] ] with score 70 and providerId 1
-10-31 08:29:32.540   459   459 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
-10-31 08:29:32.540   812   812 D Telephony: isEmergencyPreferredAccount: subId=-1, activeData=-1
-10-31 08:29:32.540   812   812 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
-10-31 08:29:32.610  1900  1900 W AlgerTV : HOME_META_FAIL id=71384707 attempt=0: HTTP 503
-10-31 08:29:32.628  1900  1900 W AlgerTV : HOME_META_FAIL id=11641012 attempt=0: HTTP 503
-10-31 08:29:32.814  1900  1900 W AlgerTV : HOME_META_FAIL id=60131 attempt=0: HTTP 503
-10-31 08:29:32.881  1900  1900 W AlgerTV : HOME_META_FAIL id=3778678 attempt=0: HTTP 503
-10-31 08:29:33.016  1900  1900 W AlgerTV : HOME_META_FAIL id=19723756 attempt=0: HTTP 503
-10-31 08:29:33.066   272   480 I ActivityManager: Killing 1058:com.android.deskclock/u0a104 (adj 985): empty #17
-10-31 08:29:33.071   142   142 I Zygote  : Process 1058 exited due to signal 9 (Killed)
-10-31 08:29:33.088  1900  1900 W AlgerTV : HOME_META_FAIL id=3779629 attempt=0: HTTP 503
-10-31 08:29:33.309  1900  1900 W AlgerTV : HOME_META_FAIL id=991319590 attempt=0: HTTP 503
-10-31 08:29:33.316  1900  1900 I AlgerTV : HOME_META_OK id=60198 ms=1192
-10-31 08:29:33.459  1900  1900 I AlgerTV : HOME_META_OK id=745956260 ms=1335
-10-31 08:29:33.621  1900  1900 I AlgerTV : HOME_META_OK id=2809513713 ms=1497
-10-31 08:29:33.660  1900  1900 W AlgerTV : HOME_META_FAIL id=71384707 attempt=1: HTTP 503
-10-31 08:29:33.714   272   306 I system_server: Explicit concurrent copying GC freed 26177(1612KB) AllocSpace objects, 10(392KB) LOS objects, 75% free, 7866KB/31MB, paused 26us total 21.109ms
-10-31 08:29:33.715    72    72 D hwcomposer: VSYNC event status:1
-10-31 08:29:33.822  1900  1900 W AlgerTV : HOME_META_FAIL id=11641012 attempt=1: HTTP 503
-10-31 08:29:33.870  1900  1900 W AlgerTV : HOME_META_FAIL id=60131 attempt=1: HTTP 503
-10-31 08:29:34.036  1900  1900 W AlgerTV : HOME_META_FAIL id=3778678 attempt=1: HTTP 503
-10-31 08:29:34.062    72    72 D hwcomposer: VSYNC event status:0
-10-31 08:29:34.072  1900  1900 W AlgerTV : HOME_META_FAIL id=19723756 attempt=1: HTTP 503
-10-31 08:29:34.237  1900  1900 W AlgerTV : HOME_META_FAIL id=3779629 attempt=1: HTTP 503
-10-31 08:29:34.311  1900  1900 W AlgerTV : HOME_META_FAIL id=991319590 attempt=1: HTTP 503
-10-31 08:29:34.499  1900  1900 I AlgerTV : HOME_META_OK id=2884035 ms=2375
-10-31 08:29:34.530  1900  1900 I AlgerTV : HOME_META_OK id=1978921795 ms=2406
-10-31 08:29:34.561  1900  1900 I AlgerTV : HOME_META_OK id=180106 ms=2437
-10-31 08:29:34.561  1900  1900 I AlgerTV : HOME_DONE ms=2437 meta=6/13 fallback=false
-10-31 08:29:34.562  1900  1900 I AlgerTV : HOME_ROWS_BUILT fallback=false
-10-31 08:29:34.562    72    72 D hwcomposer: VSYNC event status:1
-10-31 08:29:34.562  1900  1957 I AlgerTV : HOME_CACHE_SAVED bytes=1314
-10-31 08:29:34.928    72    72 D hwcomposer: VSYNC event status:0
-10-31 08:29:35.083   272  1116 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-31 08:29:35.805    72    72 D hwcomposer: VSYNC event status:1
-10-31 08:29:36.195    72    72 D hwcomposer: VSYNC event status:0
-10-31 08:29:37.032  1865  1888 I oid.documentsu: Waiting for a blocking GC ProfileSaver
-10-31 08:29:38.489    72    72 D hwcomposer: VSYNC event status:1
-10-31 08:29:38.862    72    72 D hwcomposer: VSYNC event status:0
-10-31 08:29:39.566   459   745 I vol.Events: writeEvent level_changed STREAM_MUSIC 3
-10-31 08:29:39.567    72    72 D hwcomposer: VSYNC event status:1
-10-31 08:29:39.929    72    72 D hwcomposer: VSYNC event status:0
-10-31 08:29:40.136   159   178 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
-10-31 08:29:40.136   159   178 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
-10-31 08:29:41.510   272   311 I ActivityManager: Killing 1280:com.android.provision/u0a105 (adj 985): empty #17
-10-31 08:29:41.514   142   142 I Zygote  : Process 1280 exited due to signal 9 (Killed)
-10-31 08:29:41.995   272   305 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
-10-31 08:29:41.997   272   305 I chatty  : uid=1000(system) android.io identical 5 lines
-10-31 08:29:41.998   272   305 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
-10-31 08:29:46.100   272  1157 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 2000; state: ENABLED
-10-31 08:29:46.100   272  1157 D CompatibilityChangeReporter: Compat change id reported: 132649864; UID 2000; state: DISABLED
-10-31 08:29:46.104  1119  1783 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 08:29:46.104  1119  1783 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.104  1119  1783 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:46.104  1119  1783 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:29:46.105  1119  1783 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 08:29:46.105  1119  1783 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.105  1119  1783 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0(MediaProvider.java:613)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0$MediaProvider$3(Unknown Source:0)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$OA4Hj-5lam3D4oprnbu7ZpL-f_E.run(Unknown Source:10)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:46.105  1119  1783 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
-10-31 08:29:46.121    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-31 08:29:46.121  1971  1971 I Gralloc4: mapper 4.x is not supported
-10-31 08:29:46.121    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-10-31 08:29:46.121  1971  1971 W Gralloc3: mapper 3.x is not supported
-10-31 08:29:46.233  1975  1977 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-10-31 08:29:46.237  1119  1780 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 08:29:46.241  1119  1780 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-10-31 08:29:46.241  1119  1783 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
-10-31 08:29:46.241  1119  1783 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.241  1119  1783 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
-10-31 08:29:46.241  1119  1783 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 04:36:39.314   271   579 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{2b43af u0 StatusBar}, surfaceController Surface(name=StatusBar)/@0x5d01b17
+11-01 04:36:39.329   271   579 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{2f8e33a u0 NavigationBar0}, surfaceController Surface(name=NavigationBar0)/@0x60f7396
+11-01 04:36:39.352   271   579 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.wushisan.algertv/.ui.MainActivity} from uid 2000
+11-01 04:36:39.352  1850  1851 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 04:36:39.380   702  1355 E FrameEvents: updateAcquireFence: Did not find frame.
+11-01 04:36:39.381    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 04:36:39.487    70    70 D hwcomposer: VSYNC event status:0
+11-01 04:36:39.488   271   305 I WindowManager: Screen frozen for +385ms due to Window{297d711 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+11-01 04:36:39.511   271   305 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-01 04:36:39.622    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
+11-01 04:36:39.755    98    98 I chatty  : uid=1000(system) /system/bin/surfaceflinger identical 2 lines
+11-01 04:36:39.821    98    98 E CompositionEngine: [BackColorSurface#0] Invalid device requested composition type change: SOLID_COLOR (3) --> DEVICE (2)
+11-01 04:36:41.537   271   304 I system_server: Explicit concurrent copying GC freed 42745(1851KB) AllocSpace objects, 12(240KB) LOS objects, 76% free, 7707KB/31MB, paused 25us total 19.942ms
+11-01 04:36:41.539    70    70 D hwcomposer: VSYNC event status:1
+11-01 04:36:41.887    70    70 D hwcomposer: VSYNC event status:0
+11-01 04:36:43.619   271   301 I ActivityManager: Killing 1521:com.android.contacts/u0a93 (adj 985): empty #17
+11-01 04:36:43.622   271  1669 I ActivityManager: Killing 1045:com.android.deskclock/u0a104 (adj 975): empty #17
+11-01 04:36:43.626   130   130 I Zygote  : Process 1521 exited due to signal 9 (Killed)
+11-01 04:36:43.628   130   130 I Zygote  : Process 1045 exited due to signal 9 (Killed)
+11-01 04:36:48.530   457   687 I vol.Events: writeEvent level_changed STREAM_MUSIC 3
+11-01 04:36:48.532    70    70 D hwcomposer: VSYNC event status:1
+11-01 04:36:48.887    70    70 D hwcomposer: VSYNC event status:0
+11-01 04:36:49.105   146   159 E Netd    : Failed to dump IPv4 sockets struct tcp_info: No such file or directory
+11-01 04:36:49.105   146   159 E TcpSocketMonitor: Failed to poll TCP socket info: No such file or directory
+11-01 04:36:53.399   271  1104 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 2000; state: ENABLED
+11-01 04:36:53.400   271  1104 D CompatibilityChangeReporter: Compat change id reported: 132649864; UID 2000; state: DISABLED
+11-01 04:36:53.426  1229  1775 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+11-01 04:36:53.426  1229  1775 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.426  1229  1775 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12(MediaProvider.java:1127)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$12$MediaProvider(Unknown Source:0)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$VhB3wkpGkT4Cm_4TN5qOQg3m3rU.run(Unknown Source:4)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+11-01 04:36:53.426  1229  1775 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 04:36:53.427  1229  1775 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+11-01 04:36:53.427  1229  1775 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.427  1229  1775 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0(MediaProvider.java:613)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0$MediaProvider$3(Unknown Source:0)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$OA4Hj-5lam3D4oprnbu7ZpL-f_E.run(Unknown Source:10)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+11-01 04:36:53.427  1229  1775 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-01 04:36:53.430    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-01 04:36:53.430  1855  1855 I Gralloc4: mapper 4.x is not supported
+11-01 04:36:53.430    21    21 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-01 04:36:53.430  1855  1855 W Gralloc3: mapper 3.x is not supported
+11-01 04:36:53.625   271   552 I ActivityManager: Killing 1546:com.android.dynsystem/1000 (adj 985): empty #17
+11-01 04:36:53.625  1859  1861 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-01 04:36:53.629  1229  1770 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 04:36:53.630   130   130 I Zygote  : Process 1546 exited due to signal 9 (Killed)
+11-01 04:36:53.633  1229  1770 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/shot.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+11-01 04:36:53.634  1229  1775 E StorageManager: Failed to set extended attributes for /storage/emulated/0/shot.png to set project id.: Operation not supported on transport endpoint
+11-01 04:36:53.634  1229  1775 W MediaProvider: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.634  1229  1775 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/shot.png
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:583)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:562)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:224)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1(MediaProvider.java:635)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onUpdate$1$MediaProvider$3(Unknown Source:0)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$WJkiC6ajEYmAPvc5_niXuh2KmrI.run(Unknown Source:8)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+11-01 04:36:53.634  1229  1775 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
